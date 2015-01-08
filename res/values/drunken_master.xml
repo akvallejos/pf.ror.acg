@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+	Items are stored in paired values, first item is starting value
+	and second item is the maximum feat
+ -->
+<resources>
+    <string name="drunken_master_str">1d6</string>
+    <string name="drunken_master_dex">1d10</string>
+    <string name="drunken_master_con">1d6</string>
+    <string name="drunken_master_int">1d6</string>
+    <string name="drunken_master_wis">1d8</string>
+    <string name="drunken_master_cha">1d6</string>
+    <string name="drunken_master_fav_card">Blessing</string>
+      
+    <string-array name="drunken_master_str_bonus">
+        <item>0</item>
+        <item >+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="drunken_master_dex_bonus">
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+    </string-array>
+    <string-array name="drunken_master_con_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="drunken_master_int_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="drunken_master_wis_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item >+3</item>
+    </string-array>
+    <string-array name="drunken_master_cha_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+    </string-array>
+    <string-array name="drunken_master_hand_limit">
+        <item>4</item>
+        <item >5</item>
+        <item >6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="drunken_master_weapons">
+        <item >0</item>
+        <item>1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string-array name="drunken_master_spells">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="drunken_master_armors">
+        <item >0</item>
+    </string-array>
+    <string-array name="drunken_master_items">
+        <item >4</item>
+        <item>5</item>
+        <item >6</item>
+    </string-array>
+    <string-array name="drunken_master_allies">
+        <item >3</item>
+        <item>4</item>
+        <item >5</item>
+    </string-array>
+    <string-array name="drunken_master_blessings">
+        <item >8</item>
+        <item>9</item>
+        <item >10</item>
+    </string-array>
+    
+    <string-array name="drunken_master_proficiencies">
+        <item>Proficient with nothing.</item>
+        <item>Proficient with Weapons.</item>
+    </string-array>
+    
+    <string-array name="drunken_master_skills">
+        <item>Acrobatics: Dexterity +2</item>
+        <item>Fortitude: Constitution +2</item>
+    </string-array>
+    
+    <string-array name="drunken_master_power1">
+        <item>
+            When you attempt a combat check without playing a weapon, 
+            you may use your Dexterity die instead of your Strength die
+        </item>
+        <item>
+            When you attempt a combat check without playing a weapon, 
+            you may use your Dexterity die instead of your Strength die 
+            and add the Magic trait
+        </item>
+        <item>
+            When you attempt a combat check without playing a weapon, 
+            you may use your Dexterity die instead of your Strength die 
+            and add the Magic trait and the Fire trait
+       </item>
+    </string-array>
+    <string-array name="drunken_master_power2">
+        <item>
+            You may play any number of blessings on your combat check; 
+            recharge them instead of discarding them.
+        </item>
+    </string-array>
+    <string-array name="drunken_master_power3">
+        <item>
+            --
+        </item>
+        <item>
+            When dealt damage other than Combat damage, reduce that damage
+            by 1.
+        </item>
+        <item>
+            When dealt damage other than Combat damage, reduce that damage
+            by 2.
+        </item>
+        <item>
+            When dealt damage other than Combat damage, reduce that damage
+            by 3.
+        </item>
+    </string-array>
+</resources>

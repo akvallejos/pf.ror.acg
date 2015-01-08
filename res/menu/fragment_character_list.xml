@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:showAsAction="never">
+    
+	    <item android:id="@+id/menu_item_new_barbarian"
+		    android:title="@string/new_barbarian" />
+	    
+	    <item android:id="@+id/menu_item_new_bard"
+		    android:title="@string/new_bard"/>
+	    	
+	    <item android:id="@+id/menu_item_new_cleric"
+		    android:title="@string/new_cleric"/>
+	    
+	    <item android:id="@+id/menu_item_new_druid"
+		    android:title="@string/new_druid"/>
+	    
+	    <item android:id="@+id/menu_item_new_fighter"
+		    android:title="@string/new_fighter"/>
+	    
+		<item android:id="@+id/menu_item_new_monk"
+		    android:title="@string/new_monk"/>
+		
+		<item android:id="@+id/menu_item_new_paladin"
+		    android:title="@string/new_paladin"/>
+		
+		<item android:id="@+id/menu_item_new_ranger"
+		    android:title="@string/new_ranger"/>
+		
+		<item android:id="@+id/menu_item_new_rogue"
+		    android:title="@string/new_rogue"/>
+		
+		<item android:id="@+id/menu_item_new_sorceress"
+		    android:title="@string/new_sorceress"/>
+		
+		<item android:id="@+id/menu_item_new_wizard"
+		    android:title="@string/new_wizard"/>
+	</group>
+	
+</menu>

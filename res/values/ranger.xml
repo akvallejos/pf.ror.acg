@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+	Items are stored in paired values, first item is starting value
+	and second item is the maximum feat
+ -->
+<resources>
+    <string name="ranger_str">1d6</string>
+    <string name="ranger_dex">1d8</string>
+    <string name="ranger_con">1d12</string>
+    <string name="ranger_int">1d6</string>
+    <string name="ranger_wis">1d6</string>
+    <string name="ranger_cha">1d4</string>
+   	<string name="ranger_fav_card">Weapon</string>
+      
+    <string-array name="ranger_str_bonus">
+        <item>0</item>
+        <item >+1</item>
+        <item >+2</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="ranger_dex_bonus">
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+    </string-array>
+    <string-array name="ranger_con_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item >+2</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="ranger_int_bonus">
+        <item >0</item>
+        <item>+1</item>
+    </string-array>
+    <string-array name="ranger_wis_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="ranger_cha_bonus">
+        <item >0</item>
+        <item>+1</item>
+    </string-array>
+    
+    <string-array name="ranger_hand_limit">
+        <item>5</item>
+        <item >6</item>
+    </string-array>
+    
+    <string-array name="ranger_weapons">
+        <item>5</item>
+        <item >6</item>
+    </string-array>
+    <string-array name="ranger_spells">
+        <item >0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="ranger_armors">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="ranger_items">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="ranger_allies">
+        <item >1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="ranger_blessings">
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <string-array name="ranger_proficiencies">
+        <item>Profiecient With Light Armor, Weapons</item>
+    </string-array>
+    
+    <string-array name="ranger_skills">
+        <item>Ranged: Dexterity +3</item>
+        <item>Fortitude: Constitution +2</item>
+        <item>Perception: Wisdom +2</item>
+        <item>Survival: Wisdom +2</item>
+    </string-array>
+    
+    <string-array name="ranger_power1">
+        <item>
+            At the end of your turn, you may examine the top card 
+            of your location deck.
+        </item>
+        <item>
+            At the end of your turn, you may examine the top card 
+             or bottom card of your location deck.
+        </item>
+    </string-array>
+    <string-array name="ranger_power2">
+        <item>
+            You may recharge a card to add 1d4
+             to a combat check at another location.
+        </item>
+        <item>
+            You may recharge a card to add 1d4 +1
+             to a combat check at another location.
+        </item>
+        <item>
+            You may recharge a card to add 1d4 +2
+             to a combat check at another location.
+        </item>
+    </string-array>
+</resources>

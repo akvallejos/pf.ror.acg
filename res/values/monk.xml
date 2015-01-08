@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+	Items are stored in paired values, first item is starting value
+	and second item is the maximum feat
+ -->
+<resources>
+    <string name="monk_str">1d6</string>
+    <string name="monk_dex">1d10</string>
+    <string name="monk_con">1d6</string>
+    <string name="monk_int">1d6</string>
+    <string name="monk_wis">1d8</string>
+    <string name="monk_cha">1d6</string>
+    <string name="monk_fav_card">Blessing</string>
+      
+    <string-array name="monk_str_bonus">
+        <item>0</item>
+        <item >+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="monk_dex_bonus">
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+    </string-array>
+    <string-array name="monk_con_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="monk_int_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="monk_wis_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item >+3</item>
+    </string-array>
+    <string-array name="monk_cha_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+    </string-array>
+    <string-array name="monk_hand_limit">
+        <item>4</item>
+        <item >5</item>
+        <item >6</item>
+    </string-array>
+    <string-array name="monk_weapons">
+        <item >0</item>
+        <item>1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string-array name="monk_spells">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="monk_armors">
+        <item >0</item>
+    </string-array>
+    <string-array name="monk_items">
+        <item >4</item>
+        <item>5</item>
+        <item >6</item>
+    </string-array>
+    <string-array name="monk_allies">
+        <item >3</item>
+        <item>4</item>
+        <item >5</item>
+    </string-array>
+    <string-array name="monk_blessings">
+        <item >8</item>
+        <item>9</item>
+        <item >10</item>
+    </string-array>
+    
+    <string-array name="monk_proficiencies">
+        <item>Proficient with nothing.</item>
+    </string-array>
+    
+    <string-array name="monk_skills">
+        <item>Acrobatics: Dexterity +2</item>
+        <item>Fortitude: Constitution +2</item>
+    </string-array>
+    
+    <string-array name="monk_power1">
+        <item>
+            When you attempt a combat check without playing a weapon, 
+            you may use your Dexterity die instead of your Strength die
+        </item>
+        <item>
+            When you attempt a combat check without playing a weapon, 
+            you may use your Dexterity die instead of your Strength die 
+            and add the Magic trait
+        </item>
+        <item>
+            When you attempt a combat check without playing a weapon, 
+            you may use your Dexterity die instead of your Strength die 
+            and add the Magic trait and the Fire trait
+       </item>
+    </string-array>
+    <string-array name="monk_power2">
+        <item>
+            You may play any number of blessings on your combat check; 
+            recharge them instead of discarding them.
+        </item>
+    </string-array>
+</resources>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+	    <LinearLayout
+	        android:baselineAligned="false"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp">
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_marginRight="4dp">
+	            
+	            <ImageView
+	                android:baselineAligned="false"
+	                android:id="@+id/character_imageView"
+	                android:layout_width="80dp"
+	                android:layout_height="80dp"
+	                android:scaleType="centerInside"
+	                android:background="@android:color/darker_gray"
+	                android:cropToPadding="true"/>
+	            
+	            <ImageButton 
+	                android:baselineAligned="false"
+	                android:id="@+id/character_imageButton"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:src="@android:drawable/ic_menu_camera"/>
+	        </LinearLayout>
+	    
+	        <LinearLayout
+	            android:baselineAligned="false"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_weight="1">
+	            
+		        <EditText
+		            android:id="@+id/pc_name"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:hint="Enter Name"/>
+		            
+			    <TextView
+			        android:id="@+id/pc_role"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:text="Role" />
+		    </LinearLayout>
+	    </LinearLayout>
+	    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/skills_detail_label"
+	        style="?android:listSeparatorTextViewStyle"/>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:baselineAligned="false"
+	        android:orientation="vertical"
+	        android:id="@+id/skills_layout">
+	        	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="4dp"
+	            android:orientation="horizontal" >
+	            
+	            <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Strength:"/>
+	
+	            <TextView
+	                android:id="@+id/str_base"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="4dp"
+	                android:text="1d6" />
+	
+	            <Spinner
+	                android:id="@+id/str_bonus"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+	                    
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="4dp"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Dexterity:" />
+	            
+	            <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="4dp"
+		            android:text="1d6"
+		            android:id="@+id/dex_base"/>
+	
+	            <Spinner
+	                android:id="@+id/dex_bonus"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+	                    
+	       </LinearLayout>
+	
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+		        
+	            <TextView
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Constitution:" />
+	            
+	            <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="1d6"
+		            android:layout_marginLeft="4dp"
+		            android:id="@+id/con_base"/>
+	
+	            <Spinner
+	                android:id="@+id/con_bonus"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+		    </LinearLayout>
+	
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+		        
+	            <TextView
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Intelligence:" />
+	            
+	            <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="4dp"
+		            android:text="1d6"
+		            android:id="@+id/int_base"/>
+	
+	            <Spinner
+	                android:id="@+id/int_bonus"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+		        
+	            <TextView
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Wisdom:" />
+	            
+	            <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="1d6"
+		            android:layout_marginLeft="4dp"
+		            android:id="@+id/wis_base"/>
+	
+	            <Spinner
+	                android:id="@+id/wis_bonus"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+		    </LinearLayout>
+		
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+		        
+	            <TextView
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Charisma:" />
+	            
+	            <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="1d6"
+		            android:layout_marginLeft="4dp"
+		            android:id="@+id/cha_base"/>
+	
+	            <Spinner
+	                android:id="@+id/cha_bonus"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" />
+		    </LinearLayout>
+		</LinearLayout>
+	
+	
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/powers_detail_label"
+	        style="?android:listSeparatorTextViewStyle"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/powers_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:orientation="vertical" >
+		    
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >      
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="match_parent"
+		            android:text="Hand Limit:"/>
+		        <Spinner
+		            android:id="@+id/hand_limit"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"/>
+	        </LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >      
+
+		        <Spinner
+		            android:id="@+id/proficieny"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cards_detail_label"
+	        android:id="@+id/favored_card"
+	        style="?android:listSeparatorTextViewStyle"/>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:baselineAligned="false"
+	        android:orientation="vertical" >
+		    
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Weapons:" />
+
+		        <Spinner
+		            android:id="@+id/weapons"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+	        
+		  	<LinearLayout
+		  	    android:layout_width="wrap_content"
+		  	    android:layout_height="wrap_content"
+		  	    android:layout_marginRight="4dp"
+		  	    android:orientation="horizontal" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Armors:" />
+
+		        <Spinner
+		            android:id="@+id/armor"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Spells:" />
+
+		        <Spinner
+		            android:id="@+id/spells"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Items:" />
+
+		        <Spinner
+		            android:id="@+id/items"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+	
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Allies:" />
+
+		        <Spinner
+		            android:id="@+id/allies"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="4dp"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="Blessings:" />
+
+		        <Spinner
+		            android:id="@+id/blessings"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>		    	    		    
+	    </LinearLayout>
+	 </LinearLayout>
+  </ScrollView>
+</LinearLayout>

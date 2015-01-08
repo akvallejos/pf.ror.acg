@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+	Items are stored in paired values, first item is starting value
+	and second item is the maximum feat
+ -->
+<resources>
+    <string name="bard_str">1d4</string>
+    <string name="bard_dex">1d8</string>
+    <string name="bard_con">1d6</string>
+    <string name="bard_int">1d6</string>
+    <string name="bard_wis">1d6</string>
+    <string name="bard_cha">1d10</string>
+   	<string name="bard_fav_card">Your Choice</string>
+      
+    <string-array name="bard_str_bonus">
+        <item>+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="bard_dex_bonus">
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="bard_con_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item >+2</item>
+    </string-array>
+    <string-array name="bard_int_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+    </string-array>
+    <string-array name="bard_wis_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+    </string-array>
+    <string-array name="bard_cha_bonus">
+        <item >0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+    </string-array>
+    
+    <string-array name="bard_hand_limit">
+        <item>6</item>
+    </string-array>
+    
+    <string-array name="bard_weapons">
+        <item>1</item>
+        <item >2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="bard_spells">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="bard_armors">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="bard_items">
+        <item>2</item>
+        <item >3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="bard_allies">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="bard_blessings">
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <string-array name="bard_proficiencies">
+        <item>Proficient With Nothing</item>
+        <item>Proficient With Light Armors</item>
+        <item>Proficient With Light Armors and Weapons</item>
+    </string-array>
+    
+    <string-array name="bard_skills">
+        <item>Knowledge: Intelligence +2</item>
+        <item>Aracne: Charisma +1</item>
+        <item>Diplomacy: Charisma +3</item>
+        <item>Divine: Charisma +1</item>
+    </string-array>
+    
+    <string-array name="bard_power1">
+        <item>
+           	Once per check, you may recharge a card to add 1d4 
+           	to a check attempted by another character at your location.
+        </item>
+        <item>
+           	Once per check, you may recharge a card to add 1d4 +1 
+           	to a check attempted by another character at your location.
+        </item>
+        <item>
+           	Once per check, you may recharge a card to add 1d4 +2 
+           	to a check attempted by another character at your location.
+        </item>
+    </string-array>
+    <string-array name="bard_power2">
+        <item>
+			At the start of your turn, you may exchange 1 card in 
+			your hand with 1 card of the same type in your discard pile.       
+		</item>
+    </string-array>
+</resources>
