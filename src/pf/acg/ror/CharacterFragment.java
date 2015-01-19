@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
 import android.os.Build;
@@ -33,11 +34,13 @@ public class CharacterFragment extends Fragment {
 	private static final String TAG = "CharacterFragment";
 	private static final int REQUEST_PHOTO = 1;
 	private static final String DIALOG_IMAGE = "image";
+	private static final String DIALOG_ROLE = "role";
+	private static final int REQUEST_ROLE = 0;
 	
 	private PC mCharacter;
 	private EditText mNameField;
 	private Callbacks mCallbacks;
-	
+	private ImageButton mRoleButton;
 	private ImageButton mPhotoButton;
 	private ImageView mPhotoView;
 	
@@ -66,6 +69,9 @@ public class CharacterFragment extends Fragment {
 	private ArrayAdapter<CharSequence> mBlessingsLimit;
 	
 	private String[] mSkills;
+	private String[] mRoles;
+	private TextView mRoleField;
+	private View mV;
 	
 	private enum attr{Str, Dex, Con, Int, Wis, Cha, 
 		HandLimit, WeaponLimit, ArmorLimit, SpellLimit, ItemLimit, AllyLimit, BlessingLimit, Proficiency; }
@@ -127,6 +133,13 @@ public class CharacterFragment extends Fragment {
 				Log.i(TAG, "Crime: " + mCharacter.getName() +"  has photo: " + filename);
 			}
 		}
+		
+		if(requestCode == REQUEST_ROLE){
+			Integer roleBonus = (Integer)data.getSerializableExtra(RolePickerFragment.EXTRA_ROLE_BONUS);
+			mCharacter.setRoleBonus(roleBonus);
+			setCharacterResourceArrays();
+			updateRoleUI();
+		}
 	}
 	
 	@Override
@@ -141,45 +154,44 @@ public class CharacterFragment extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState){
-		View v = inflater.inflate(R.layout.character_fragment, parent, false);
-		setCharacterResourceArrays(v);
-
-		TextView mRoleField = (TextView)v.findViewById(R.id.pc_role);
-		mRoleField.setText(mCharacter.getRole());
+		mV = inflater.inflate(R.layout.character_fragment, parent, false);
+		setCharacterResourceArrays();
 		
-		
-		mNameField = (EditText)v.findViewById(R.id.pc_name);
+		mNameField = (EditText)mV.findViewById(R.id.pc_name);
 		mNameField.setText(mCharacter.getName());
 		
+		mRoleField = (TextView)mV.findViewById(R.id.pc_role);
+		updateRoleUI();
+		
 		//Strength
-		TextView mStrField = (TextView)v.findViewById(R.id.str_base);
+		TextView mStrField = (TextView)mV.findViewById(R.id.str_base);
 		mStrField.setText(mStrBase);
-		createBonusSpinner(v, R.id.str_bonus, mStrBonus, mCharacter.getStrBonus(), attr.Str);
+		createBonusSpinner(R.id.str_bonus, mStrBonus, mCharacter.getStrBonus(), attr.Str);
 				
 		//Dexterity
-		TextView mDexField = (TextView)v.findViewById(R.id.dex_base);
+		TextView mDexField = (TextView)mV.findViewById(R.id.dex_base);
 		mDexField.setText(mDexBase);
-		createBonusSpinner(v, R.id.dex_bonus, mDexBonus, mCharacter.getDexBonus(), attr.Dex);
+		createBonusSpinner(R.id.dex_bonus, mDexBonus, mCharacter.getDexBonus(), attr.Dex);
 		
 		//Constitution
-		TextView mConField = (TextView)v.findViewById(R.id.con_base);
+		TextView mConField = (TextView)mV.findViewById(R.id.con_base);
 		mConField.setText(mConBase);
-		createBonusSpinner(v, R.id.con_bonus, mConBonus, mCharacter.getConBonus(), attr.Con);
+		createBonusSpinner(R.id.con_bonus, mConBonus, mCharacter.getConBonus(), attr.Con);
 
 		//Intelligence
-		TextView mIntField = (TextView)v.findViewById(R.id.int_base);
+		TextView mIntField = (TextView)mV.findViewById(R.id.int_base);
 		mIntField.setText(mIntBase);
-		createBonusSpinner(v, R.id.int_bonus, mIntBonus, mCharacter.getIntBonus(), attr.Int);
+		createBonusSpinner(R.id.int_bonus, mIntBonus, mCharacter.getIntBonus(), attr.Int);
 		
 		//Wisdom
-		TextView mWisField = (TextView)v.findViewById(R.id.wis_base);
+		TextView mWisField = (TextView)mV.findViewById(R.id.wis_base);
 		mWisField.setText(mWisBase);
-		createBonusSpinner(v, R.id.wis_bonus, mWisBonus, mCharacter.getWisBonus(), attr.Wis);
+		createBonusSpinner(R.id.wis_bonus, mWisBonus, mCharacter.getWisBonus(), attr.Wis);
 		
 		//Charisma
-		TextView mChaField = (TextView)v.findViewById(R.id.cha_base);
+		TextView mChaField = (TextView)mV.findViewById(R.id.cha_base);
 		mChaField.setText(mChaBase);
-		createBonusSpinner(v, R.id.cha_bonus, mChaBonus, mCharacter.getWisBonus(), attr.Cha);
+		createBonusSpinner(R.id.cha_bonus, mChaBonus, mCharacter.getWisBonus(), attr.Cha);
 		
 		//Skills
 		StringBuilder builder = new StringBuilder();
@@ -187,38 +199,32 @@ public class CharacterFragment extends Fragment {
 		    builder.append(s + "\n");
 		}
 		
-		LinearLayout skills = (LinearLayout)v.findViewById(R.id.skills_layout);
+		LinearLayout skills = (LinearLayout)mV.findViewById(R.id.skills_layout);
 		TextView tv = new TextView(this.getActivity());
 		tv.setText(builder.toString());
 		skills.addView(tv);
 		
 		//Favored Card
-		TextView favCard = (TextView)v.findViewById(R.id.favored_card);
+		TextView favCard = (TextView)mV.findViewById(R.id.favored_card);
 		favCard.setText(mFavCard);
 		
-		//HandLimit
-		createBonusSpinner(v, R.id.hand_limit, mHandLimit, mCharacter.getHandLimit(), attr.HandLimit);
-
 		//WeaponLimit
-		createBonusSpinner(v, R.id.weapons, mWeaponsLimit, mCharacter.getWeapons(), attr.WeaponLimit);
+		createBonusSpinner(R.id.weapons, mWeaponsLimit, mCharacter.getWeapons(), attr.WeaponLimit);
 
 		//ArmorLimit
-		createBonusSpinner(v, R.id.armor, mArmorsLimit, mCharacter.getArmors(), attr.ArmorLimit);
+		createBonusSpinner(R.id.armor, mArmorsLimit, mCharacter.getArmors(), attr.ArmorLimit);
 
 		//SpellLimit
-		createBonusSpinner(v, R.id.spells, mSpellsLimit, mCharacter.getSpells(), attr.SpellLimit);
+		createBonusSpinner(R.id.spells, mSpellsLimit, mCharacter.getSpells(), attr.SpellLimit);
 		
 		//ItemLimit
-		createBonusSpinner(v, R.id.items, mItemsLimit, mCharacter.getItems(), attr.ItemLimit);
+		createBonusSpinner(R.id.items, mItemsLimit, mCharacter.getItems(), attr.ItemLimit);
 		
 		//AllyLimit
-		createBonusSpinner(v, R.id.allies, mAlliesLimit, mCharacter.getAllies(), attr.AllyLimit);
+		createBonusSpinner(R.id.allies, mAlliesLimit, mCharacter.getAllies(), attr.AllyLimit);
 		
 		//BlessingLimit
-		createBonusSpinner(v, R.id.blessings, mBlessingsLimit, mCharacter.getBlessings(), attr.BlessingLimit);
-		
-		//Proficiency
-		createBonusSpinner(v, R.id.proficieny, mProficiency, mCharacter.getProficieny(), attr.Proficiency);
+		createBonusSpinner(R.id.blessings, mBlessingsLimit, mCharacter.getBlessings(), attr.BlessingLimit);
 		
 		mNameField.addTextChangedListener(new TextWatcher(){
 			
@@ -242,7 +248,19 @@ public class CharacterFragment extends Fragment {
 			}
 		});
 		
-		mPhotoButton = (ImageButton)v.findViewById(R.id.character_imageButton);
+		mRoleButton = (ImageButton)mV.findViewById(R.id.character_roleButton);
+		mRoleButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				FragmentManager fm = getActivity().getSupportFragmentManager();
+				RolePickerFragment dialog = RolePickerFragment.newInstance(mCharacter.getRoleBonus());
+				dialog.setTargetFragment(CharacterFragment.this, REQUEST_ROLE);
+				dialog.show(fm, DIALOG_ROLE);
+			}
+		});
+		
+		mPhotoButton = (ImageButton)mV.findViewById(R.id.character_imageButton);
 		mPhotoButton.setOnClickListener(new View.OnClickListener(){
 			@Override
 			public void onClick(View v){
@@ -262,7 +280,7 @@ public class CharacterFragment extends Fragment {
 			mPhotoButton.setEnabled(false);
 		}
 		
-		mPhotoView = (ImageView)v.findViewById(R.id.character_imageView);
+		mPhotoView = (ImageView)mV.findViewById(R.id.character_imageView);
 		
 		mPhotoView.setOnClickListener(new View.OnClickListener() {
 			
@@ -279,7 +297,7 @@ public class CharacterFragment extends Fragment {
 			}
 		});
 		
-		return v;
+		return mV;
 	}
 
 	private void showPhoto(){
@@ -293,31 +311,31 @@ public class CharacterFragment extends Fragment {
 		mPhotoView.setImageDrawable(b);
 	} //showPhoto()
 	
-	private void setCharacterResourceArrays(View v){
+	private void setCharacterResourceArrays(){
 		Log.d(TAG, "Character role found " + mCharacter.getRole());
 		switch(mCharacter.role_to_enum()){
 		case monk:
-			setMonkValues(v);return;
+			setMonkValues();return;
 		case paladin:
-			setPaladinValues(v);return;
+			setPaladinValues();return;
 		case barbarian:
-			setBarbarianValues(v);return;
+			setBarbarianValues();return;
 		case fighter:
-			setFighterValues(v);return;
+			setFighterValues();return;
 		case sorceress:
-			setSorceressValues(v);return;
+			setSorceressValues();return;
 		case wizard:
-			setWizardValues(v); return;
+			setWizardValues(); return;
 		case rogue:
-			setRogueValues(v);return;
+			setRogueValues();return;
 		case cleric:
-			setClericValues(v);return;
+			setClericValues();return;
 		case bard:
-			setBardValues(v);return;
+			setBardValues();return;
 		case ranger:
-			setRangerValues(v);return;
+			setRangerValues();return;
 		case druid:
-			setDruidValues(v);return;
+			setDruidValues();return;
 		case none:
 			Log.d(TAG, "none role found");
 			return;
@@ -329,7 +347,7 @@ public class CharacterFragment extends Fragment {
 	
 	
 	@SuppressLint("InlinedApi")
-	private void setMonkValues(View v){
+	private void setMonkValues(){
 		Log.d(TAG, "grab values from resource monk.xml");
 
 		mStrBase = getString(R.string.monk_str);
@@ -339,6 +357,9 @@ public class CharacterFragment extends Fragment {
 		mWisBase = getString(R.string.monk_wis);
 		mChaBase = getString(R.string.monk_cha);
 		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.monk_fav_card);
+		
+		Resources res = getResources();
+		mRoles = res.getStringArray(R.array.monk_role_bonus);
 
 		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_str_bonus, R.layout.skills_spinner);
 		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_dex_bonus, R.layout.skills_spinner);
@@ -346,7 +367,6 @@ public class CharacterFragment extends Fragment {
 		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_int_bonus, R.layout.skills_spinner);
 		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_wis_bonus, R.layout.skills_spinner);
 		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_hand_limit, R.layout.skills_spinner);
 
 		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_weapons, R.layout.skills_spinner);
 		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_armors, R.layout.skills_spinner);
@@ -354,15 +374,40 @@ public class CharacterFragment extends Fragment {
 		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_items, R.layout.skills_spinner);
 		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_allies, R.layout.skills_spinner);
 		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_proficiencies, R.layout.skills_spinner);
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.monk_skills);
 		
-		createPowerSpinner(v, 0, R.array.monk_power1);
-		createPowerSpinner(v, 1, R.array.monk_power2);		
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_hand_limit, R.layout.skills_spinner);
+			mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_proficiencies, R.layout.skills_spinner);
+			createPowerSpinner(mV, 0, R.array.monk_power1);
+			createPowerSpinner(mV, 1, R.array.monk_power2);
+			return;
+		case 1:
+			mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.zen_archer_hand_limit, R.layout.skills_spinner);
+			mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.zen_archer_proficiencies, R.layout.skills_spinner);
+			createPowerSpinner(mV, 0, R.array.zen_archer_power1);
+			createPowerSpinner(mV, 1, R.array.zen_archer_power2);
+			createPowerSpinner(mV, 2, R.array.zen_archer_power3);
+			createPowerSpinner(mV, 3, R.array.zen_archer_power4);
+			createPowerSpinner(mV, 4, R.array.zen_archer_power5);
+			createPowerSpinner(mV, 5, R.array.zen_archer_power6);
+			return;
+		case 2:
+			mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.drunken_master_hand_limit, R.layout.skills_spinner);
+			mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.drunken_master_proficiencies, R.layout.skills_spinner);
+			createPowerSpinner(mV, 0, R.array.drunken_master_power1);
+			createPowerSpinner(mV, 1, R.array.drunken_master_power2);
+			createPowerSpinner(mV, 2, R.array.drunken_master_power3);
+			createPowerSpinner(mV, 3, R.array.drunken_master_power4);
+			createPowerSpinner(mV, 4, R.array.drunken_master_power5);
+			createPowerSpinner(mV, 5, R.array.drunken_master_power6);
+			return;
+		}
 	}
 
-	private void setPaladinValues(View v){
+	private void setPaladinValues(){
 		Log.d(TAG, "grab values from resource paladin.xml");
 		
 		mStrBase = getString(R.string.paladin_str);
@@ -391,11 +436,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.paladin_skills);
 		
-		createPowerSpinner(v, 0, R.array.paladin_power1);
-		createPowerSpinner(v, 1, R.array.paladin_power2);	
+		createPowerSpinner(mV, 0, R.array.paladin_power1);
+		createPowerSpinner(mV, 1, R.array.paladin_power2);	
 	}
 	
-	private void setBarbarianValues(View v){
+	private void setBarbarianValues(){
 		Log.d(TAG, "grab values from resource barbarian.xml");
 		
 		mStrBase = getString(R.string.barbarian_str);
@@ -424,11 +469,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.barbarian_skills);
 		
-		createPowerSpinner(v, 0, R.array.barbarian_power1);
-		createPowerSpinner(v, 1, R.array.barbarian_power2);	
+		createPowerSpinner(mV, 0, R.array.barbarian_power1);
+		createPowerSpinner(mV, 1, R.array.barbarian_power2);	
 	}
 	
-	private void setWizardValues(View v){
+	private void setWizardValues(){
 		Log.d(TAG, "grab values from resource wizard.xml");
 		
 		mStrBase = getString(R.string.wizard_str);
@@ -457,12 +502,12 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.wizard_skills);
 		
-		createPowerSpinner(v, 0, R.array.wizard_power1);
-		createPowerSpinner(v, 1, R.array.wizard_power2);
-		createPowerSpinner(v, 2, R.array.wizard_power3);
+		createPowerSpinner(mV, 0, R.array.wizard_power1);
+		createPowerSpinner(mV, 1, R.array.wizard_power2);
+		createPowerSpinner(mV, 2, R.array.wizard_power3);
 	}
 	
-	private void setFighterValues(View v){
+	private void setFighterValues(){
 		Log.d(TAG, "grab values from resource fighter.xml");
 		
 		mStrBase = getString(R.string.fighter_str);
@@ -491,11 +536,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.fighter_skills);
 		
-		createPowerSpinner(v, 0, R.array.fighter_power1);
-		createPowerSpinner(v, 1, R.array.fighter_power2);
+		createPowerSpinner(mV, 0, R.array.fighter_power1);
+		createPowerSpinner(mV, 1, R.array.fighter_power2);
 	}
 	
-	private void setSorceressValues(View v){
+	private void setSorceressValues(){
 		Log.d(TAG, "grab values from resource sorceress.xml");
 		
 		mStrBase = getString(R.string.sorceress_str);
@@ -524,11 +569,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.sorceress_skills);
 		
-		createPowerSpinner(v, 0, R.array.sorceress_power1);
-		createPowerSpinner(v, 1, R.array.sorceress_power2);
+		createPowerSpinner(mV, 0, R.array.sorceress_power1);
+		createPowerSpinner(mV, 1, R.array.sorceress_power2);
 	}
 	
-	private void setRogueValues(View v){
+	private void setRogueValues(){
 		Log.d(TAG, "grab values from resource rogue.xml");
 		
 		mStrBase = getString(R.string.rogue_str);
@@ -557,11 +602,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.rogue_skills);
 		
-		createPowerSpinner(v, 0, R.array.rogue_power1);
-		createPowerSpinner(v, 1, R.array.rogue_power2);
+		createPowerSpinner(mV, 0, R.array.rogue_power1);
+		createPowerSpinner(mV, 1, R.array.rogue_power2);
 	}
 	
-	private void setClericValues(View v){
+	private void setClericValues(){
 		Log.d(TAG, "grab values from resource cleric.xml");
 		
 		mStrBase = getString(R.string.cleric_str);
@@ -590,11 +635,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.cleric_skills);
 		
-		createPowerSpinner(v, 0, R.array.cleric_power1);
-		createPowerSpinner(v, 1, R.array.cleric_power2);
+		createPowerSpinner(mV, 0, R.array.cleric_power1);
+		createPowerSpinner(mV, 1, R.array.cleric_power2);
 	}
 	
-	private void setBardValues(View v){
+	private void setBardValues(){
 		Log.d(TAG, "grab values from resource bard.xml");
 		
 		mStrBase = getString(R.string.bard_str);
@@ -623,11 +668,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.bard_skills);
 		
-		createPowerSpinner(v, 0, R.array.bard_power1);
-		createPowerSpinner(v, 1, R.array.bard_power2);
+		createPowerSpinner(mV, 0, R.array.bard_power1);
+		createPowerSpinner(mV, 1, R.array.bard_power2);
 	}
 	
-	private void setRangerValues(View v){
+	private void setRangerValues(){
 		Log.d(TAG, "grab values from resource ranger.xml");
 		
 		mStrBase = getString(R.string.ranger_str);
@@ -656,11 +701,11 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.ranger_skills);
 		
-		createPowerSpinner(v, 0, R.array.ranger_power1);
-		createPowerSpinner(v, 1, R.array.ranger_power2);
+		createPowerSpinner(mV, 0, R.array.ranger_power1);
+		createPowerSpinner(mV, 1, R.array.ranger_power2);
 	}
 	
-	private void setDruidValues(View v){
+	private void setDruidValues(){
 		Log.d(TAG, "grab values from resource druid.xml");
 		
 		mStrBase = getString(R.string.druid_str);
@@ -689,15 +734,26 @@ public class CharacterFragment extends Fragment {
 
 		mSkills = this.getActivity().getResources().getStringArray(R.array.druid_skills);
 		
-		createPowerSpinner(v, 0, R.array.druid_power1);
-		createPowerSpinner(v, 1, R.array.druid_power2);
+		createPowerSpinner(mV, 0, R.array.druid_power1);
+		createPowerSpinner(mV, 1, R.array.druid_power2);
 	}
 	
-	private void createBonusSpinner(View v, 
+	private void updateRoleUI(){
+		mRoleField.setText(mRoles[mCharacter.getRoleBonus()]);
+		
+		//HandLimit
+		createBonusSpinner(R.id.hand_limit, mHandLimit, mCharacter.getHandLimit(), attr.HandLimit);
+		
+		//Proficiency
+		createBonusSpinner(R.id.proficieny, mProficiency, mCharacter.getProficieny(), attr.Proficiency);
+
+	}
+	
+	private void createBonusSpinner(
 									int layoutSpinnerId, ArrayAdapter<CharSequence> bonusAdapter,
 									Integer bonusSelection, final attr attribute){
 		
-		Spinner mStrSpinner = (Spinner)v.findViewById(layoutSpinnerId);
+		Spinner mStrSpinner = (Spinner)mV.findViewById(layoutSpinnerId);
 		mStrSpinner.setAdapter(bonusAdapter);
 		mStrSpinner.setSelection(bonusSelection);
 		mStrSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

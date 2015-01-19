@@ -1,7 +1,9 @@
 package pf.acg.ror;
 
+import java.util.Arrays;
 import java.util.UUID;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -14,6 +16,7 @@ public class PC {
 	private static final String JSON_ID = "id";
 	private static final String JSON_NAME = "name";
 	private static final String JSON_ROLE = "role";
+	private static final String JSON_ROLE_BONUS = "role_bonus";
 	private static final String JSON_STR_BONUS = "str";
 	private static final String JSON_DEX_BONUS = "dex";
 	private static final String JSON_CON_BONUS = "con";
@@ -28,6 +31,8 @@ public class PC {
 	private static final String JSON_ALLIES = "allies";
 	private static final String JSON_BLESSINGS = "blessings";
 	private static final String JSON_PHOTO = "photo";
+	private static final String JSON_POWERS_ARRAY = "powers";
+	private static final int POWERS_ARRAY_SIZE = 6;
 
 	private static final String TAG = "PC.class";
 
@@ -44,6 +49,8 @@ public class PC {
 	private Integer mWisBonus = 0;
 	private Integer mChaBonus = 0;
 	
+	private Integer mRoleBonus = 0;
+	
 	private Integer mHandLimit = 0;
 	
 	private Integer mArmors = 0;
@@ -55,7 +62,7 @@ public class PC {
 	
 	private Integer mProficieny = 0;
 	
-	private Integer[] mPowersArray = new Integer[4];
+	private Integer[] mPowersArray = new Integer[POWERS_ARRAY_SIZE];
 	
 	public enum valid_roles{ 
 		monk, paladin, fighter, sorceress, wizard, rogue, cleric, bard, ranger, druid, barbarian, none;
@@ -89,6 +96,7 @@ public class PC {
 		}
 		
 		mRole = json.getString(JSON_ROLE);
+		mRoleBonus = json.getInt(JSON_ROLE_BONUS);
 		
 		mStrBonus = json.getInt(JSON_STR_BONUS);
 		mDexBonus = json.getInt(JSON_DEX_BONUS);
@@ -105,6 +113,11 @@ public class PC {
 		mItems = json.getInt(JSON_ITEMS);
 		mAllies = json.getInt(JSON_ALLIES);
 		mBlessings = json.getInt(JSON_BLESSINGS);
+		
+		JSONArray powers = (JSONArray) json.get(JSON_POWERS_ARRAY);
+		for(int i = 0; i < powers.length(); i++){
+			mPowersArray[i] = powers.optInt(i, 0);
+		}
 
 		if(json.has(JSON_PHOTO))
 			mPhoto = new Photo(json.getJSONObject(JSON_PHOTO));
@@ -115,6 +128,7 @@ public class PC {
 		json.put(JSON_ID, mId);
 		json.put(JSON_NAME, mName);
 		json.put(JSON_ROLE, mRole);
+		json.put(JSON_ROLE_BONUS, mRoleBonus);
 		
 		json.put(JSON_STR_BONUS, mStrBonus);
 		json.put(JSON_DEX_BONUS, mDexBonus);
@@ -131,6 +145,8 @@ public class PC {
 		json.put(JSON_ITEMS, mItems);
 		json.put(JSON_ALLIES, mAllies);
 		json.put(JSON_BLESSINGS, mBlessings);
+		
+		json.put(JSON_POWERS_ARRAY, new JSONArray(Arrays.asList(mPowersArray)));
 
 		if(mPhoto != null)
 			json.put(JSON_PHOTO, mPhoto.toJSON());
@@ -154,6 +170,14 @@ public class PC {
 		return mRole;
 	}
 	
+	public Integer getRoleBonus() {
+		return mRoleBonus;
+	}
+	
+	public void setRoleBonus(Integer roleBonus) {
+		mRoleBonus = roleBonus;
+	}
+	
 	public Integer getStrBonus() {
 		return mStrBonus;
 	}
@@ -161,6 +185,7 @@ public class PC {
 	public void setStrBonus(Integer strBonus) {
 		mStrBonus = strBonus;
 	}
+	
 	public Integer getDexBonus() {
 		return mDexBonus;
 	}
