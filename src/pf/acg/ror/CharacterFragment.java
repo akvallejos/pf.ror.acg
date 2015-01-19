@@ -1,12 +1,18 @@
 package pf.acg.ror;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.UUID;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
 import android.os.Build;
@@ -349,7 +355,19 @@ public class CharacterFragment extends Fragment {
 	@SuppressLint("InlinedApi")
 	private void setMonkValues(){
 		Log.d(TAG, "grab values from resource monk.xml");
-
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.monk_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "monk");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "zen_archer");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "drunken_master");
+			return;
+		}
+/*
 		mStrBase = getString(R.string.monk_str);
 		mDexBase = getString(R.string.monk_dex);
 		mConBase = getString(R.string.monk_con);
@@ -405,6 +423,112 @@ public class CharacterFragment extends Fragment {
 			createPowerSpinner(mV, 5, R.array.drunken_master_power6);
 			return;
 		}
+		*/
+	}
+
+	private void setValuesFromJSON(InputStream role_res_io, String powers_key) {
+		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
+		int ctr;
+		try {
+		    ctr = role_res_io.read();
+		    while (ctr != -1) {
+		        byteArrayOutputStream.write(ctr);
+		        ctr = role_res_io.read();
+		    }
+		    role_res_io.close();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		Log.v("JSON Data", byteArrayOutputStream.toString());
+		try {
+		    // Parse the data into jsonobject to get original data in form of json.
+		    JSONObject json = new JSONObject(
+		            byteArrayOutputStream.toString());
+		    mStrBase = json.getString("str");
+		    mDexBase = json.getString("dex");
+		    mConBase = json.getString("con");
+		    mIntBase = json.getString("int");
+		    mWisBase = json.getString("wis");
+		    mChaBase = json.getString("cha");
+			mFavCard = "Card Feats:         Favored Card: " + json.getString("fav_card");
+
+		    mRoles = JSONArray2Array((JSONArray) json.get("role_bonus"));
+		    mSkills = JSONArray2Array((JSONArray) json.get("skills"));
+
+		    
+		    mStrBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("str_bonus")));
+		    
+		    mDexBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("dex_bonus")));
+		    
+		    mConBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
+		    		JSONArray2List((JSONArray)json.get("con_bonus")));
+		    
+		    mIntBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
+		    		JSONArray2List((JSONArray)json.get("int_bonus")));
+		    
+		    mWisBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("wis_bonus")));
+		    
+		    mChaBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("cha_bonus")));
+		    
+		    mWeaponsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("weapons")));
+		    
+		    mArmorsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("armors")));
+		    
+		    mSpellsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("spells")));
+		    
+		    mItemsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("items")));
+		    
+		    mAlliesLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("allies")));
+		    
+		    mBlessingsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
+		    		JSONArray2List((JSONArray)json.get("blessings")));
+		    		    
+			mHandLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
+					JSONArray2List((json.getJSONArray("hand_limit").
+							getJSONArray(mCharacter.getRoleBonus()))));
+			
+			mProficiency = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
+					JSONArray2List(json.getJSONArray("proficiencies").
+							getJSONArray(mCharacter.getRoleBonus())));
+			
+			JSONArray json_powers = json.getJSONObject("powers").getJSONArray(powers_key);
+			for(int i = 0; i < json_powers.length(); i++){
+				ArrayAdapter<CharSequence> power_adapter = new ArrayAdapter<CharSequence>(this.getActivity(),
+						R.layout.skills_spinner,
+						JSONArray2List(json_powers.getJSONArray(i)));
+				createPowerSpinner(mV,i,power_adapter);
+			}
+
+		} catch (Exception e) {
+		    e.printStackTrace();
+		}
+	}
+
+	private String[] JSONArray2Array(JSONArray json) {
+		ArrayList<String> list = new ArrayList<String>();
+		for (int i = 0; i < json.length(); i++) {
+	        list.add((String) json.opt(i));
+	    }
+		String[] a = new String[list.size()];
+		return list.toArray(a);
+	}
+
+	private ArrayList<CharSequence> JSONArray2List(JSONArray json_array) {
+        ArrayList<CharSequence> list = new ArrayList<CharSequence>();
+		for (int i = 0; i < json_array.length(); i++) {
+			list.add( (String) json_array.opt(i) );
+	    }
+		return list;
 	}
 
 	private void setPaladinValues(){
@@ -823,4 +947,26 @@ public class CharacterFragment extends Fragment {
 		powers.addView(powersSpinner1);
 	}
 	
+	private void createPowerSpinner(View v, final int powerIndex, ArrayAdapter<CharSequence> powerAdapter){
+		LinearLayout powers = (LinearLayout)v.findViewById(R.id.powers_layout);
+		
+		Spinner powersSpinner1 = new Spinner(v.getContext(),Spinner.MODE_DIALOG);
+	
+		powersSpinner1.setAdapter(powerAdapter);
+		powersSpinner1.setSelection(mCharacter.getPowersAt(powerIndex));
+		powersSpinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+				mCharacter.setPowersAt(powerIndex, pos);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		powers.addView(powersSpinner1);
+	}
 }

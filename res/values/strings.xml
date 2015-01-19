@@ -3,17 +3,17 @@
 
     <string name="app_name">Pathfinder ACG RoR</string>
     
-    <string name="new_monk">New Monk</string>
-    <string name="new_paladin">New Paladin</string>
-    <string name="new_wizard">New Wizard</string>
-    <string name="new_fighter">New Fighter</string>
-    <string name="new_sorceress">New Sorceress</string>
-    <string name="new_rogue">New Rogue</string>
-    <string name="new_ranger">New Ranger</string>
-    <string name="new_bard">New Bard</string>
-    <string name="new_cleric">New Cleric</string>
-    <string name="new_druid">New Druid</string>
-    <string name="new_barbarian">New Barbarian</string>
+    <string name="new_monk">New Monk (RoR)</string>
+    <string name="new_paladin">New Paladin (RoR)</string>
+    <string name="new_wizard">New Wizard (RoR)</string>
+    <string name="new_fighter">New Fighter (RoR)</string>
+    <string name="new_sorceress">New Sorceress (RoR)</string>
+    <string name="new_rogue">New Rogue (RoR)</string>
+    <string name="new_ranger">New Ranger (RoR)</string>
+    <string name="new_bard">New Bard (RoR)</string>
+    <string name="new_cleric">New Cleric (RoR)</string>
+    <string name="new_druid">New Druid (RoR)</string>
+    <string name="new_barbarian">New Barbarian (RoR)</string>
     
     <string name="delete_character">Delete</string>
     
