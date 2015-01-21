@@ -143,6 +143,9 @@ public class CharacterFragment extends Fragment {
 		if(requestCode == REQUEST_ROLE){
 			Integer roleBonus = (Integer)data.getSerializableExtra(RolePickerFragment.EXTRA_ROLE_BONUS);
 			mCharacter.setRoleBonus(roleBonus);
+			
+			LinearLayout powers = (LinearLayout)mV.findViewById(R.id.role_powers_layout);
+			powers.removeAllViews();
 			setCharacterResourceArrays();
 			updateRoleUI();
 		}
@@ -260,7 +263,8 @@ public class CharacterFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				FragmentManager fm = getActivity().getSupportFragmentManager();
-				RolePickerFragment dialog = RolePickerFragment.newInstance(mCharacter.getRoleBonus());
+				RolePickerFragment dialog = RolePickerFragment.newInstance(mCharacter.getRoleBonus(),
+						mRoles);
 				dialog.setTargetFragment(CharacterFragment.this, REQUEST_ROLE);
 				dialog.show(fm, DIALOG_ROLE);
 			}
@@ -350,81 +354,6 @@ public class CharacterFragment extends Fragment {
 			return;
 		}		
 	}
-	
-	
-	@SuppressLint("InlinedApi")
-	private void setMonkValues(){
-		Log.d(TAG, "grab values from resource monk.xml");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.monk_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "monk");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "zen_archer");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "drunken_master");
-			return;
-		}
-/*
-		mStrBase = getString(R.string.monk_str);
-		mDexBase = getString(R.string.monk_dex);
-		mConBase = getString(R.string.monk_con);
-		mIntBase = getString(R.string.monk_int);
-		mWisBase = getString(R.string.monk_wis);
-		mChaBase = getString(R.string.monk_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.monk_fav_card);
-		
-		Resources res = getResources();
-		mRoles = res.getStringArray(R.array.monk_role_bonus);
-
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_cha_bonus, R.layout.skills_spinner);
-
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_blessings, R.layout.skills_spinner);
-
-		mSkills = this.getActivity().getResources().getStringArray(R.array.monk_skills);
-		
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_hand_limit, R.layout.skills_spinner);
-			mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.monk_proficiencies, R.layout.skills_spinner);
-			createPowerSpinner(mV, 0, R.array.monk_power1);
-			createPowerSpinner(mV, 1, R.array.monk_power2);
-			return;
-		case 1:
-			mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.zen_archer_hand_limit, R.layout.skills_spinner);
-			mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.zen_archer_proficiencies, R.layout.skills_spinner);
-			createPowerSpinner(mV, 0, R.array.zen_archer_power1);
-			createPowerSpinner(mV, 1, R.array.zen_archer_power2);
-			createPowerSpinner(mV, 2, R.array.zen_archer_power3);
-			createPowerSpinner(mV, 3, R.array.zen_archer_power4);
-			createPowerSpinner(mV, 4, R.array.zen_archer_power5);
-			createPowerSpinner(mV, 5, R.array.zen_archer_power6);
-			return;
-		case 2:
-			mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.drunken_master_hand_limit, R.layout.skills_spinner);
-			mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.drunken_master_proficiencies, R.layout.skills_spinner);
-			createPowerSpinner(mV, 0, R.array.drunken_master_power1);
-			createPowerSpinner(mV, 1, R.array.drunken_master_power2);
-			createPowerSpinner(mV, 2, R.array.drunken_master_power3);
-			createPowerSpinner(mV, 3, R.array.drunken_master_power4);
-			createPowerSpinner(mV, 4, R.array.drunken_master_power5);
-			createPowerSpinner(mV, 5, R.array.drunken_master_power6);
-			return;
-		}
-		*/
-	}
 
 	private void setValuesFromJSON(InputStream role_res_io, String powers_key) {
 		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -500,7 +429,7 @@ public class CharacterFragment extends Fragment {
 			mProficiency = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
 					JSONArray2List(json.getJSONArray("proficiencies").
 							getJSONArray(mCharacter.getRoleBonus())));
-			
+
 			JSONArray json_powers = json.getJSONObject("powers").getJSONArray(powers_key);
 			for(int i = 0; i < json_powers.length(); i++){
 				ArrayAdapter<CharSequence> power_adapter = new ArrayAdapter<CharSequence>(this.getActivity(),
@@ -531,37 +460,37 @@ public class CharacterFragment extends Fragment {
 		return list;
 	}
 
+	@SuppressLint("InlinedApi")
+	private void setMonkValues(){
+		Log.d(TAG, "grab values from resource monk_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.monk_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "monk");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "zen_archer");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "drunken_master");
+			return;
+		}
+	}
+	
 	private void setPaladinValues(){
-		Log.d(TAG, "grab values from resource paladin.xml");
-		
-		mStrBase = getString(R.string.paladin_str);
-		mDexBase = getString(R.string.paladin_dex);
-		mConBase = getString(R.string.paladin_con);
-		mIntBase = getString(R.string.paladin_int);
-		mWisBase = getString(R.string.paladin_wis);
-		mChaBase = getString(R.string.paladin_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.paladin_fav_card);
-
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_hand_limit, R.layout.skills_spinner);
-
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.paladin_proficiencies, R.layout.skills_spinner);
-
-		mSkills = this.getActivity().getResources().getStringArray(R.array.paladin_skills);
-		
-		createPowerSpinner(mV, 0, R.array.paladin_power1);
-		createPowerSpinner(mV, 1, R.array.paladin_power2);	
+		Log.d(TAG, "grab values from resource paladin_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.palladin_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "palladin");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "crusaider");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "hopitaler");
+			return;
+		}	
 	}
 	
 	private void setBarbarianValues(){
@@ -948,7 +877,7 @@ public class CharacterFragment extends Fragment {
 	}
 	
 	private void createPowerSpinner(View v, final int powerIndex, ArrayAdapter<CharSequence> powerAdapter){
-		LinearLayout powers = (LinearLayout)v.findViewById(R.id.powers_layout);
+		LinearLayout powers = (LinearLayout)v.findViewById(R.id.role_powers_layout);
 		
 		Spinner powersSpinner1 = new Spinner(v.getContext(),Spinner.MODE_DIALOG);
 	

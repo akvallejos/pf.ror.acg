@@ -10,12 +10,14 @@ import android.support.v4.app.DialogFragment;
 
 public class RolePickerFragment extends DialogFragment {
 	public static final String EXTRA_ROLE_BONUS = "pf.acg.ror.role";
+	public static final String EXTRA_ROLES_AVAIL = "pf.acg.ror.roles_avail";
 	
 	private Integer mRoleBonus;
 	
-	public static RolePickerFragment newInstance(int role){
+	public static RolePickerFragment newInstance(int role, CharSequence[] roles){
 		Bundle args = new Bundle();
 		args.putSerializable(EXTRA_ROLE_BONUS, role);
+		args.putSerializable(EXTRA_ROLES_AVAIL, roles);
 		
 		RolePickerFragment fragment = new RolePickerFragment();
 		fragment.setArguments(args);
@@ -25,7 +27,8 @@ public class RolePickerFragment extends DialogFragment {
 	
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState){
-		final CharSequence[] items = {"monk", "zen archer", "drunken master"};
+		//TODO
+		final CharSequence[] items = getArguments().getCharSequenceArray(EXTRA_ROLES_AVAIL);
 		mRoleBonus = (Integer)getArguments().getSerializable(EXTRA_ROLE_BONUS);
 
 		return new AlertDialog.Builder(getActivity())
