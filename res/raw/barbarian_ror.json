@@ -1,0 +1,151 @@
+{
+	"str": "1d12",
+    "dex": "1d6",
+    "con": "1d8",
+    "int": "1d4",
+    "wis": "1d6",
+    "cha": "1d6",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Barbarian",
+        "Berserker",
+        "Juggernaught"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "2",
+        "3"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4",
+        "5"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": [
+        "Melee: Strength +2",
+        "Survival: Wisdom +3"
+    ],
+    
+    "hand_limit":[
+        ["4","5"],
+        ["4","5","6"],
+        ["4","5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"barbarian": [[
+    		"You may bury a card from your hand to add 1d10 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand to add 1d10 +1 to your Strength, Melee, or Constitution check."
+    	],
+    [
+        "You may move at the end of your turn.",
+        "You may move at the end of your turn and/or move another character to the location where you end your turn."
+    ]],
+    "berserker": [[
+    		"You may bury a card from your hand to add 1d10 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand to add 1d10 +1 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand or the top card of your deck to add 1d10 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand or the top card of your deck to add 1d10 +1 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand or the top card of your deck to add 1d10 +2 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand or the top card of your deck to add 1d10 +3 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand or the top card of your deck to add 1d10 +4 to your Strength, Melee, or Constitution check."
+    		
+    	],
+    [
+        "You may move at the end of your turn.",
+        "You may move at the end of your turn and/or move another character to the location where you end your turn."
+    ],
+    [
+        "-",
+        "Add 2 to your check to acquire a weapon.",
+        "Add 4 to your check to acquire a weapon."
+    ],
+    [
+        "-",
+        "When you play Blessing of Gorum, add d12 instead of the normal die."
+    ]],
+    
+    "juggernaught": [[
+    		"You may bury a card from your hand to add 1d10 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand to add 1d10 +1 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand to add 1d10 +2 to your Strength, Melee, or Constitution check.",
+    		"You may bury a card from your hand to add 1d10 +3 to your Strength, Melee, or Constitution check."
+    	],
+    [
+        "You may move at the end of your turn.",
+        "You may move at the end of your turn and/or move another character to the location where you end your turn."
+    ],
+    [
+        "-",
+        "When you are dealt Combat damage, reduce that damage by 1.",
+        "When you are dealt Combat or any other type of damage, reduce that damage by 1."
+    ],
+    [
+        "-",
+        "Add 2 to your check to acquire a armor.",
+        "Add 4 to your check to acquire a armor."
+    ],
+    [
+        "-",
+        "When you play Blessing of Gorum, add d12 instead of the normal die."
+    ]]}
+}

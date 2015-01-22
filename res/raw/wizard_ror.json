@@ -1,0 +1,158 @@
+{
+	"str": "1d6",
+    "dex": "1d6",
+    "con": "1d4",
+    "int": "1d12",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Wizard",
+        "Evoker",
+        "Illusionist"
+    ],
+    "str_bonus":[
+        "0",
+        "+1"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "1",
+        "2"
+    ],
+    "spells": [
+        "8",
+        "9",
+        "10",
+        "11"
+    ],
+    "armors": [
+        "0",
+        "1"
+    ],
+    "items": [
+        "3",
+        "4",
+        "5",
+        "6"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "0"
+    ],
+    "skills": [
+        "Arcane: Intelligence +2",
+        "Knowledge: Intelligence +2"
+    ],
+    
+    "hand_limit":[
+        ["6","7","8"],
+        ["6","7","8","9"],
+        ["6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with nothing."],
+        ["Proficient with nothing."],
+        ["Proficient with nothing."]
+        
+    ],
+
+    
+    "powers": {
+    	"wizard": [[
+        "After you play a spell with the Arcane trait, you may examine the top card of your deck; if it’s a spell, you may put it in your hand."
+        ],
+    [
+        "If you acquire a card with the Magic trait during an exploration, you may immediately explore again."
+    ],
+    [
+    	"-",
+    	"Add 1 to your check to recharge a card.",
+    	"Add 2 to your check to recharge a card."
+    	]],
+    	
+    "evoker": [[
+        "After you play a spell with the Arcane trait, you may examine the top card of your deck; if it’s a spell, you may put it in your hand."
+        ],
+    [
+        "If you acquire a card with the Magic trait during an exploration, you may immediately explore again."
+    ],
+    [
+    	"-",
+    	"Add 1 to your check to recharge a card.",
+    	"Add 2 to your check to recharge a card.",
+    	"Add 3 to your check to recharge a card.",
+    	"Add 4 to your check to recharge a card."
+    	],
+    [
+    	"-",
+    	"Add 2 to your Arcane check with the Force trait.",
+    	"Add 2 to your Arcane check with the Force or Acid and Cold trait.",
+    	"Add 2 to your Arcane check with the Force or Acid and Cold or Electricity and Fire traits."	
+    	],
+    [
+    	"-",
+    	"Add 2 to your check to acquire a spell.",
+    	"Add 4 to your check to acquire a spell."
+    	]],
+    
+    "illusionist": [[
+        "After you play a spell with the Arcane trait, you may examine the top card of your deck; if it’s a spell, you may put it in your hand."
+        ],
+    [
+        "If you acquire a card with the Magic trait during an exploration, you may immediately explore again."
+    ],
+    [
+    	"-",
+    	"Add 1 to your check to recharge a card.",
+    	"Add 2 to your check to recharge a card.",
+    	"Add 3 to your check to recharge a card.",
+    	"Add 4 to your check to recharge a card."
+    	],
+    [
+    	"-",
+    	"If you play a spell to evade a monster, you may put the monster on the bottom of the deck."
+    	],
+    [
+    	"-",
+    	"Add 2 to your check to acquire a spell.",
+    	"Add 4 to your check to acquire a spell.",
+    	"Add 4 to your check to acquire a spell or ally."],
+    [
+    	"-",
+    	"At the start of your turn, you may discard a card to draw a card."]
+    	]}
+}
