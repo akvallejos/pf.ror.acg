@@ -1,0 +1,159 @@
+{
+	"str": "1d4",
+    "dex": "1d6",
+    "con": "1d8",
+    "int": "1d6",
+    "wis": "1d10",
+    "cha": "1d8",
+    "fav_card": "Ally",
+    
+    "role_bonus":[
+        "Druid",
+        "Shapeshifter",
+        "Wild Warden"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "0",
+        "1"
+    ],
+    "spells": [
+        "6",
+        "7",
+        "8"
+    ],
+    "armors": [
+        "0",
+        "1"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5",
+        "6"
+    ],
+    "blessings": [
+        "4",
+        "5"
+    ],
+    "skills": [
+        "Knowledge: Intelligence +3",
+        "Divine: Wisdom +1",
+        "Survival: Wisdom +1"
+    ],
+    
+    "hand_limit":[
+        ["5"],
+        ["5","6"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Nothing","Proficient With Light Armor","Proficient With Light Armor, Weapons"],
+        ["Proficient With Nothing","Proficient With Light Armor","Proficient With Light Armor, Weapons"],
+        ["Proficient With Nothing","Proficient With Light Armor","Proficient With Light Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"druid": [[
+    		"When you play an ally with the Animal trait, you may recharge it instead of discarding it."
+    ],
+    [
+        "You may reveal an ally with the Animal trait to add 1d4 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +1 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +2 to your check."
+    ],
+    [
+    	"You may discard a card to roll d10 instead of your Strength or Dexterity die for any check."
+    ]
+    ],
+    "shapeshifter": [[
+    		"When you play an ally with the Animal trait, you may recharge it instead of discarding it."
+    ],
+    [
+        "You may reveal an ally with the Animal trait to add 1d4 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +1 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +2 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +3 to your check."
+    ],
+    [
+    	"You may discard a card to roll d10 instead of your Strength or Dexterity die for any check.",
+    	"You may discard a card to roll 1d10 +1 instead of your Strength or Dexterity die for any check.",
+    	"You may discard a card to roll 1d10 +2 instead of your Strength or Dexterity die for any check.",
+    	"You may discard a card to roll 1d10 +2 with the Fire trait instead of your Strength or Dexterity die for any check."
+    ],
+    [
+    	"-",
+    	"Add 2 to your check to acquire an ally with the Animal trait.",
+    	"Add 4 to your check to acquire an ally with the Animal trait."
+    ],
+    [
+    	"-",
+    	"When you play a blessing to add to your Wisdom check, add d12 instead of the normal die."
+    ]],
+    
+    "wild_warden": [[
+    		"When you play an ally with the Animal trait, you may recharge it instead of discarding it."
+    ],
+    [
+        "You may reveal an ally with the Animal trait to add 1d4 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +1 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +2 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +3 to your check.",
+        "You may reveal an ally with the Animal trait to add 1d4 +4 to your check."
+    ],
+    [
+    	"You may discard a card to roll d10 instead of your Strength or Dexterity die for any check."
+    ],
+    [
+    	"-",
+    	"Add 2 to your Divine check when playing a spell.",
+    	"Add 4 to your Divine check when playing a spell."
+    ],
+    [
+    	"-",
+    	"Add 1d8 with the Magic trait to your check to defeat a bane with the Animal trait."
+    ],
+    [
+    	"-",
+    	"When you play a blessing to add to your Wisdom check, add d12 instead of the normal die."
+    ]]}
+}

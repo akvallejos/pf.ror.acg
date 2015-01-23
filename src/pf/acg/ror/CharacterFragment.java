@@ -449,36 +449,19 @@ public class CharacterFragment extends Fragment {
 	}
 	
 	private void setBardValues(){
-		Log.d(TAG, "grab values from resource bard.xml");
-		
-		mStrBase = getString(R.string.bard_str);
-		mDexBase = getString(R.string.bard_dex);
-		mConBase = getString(R.string.bard_con);
-		mIntBase = getString(R.string.bard_int);
-		mWisBase = getString(R.string.bard_wis);
-		mChaBase = getString(R.string.bard_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.bard_fav_card);
-	
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_hand_limit, R.layout.skills_spinner);
-	
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.bard_proficiencies, R.layout.skills_spinner);
-	
-		mSkills = this.getActivity().getResources().getStringArray(R.array.bard_skills);
-		
-		createPowerSpinner(mV, 0, R.array.bard_power1);
-		createPowerSpinner(mV, 1, R.array.bard_power2);
+		Log.d(TAG, "grab values from resource bard_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.bard_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "bard");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "virtuoso");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "charlatan");
+			return;
+		}
 	}
 
 	private void setClericValues(){
@@ -498,36 +481,19 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setDruidValues(){
-		Log.d(TAG, "grab values from resource druid.xml");
-		
-		mStrBase = getString(R.string.druid_str);
-		mDexBase = getString(R.string.druid_dex);
-		mConBase = getString(R.string.druid_con);
-		mIntBase = getString(R.string.druid_int);
-		mWisBase = getString(R.string.druid_wis);
-		mChaBase = getString(R.string.druid_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.druid_fav_card);
-	
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_hand_limit, R.layout.skills_spinner);
-	
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.druid_proficiencies, R.layout.skills_spinner);
-	
-		mSkills = this.getActivity().getResources().getStringArray(R.array.druid_skills);
-		
-		createPowerSpinner(mV, 0, R.array.druid_power1);
-		createPowerSpinner(mV, 1, R.array.druid_power2);
+		Log.d(TAG, "grab values from resource druid_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.druid_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "druid");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "shapeshifter");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "wild_warden");
+			return;
+		}
 	}
 
 	private void setFighterValues(){
