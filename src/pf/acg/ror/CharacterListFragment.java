@@ -155,7 +155,7 @@ public class CharacterListFragment extends ListFragment
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id){
 		PC c = ((CharacterAdapter)getListAdapter()).getItem(position);
-		Log.d(TAG, c.getRole() + " was clicked");
+		//Log.d(TAG, c.getRole() + " was clicked");
 		
 		//Start a Character Pager Activity
 		//Intent i = new Intent(getActivity(), CharacterPagerActivity.class);
@@ -165,7 +165,7 @@ public class CharacterListFragment extends ListFragment
 	}
 	
 	private void addCharacter(PC character){
-		Log.d(TAG, character.getRole());
+		//Log.d(TAG, character.getRole());
 		CharacterBinder.get(getActivity()).addCharacter(character);
 		((CharacterAdapter)getListAdapter()).notifyDataSetChanged();
 		mCallbacks.onCharacterSelected(character);

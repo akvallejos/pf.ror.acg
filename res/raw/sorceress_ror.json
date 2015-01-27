@@ -1,0 +1,158 @@
+{
+	"str": "1d4",
+    "dex": "1d8",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d6",
+    "cha": "1d12",
+    "fav_card": "Spell",
+    
+    "role_bonus":[
+        "Sorceress",
+        "Abyssal Sorcerer",
+        "Celestial Sorcerer"
+    ],
+    "str_bonus":[
+        "0",
+        "+1"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "weapons":[
+        "0",
+        "1"
+    ],
+    "spells": [
+    	"3",
+        "4",
+        "5",
+        "6"
+    ],
+    "armors": [
+        "0"
+    ],
+    "items": [
+        "3",
+        "4",
+        "5",
+        "6"
+    ],
+    "allies": [
+        "5",
+        "6",
+        "7"
+    ],
+    "blessings": [
+        "5",
+        "6",
+        "7"
+    ],
+    "skills": [
+        "Arcane: Charisma +2",
+        "Diplomacy: Charimsa +2"
+    ],
+    
+    "hand_limit":[
+        ["6","7"],
+        ["6","7"],
+        ["6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with nothing."],
+        ["Proficient with nothing."],
+        ["Proficient with nothing."]
+    ],
+
+    
+    "powers": {
+    	"sorceress": [[
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +1 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire, and Magic traits. This counts as playing a spell."
+        ],
+    [
+        "You automatically succeed at your check to recharge a spell with the Arcane trait.",
+        "You automatically succeed at your check to recharge a spell or item with the Arcane trait."
+    ]],
+    	
+    "abyssal_sorcerer": [[
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +1 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +3 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell."
+        ],
+    [
+        "You automatically succeed at your check to recharge a spell with the Arcane trait.",
+        "You automatically succeed at your check to recharge a spell or item with the Arcane trait."
+    ],
+    [
+    	"-",
+    	"Reduce Fire damage dealt to you by 1.",
+    	"Reduce Fire and Acid and Cold damage dealt to you by 1.",
+    	"Reduce Fire and Acid and Cold damage dealt to you by 2."
+    	],
+    [
+    	"-",
+    	"When you play Blessing of Pharasma, add d12 instead of the normal die."	
+    	],
+    [
+    	"-",
+    	"At the start of your turn, you may banish an ally to draw 3 cards."
+    	]],
+    
+    "celestial_sorcerer": [[
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +1 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +3 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell."
+        ],
+    [
+        "You automatically succeed at your check to recharge a spell with the Arcane trait.",
+        "You automatically succeed at your check to recharge a spell or item with the Arcane trait."
+    ],
+    [
+    	"-",
+    	"If you would fail a check by 1, you may bury a card to succeed."
+    	],
+    [
+    	"-",
+    	"Reduce Fire damage dealt to you by 1.",
+    	"Reduce Fire and Electricity damage dealt to you by 1.",
+    	"Reduce Fire and Electricity damage dealt to you by 2."
+    	],
+    [
+    	"-",
+    	"When you play Blessing of Pharasma, add d12 instead of the normal die."
+    ]]}
+}

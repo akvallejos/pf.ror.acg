@@ -53,14 +53,14 @@ public class CharacterCameraFragment extends Fragment {
 				os = getActivity().openFileOutput(filename, Context.MODE_PRIVATE);
 				os.write(data);
 			} catch (Exception e) {
-				Log.e(TAG, "Error writing to file " + filename, e);
+				//Log.e(TAG, "Error writing to file " + filename, e);
 				success = false;
 			} finally {
 				try {
 					if (os != null)
 						os.close();
 				} catch (Exception e) {
-					Log.e(TAG, "Error closing file " + filename, e);
+					//Log.e(TAG, "Error closing file " + filename, e);
 				}//try
 			}//try
 			
@@ -114,7 +114,7 @@ public class CharacterCameraFragment extends Fragment {
 						mCamera.setPreviewDisplay(holder);
 				}
 				catch(IOException exception){
-						Log.e(TAG, "Error setting up preview display", exception);
+						//Log.e(TAG, "Error setting up preview display", exception);
 					}
 			} //surfaceCreated()
 			
@@ -137,7 +137,7 @@ public class CharacterCameraFragment extends Fragment {
 				try {
 					mCamera.startPreview();
 				} catch(Exception e) {
-					Log.e(TAG, "Could not start preview", e);
+					//Log.e(TAG, "Could not start preview", e);
 					mCamera.release();
 					mCamera = null;
 				}

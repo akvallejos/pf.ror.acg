@@ -36,7 +36,7 @@ public class CharacterPagerActivity extends FragmentActivity
 			@Override
 			public Fragment getItem(int pos){
 				PC character = mCharacters.get(pos);
-				Log.d(PAGER_TAG, "Character id:" + character.getId());
+				//Log.d(PAGER_TAG, "Character id:" + character.getId());
 				return CharacterFragment.newInstance(character.getId());
 			}
 			

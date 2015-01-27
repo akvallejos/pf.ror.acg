@@ -25,7 +25,7 @@ public class CharacterBinder {
 			mCharacters = mSerializer.loadCharacters();
 		} catch(Exception e) {
 			mCharacters = new ArrayList<PC>();
-			Log.e(TAG, "Error loading characters");
+			//Log.e(TAG, "Error loading characters");
 		}
 	}
 	
@@ -56,10 +56,10 @@ public class CharacterBinder {
 	public boolean saveCharacters(){
 		try{
 			mSerializer.saveCharacters(mCharacters);
-			Log.d(TAG, "characters saved");
+			//Log.d(TAG, "characters saved");
 			return true;
 		} catch (Exception e) {
-			Log.e(TAG, "Error saving data: ", e);
+			//Log.e(TAG, "Error saving data: ", e);
 			return false;
 		}
 	}

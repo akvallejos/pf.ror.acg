@@ -21,7 +21,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -123,7 +122,7 @@ public class CharacterFragment extends Fragment {
 	
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data){
-		Log.d("date_select", String.valueOf(Activity.RESULT_OK));
+		//Log.d("date_select", String.valueOf(Activity.RESULT_OK));
 		if(resultCode != Activity.RESULT_OK) return;
 		if (requestCode == REQUEST_PHOTO) {
 			String filename = data.getStringExtra(CharacterCameraFragment.EXTRA_PHOTO_FILENAME);
@@ -136,7 +135,7 @@ public class CharacterFragment extends Fragment {
 				mCharacter.setPhoto(p);
 				mCallbacks.onCharacterUpdated(mCharacter);
 				showPhoto();
-				Log.i(TAG, "Crime: " + mCharacter.getName() +"  has photo: " + filename);
+				//Log.i(TAG, "Crime: " + mCharacter.getName() +"  has photo: " + filename);
 			}
 		}
 		
@@ -311,7 +310,7 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setCharacterResourceArrays(){
-		Log.d(TAG, "Character role found " + mCharacter.getRole());
+		//Log.d(TAG, "Character role found " + mCharacter.getRole());
 		switch(mCharacter.role_to_enum()){
 		case monk:
 			setMonkValues();return;
@@ -336,10 +335,10 @@ public class CharacterFragment extends Fragment {
 		case druid:
 			setDruidValues();return;
 		case none:
-			Log.d(TAG, "none role found");
+			//Log.d(TAG, "none role found");
 			return;
 		default:
-			Log.d(TAG, "no role found in switch");
+			//Log.d(TAG, "no role found in switch");
 			return;
 		}		
 	}
@@ -358,7 +357,7 @@ public class CharacterFragment extends Fragment {
 		} catch (IOException e) {
 		    e.printStackTrace();
 		}
-		Log.v("JSON Data", byteArrayOutputStream.toString());
+		//Log.v("JSON Data", byteArrayOutputStream.toString());
 		try {
 		    // Parse the data into jsonobject to get original data in form of json.
 		    JSONObject json = new JSONObject(
@@ -433,7 +432,7 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setBarbarianValues(){
-		Log.d(TAG, "grab values from resource barbarian_ror.json");
+		//Log.d(TAG, "grab values from resource barbarian_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.barbarian_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -449,7 +448,7 @@ public class CharacterFragment extends Fragment {
 	}
 	
 	private void setBardValues(){
-		Log.d(TAG, "grab values from resource bard_ror.json");
+		//Log.d(TAG, "grab values from resource bard_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.bard_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -465,7 +464,7 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setClericValues(){
-		Log.d(TAG, "grab values from resource cleric_ror.json");
+		//Log.d(TAG, "grab values from resource cleric_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.cleric_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -481,7 +480,7 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setDruidValues(){
-		Log.d(TAG, "grab values from resource druid_ror.json");
+		//Log.d(TAG, "grab values from resource druid_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.druid_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -497,41 +496,24 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setFighterValues(){
-		Log.d(TAG, "grab values from resource fighter.xml");
-		
-		mStrBase = getString(R.string.fighter_str);
-		mDexBase = getString(R.string.fighter_dex);
-		mConBase = getString(R.string.fighter_con);
-		mIntBase = getString(R.string.fighter_int);
-		mWisBase = getString(R.string.fighter_wis);
-		mChaBase = getString(R.string.fighter_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.fighter_fav_card);
-
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_hand_limit, R.layout.skills_spinner);
-
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.fighter_proficiencies, R.layout.skills_spinner);
-
-		mSkills = this.getActivity().getResources().getStringArray(R.array.fighter_skills);
-		
-		createPowerSpinner(mV, 0, R.array.fighter_power1);
-		createPowerSpinner(mV, 1, R.array.fighter_power2);
+		//Log.d(TAG, "grab values from resource fighter_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.fighter_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "fighter");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "guardian");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "weapon_master");
+			return;
+		}
 	}
 	
 	@SuppressLint("InlinedApi")
 	private void setMonkValues(){
-		Log.d(TAG, "grab values from resource monk_ror.json");
+		//Log.d(TAG, "grab values from resource monk_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.monk_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -547,7 +529,7 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setPaladinValues(){
-		Log.d(TAG, "grab values from resource paladin_ror.json");
+		//Log.d(TAG, "grab values from resource paladin_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.palladin_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -563,7 +545,7 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setRangerValues(){
-		Log.d(TAG, "grab values from resource ranger_ror.json");
+		//Log.d(TAG, "grab values from resource ranger_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.ranger_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:
@@ -579,73 +561,39 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void setRogueValues(){
-		Log.d(TAG, "grab values from resource rogue.xml");
-		
-		mStrBase = getString(R.string.rogue_str);
-		mDexBase = getString(R.string.rogue_dex);
-		mConBase = getString(R.string.rogue_con);
-		mIntBase = getString(R.string.rogue_int);
-		mWisBase = getString(R.string.rogue_wis);
-		mChaBase = getString(R.string.rogue_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.rogue_fav_card);
-
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_hand_limit, R.layout.skills_spinner);
-
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.rogue_proficiencies, R.layout.skills_spinner);
-
-		mSkills = this.getActivity().getResources().getStringArray(R.array.rogue_skills);
-		
-		createPowerSpinner(mV, 0, R.array.rogue_power1);
-		createPowerSpinner(mV, 1, R.array.rogue_power2);
+		//Log.d(TAG, "grab values from resource rogue_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.rogue_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "rogue");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "acrobat");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "thief");
+			return;
+		}
 	}
 	
 	private void setSorceressValues(){
-		Log.d(TAG, "grab values from resource sorceress.xml");
-		
-		mStrBase = getString(R.string.sorceress_str);
-		mDexBase = getString(R.string.sorceress_dex);
-		mConBase = getString(R.string.sorceress_con);
-		mIntBase = getString(R.string.sorceress_int);
-		mWisBase = getString(R.string.sorceress_wis);
-		mChaBase = getString(R.string.sorceress_cha);
-		mFavCard = "Card Feats:         Favored Card: " + getString(R.string.sorceress_fav_card);
-	
-		mStrBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_str_bonus, R.layout.skills_spinner);
-		mDexBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_dex_bonus, R.layout.skills_spinner);
-		mConBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_con_bonus, R.layout.skills_spinner);
-		mIntBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_int_bonus, R.layout.skills_spinner);
-		mWisBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_wis_bonus, R.layout.skills_spinner);
-		mChaBonus = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_cha_bonus, R.layout.skills_spinner);
-		mHandLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_hand_limit, R.layout.skills_spinner);
-	
-		mWeaponsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_weapons, R.layout.skills_spinner);
-		mArmorsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_armors, R.layout.skills_spinner);
-		mSpellsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_spells, R.layout.skills_spinner);
-		mItemsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_items, R.layout.skills_spinner);
-		mAlliesLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_allies, R.layout.skills_spinner);
-		mBlessingsLimit = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_blessings, R.layout.skills_spinner);
-		mProficiency = ArrayAdapter.createFromResource(this.getActivity(), R.array.sorceress_proficiencies, R.layout.skills_spinner);
-	
-		mSkills = this.getActivity().getResources().getStringArray(R.array.sorceress_skills);
-		
-		createPowerSpinner(mV, 0, R.array.sorceress_power1);
-		createPowerSpinner(mV, 1, R.array.sorceress_power2);
+		//Log.d(TAG, "grab values from resource sorceress_ror.json");
+		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.sorceress_ror);
+		switch(mCharacter.getRoleBonus()){
+		case 0:
+			setValuesFromJSON(role_res_io, "sorceress");
+			return;
+		case 1:
+			setValuesFromJSON(role_res_io, "abyssal_sorcerer");
+			return;
+		case 2:
+			setValuesFromJSON(role_res_io, "celestial_sorcerer");
+			return;
+		}
 	}
 
 	private void setWizardValues(){
-		Log.d(TAG, "grab values from resource wizard_ror.json");
+		//Log.d(TAG, "grab values from resource wizard_ror.json");
 		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.wizard_ror);
 		switch(mCharacter.getRoleBonus()){
 		case 0:

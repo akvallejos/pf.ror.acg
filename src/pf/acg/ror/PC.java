@@ -69,7 +69,7 @@ public class PC {
 	
 		public static valid_roles role_to_enum(String lRole) {
 		    for (valid_roles r : valid_roles.values()) {
-				Log.d(TAG, r.name());
+				//Log.d(TAG, r.name());
 		        if (r.name().equals(lRole)) {
 		            return r;
 		        }
