@@ -33,6 +33,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+@SuppressWarnings("deprecation")
 public class CharacterFragment extends Fragment {
 
 	public static final String EXTRA_CHARACTER_ID =  "pf.acg.ror";
