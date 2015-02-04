@@ -211,6 +211,7 @@ public class CharacterFragment extends Fragment {
 		LinearLayout skills = (LinearLayout)mV.findViewById(R.id.skills_layout);
 		TextView tv = new TextView(this.getActivity());
 		tv.setText(builder.toString());
+		tv.setTextSize(18);
 		skills.addView(tv);
 		
 		//Favored Card

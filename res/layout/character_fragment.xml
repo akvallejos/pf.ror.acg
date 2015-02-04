@@ -64,6 +64,7 @@
 			        android:id="@+id/pc_role"
 			        android:layout_width="match_parent"
 			        android:layout_height="match_parent"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
 			        android:text="Role" />
 			    
 			    <ImageButton 
@@ -72,7 +73,7 @@
 	                android:layout_width="wrap_content"
 	                android:layout_height="match_parent"
 	                android:layout_alignParentRight="true"
-	                android:src="@android:drawable/ic_menu_edit"/>
+	                android:src="@android:drawable/ic_input_add"/>
 			    </RelativeLayout>
 		    </LinearLayout>
 	    </LinearLayout>
@@ -81,6 +82,7 @@
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:text="@string/skills_detail_label"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        style="?android:listSeparatorTextViewStyle"/>
 	
 	    <LinearLayout
@@ -98,16 +100,18 @@
 	            android:layout_marginRight="4dp"
 	            android:orientation="horizontal" >
 	            
-	            <TextView 
-	            android:layout_width="match_parent"
-	            android:layout_height="wrap_content"
-	            android:text="Strength:"/>
+	            <TextView
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:text="Strength:" />
 	
 	            <TextView
 	                android:id="@+id/str_base"
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
 	                android:layout_marginLeft="4dp"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:text="1d6" />
 	
 	            <Spinner
@@ -127,6 +131,7 @@
 	            <TextView
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:text="Dexterity:" />
 	            
 	            <TextView
@@ -134,6 +139,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_marginLeft="4dp"
 		            android:text="1d6"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:id="@+id/dex_base"/>
 	
 	            <Spinner
@@ -153,6 +159,7 @@
 	            <TextView
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:text="Constitution:" />
 	            
 	            <TextView
@@ -160,6 +167,7 @@
 		            android:layout_height="wrap_content"
 		            android:text="1d6"
 		            android:layout_marginLeft="4dp"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:id="@+id/con_base"/>
 	
 	            <Spinner
@@ -178,12 +186,14 @@
 	            <TextView
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:text="Intelligence:" />
 	            
 	            <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
 		            android:layout_marginLeft="4dp"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="1d6"
 		            android:id="@+id/int_base"/>
 	
@@ -203,6 +213,7 @@
 	            <TextView
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:text="Wisdom:" />
 	            
 	            <TextView
@@ -210,6 +221,7 @@
 		            android:layout_height="wrap_content"
 		            android:text="1d6"
 		            android:layout_marginLeft="4dp"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:id="@+id/wis_base"/>
 	
 	            <Spinner
@@ -228,6 +240,7 @@
 	            <TextView
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
 	                android:text="Charisma:" />
 	            
 	            <TextView
@@ -235,6 +248,7 @@
 		            android:layout_height="wrap_content"
 		            android:text="1d6"
 		            android:layout_marginLeft="4dp"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:id="@+id/cha_base"/>
 	
 	            <Spinner
@@ -251,6 +265,7 @@
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:text="@string/powers_detail_label"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        style="?android:listSeparatorTextViewStyle"/>
 	    
 	    <LinearLayout
@@ -269,6 +284,7 @@
 		        <TextView 
 		            android:layout_height="wrap_content"
 		            android:layout_width="match_parent"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Hand Limit:"/>
 		        <Spinner
 		            android:id="@+id/hand_limit"
@@ -302,6 +318,7 @@
 	        android:layout_height="wrap_content"
 	        android:text="@string/cards_detail_label"
 	        android:id="@+id/favored_card"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        style="?android:listSeparatorTextViewStyle"/>
 	    
 	    <LinearLayout
@@ -321,6 +338,7 @@
 		        <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Weapons:" />
 
 		        <Spinner
@@ -339,6 +357,7 @@
 		        <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Armors:" />
 
 		        <Spinner
@@ -357,6 +376,7 @@
 		        <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Spells:" />
 
 		        <Spinner
@@ -375,6 +395,7 @@
 		        <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Items:" />
 
 		        <Spinner
@@ -393,6 +414,7 @@
 		        <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Allies:" />
 
 		        <Spinner
@@ -411,6 +433,7 @@
 		        <TextView
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
 		            android:text="Blessings:" />
 
 		        <Spinner
