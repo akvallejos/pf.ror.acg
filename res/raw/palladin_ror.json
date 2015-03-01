@@ -95,6 +95,7 @@
     	"palladin": [[
 		"You may discard the top card of your deck to add 1d6 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 to your check. If the top card was a blessing or spell, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing or spell, recharge it instead of discarding it."
     ],
     [
@@ -106,11 +107,15 @@
 		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +2 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +3 to your check. If the top card was a blessing, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 to your check. If the top card was a blessing or spell, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing or spell, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 +2 to your check. If the top card was a blessing or spell, recharge it instead of discarding it."
 		"You may discard the top card of your deck to add 1d6 +3 to your check. If the top card was a blessing or spell, recharge it instead of discarding it."
     ],
     [
         "You may examine the top card of your location deck at the start of your turn. If it’s a boon, put it on the bottom of the deck.",
         "You may examine the top card of your location deck at the start or end of your turn. If it’s a boon, put it on the bottom of the deck.",
+        "You may examine the top card of your location deck at the start of your turn. If it’s a boon, put it on the bottom or underneath of the top card of the deck.",
         "You may examine the top card of your location deck at the start or end of your turn. If it’s a boon, put it on the bottom or underneath of the top card of the deck."
     ],
     [
@@ -132,11 +137,15 @@
 		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +2 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +3 to your check. If the top card was a blessing, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 to your check. If the top card was a blessing or spell, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing or spell, recharge it instead of discarding it.",
+		"You may discard the top card of your deck to add 1d6 +2 to your check. If the top card was a blessing or spell, recharge it instead of discarding it."
 		"You may discard the top card of your deck to add 1d6 +3 to your check. If the top card was a blessing or spell, recharge it instead of discarding it."
     ],
     [
-        "You may examine the top card of your location deck at the start of your turn. If it’s a boon, put it on the bottom of the deck.",
-        "You may examine the top card of your location deck at the start or end of your turn. If it’s a boon, put it on the bottom of the deck.",
+     	"You may examine the top card of your location deck at the start of your turn. If it’s a boon, put it on the bottom of the deck.",
+     	"You may examine the top card of your location deck at the start or end of your turn. If it’s a boon, put it on the bottom of the deck.",
+     	"You may examine the top card of your location deck at the start of your turn. If it’s a boon, put it on the bottom or underneath of the top card of the deck.",
         "You may examine the top card of your location deck at the start or end of your turn. If it’s a boon, put it on the bottom or underneath of the top card of the deck."
     ],
     [

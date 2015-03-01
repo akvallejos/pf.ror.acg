@@ -108,6 +108,10 @@
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +3 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +1 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +3 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell."
         ],
     [
@@ -117,6 +121,7 @@
     [
     	"-",
     	"Reduce Fire damage dealt to you by 1.",
+    	"Reduce Fire damage dealt to you by 2.",
     	"Reduce Fire and Acid and Cold damage dealt to you by 1.",
     	"Reduce Fire and Acid and Cold damage dealt to you by 2."
     	],
@@ -135,6 +140,10 @@
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +3 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +1 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +2 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
+        "For your combat check, you may discard a card to roll your Arcane die + 1d6 +3 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell.",
         "For your combat check, you may discard a card to roll your Arcane die + 1d6 +4 with the Attack, Fire or Acid, and Magic traits. This counts as playing a spell."
         ],
     [
@@ -148,6 +157,7 @@
     [
     	"-",
     	"Reduce Fire damage dealt to you by 1.",
+    	"Reduce Fire damage dealt to you by 2.",
     	"Reduce Fire and Electricity damage dealt to you by 1.",
     	"Reduce Fire and Electricity damage dealt to you by 2."
     	],
