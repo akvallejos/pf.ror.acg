@@ -1,38 +1,64 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <group android:showAsAction="never">
-    
-	    <item android:id="@+id/menu_item_new_barbarian"
-		    android:title="@string/new_barbarian" />
-	    
-	    <item android:id="@+id/menu_item_new_bard"
-		    android:title="@string/new_bard"/>
-	    	
-	    <item android:id="@+id/menu_item_new_cleric"
-		    android:title="@string/new_cleric"/>
-	    
-	    <item android:id="@+id/menu_item_new_druid"
-		    android:title="@string/new_druid"/>
-	    
-	    <item android:id="@+id/menu_item_new_fighter"
-		    android:title="@string/new_fighter"/>
-	    
-		<item android:id="@+id/menu_item_new_monk"
-		    android:title="@string/new_monk"/>
-		
-		<item android:id="@+id/menu_item_new_paladin"
-		    android:title="@string/new_paladin"/>
-		
-		<item android:id="@+id/menu_item_new_ranger"
-		    android:title="@string/new_ranger"/>
-		
-		<item android:id="@+id/menu_item_new_rogue"
-		    android:title="@string/new_rogue"/>
-		
-		<item android:id="@+id/menu_item_new_sorceress"
-		    android:title="@string/new_sorceress"/>
-		
-		<item android:id="@+id/menu_item_new_wizard"
-		    android:title="@string/new_wizard"/>
-	</group>
+        <!--  Rise of the Rune Lords -->
+    	<item android:id="@+id/menu_item_new_ror"
+    	    android:title="@string/new_ror">
+    	<menu><group>
+		    <item android:id="@+id/menu_item_new_barbarian"
+			    android:title="@string/new_barbarian" />
+		    <item android:id="@+id/menu_item_new_bard"
+			    android:title="@string/new_bard"/>	    	
+		    <item android:id="@+id/menu_item_new_cleric"
+			    android:title="@string/new_cleric"/>
+		    <item android:id="@+id/menu_item_new_druid"
+			    android:title="@string/new_druid"/>
+		    <item android:id="@+id/menu_item_new_fighter"
+			    android:title="@string/new_fighter"/>
+			<item android:id="@+id/menu_item_new_monk"
+			    android:title="@string/new_monk"/>
+			<item android:id="@+id/menu_item_new_paladin"
+			    android:title="@string/new_paladin"/>
+			<item android:id="@+id/menu_item_new_ranger"
+			    android:title="@string/new_ranger"/>
+			<item android:id="@+id/menu_item_new_rogue"
+			    android:title="@string/new_rogue"/>
+			<item android:id="@+id/menu_item_new_sorceress"
+			    android:title="@string/new_sorceress"/>
+			<item android:id="@+id/menu_item_new_wizard"
+			    android:title="@string/new_wizard"/>
+		</group></menu>
+		</item>
+		<!-- Skulls and Shackles -->
+    	<item android:id="@+id/menu_item_new_sas"
+    	    android:title="@string/new_sas">
+    	    <menu><group>
+    	        <item android:id="@+id/menu_item_raider_ss"
+			    android:title="@string/new_raider_ss" />
+		    <item android:id="@+id/menu_item_new_bard_ss"
+			    android:title="@string/new_bard_ss"/>	    	
+		    <item android:id="@+id/menu_item_new_oracle_ss"
+			    android:title="@string/new_oracle_ss"/>
+		    <item android:id="@+id/menu_item_new_druid_ss"
+			    android:title="@string/new_druid_ss"/>
+		    <item android:id="@+id/menu_item_new_fighter_ss"
+			    android:title="@string/new_fighter_ss"/>
+			<item android:id="@+id/menu_item_new_swashbucker_ss"
+			    android:title="@string/new_swashbuckler_ss"/>
+			<item android:id="@+id/menu_item_new_gunslinger_ss"
+			    android:title="@string/new_gunslinger_ss"/>
+			<item android:id="@+id/menu_item_new_magus_ss"
+			    android:title="@string/new_magus_ss"/>
+			<item android:id="@+id/menu_item_new_rogue_ss"
+			    android:title="@string/new_rogue_ss"/>
+			<item android:id="@+id/menu_item_new_alchemist_ss"
+			    android:title="@string/new_alchemist_ss"/>
+			<item android:id="@+id/menu_item_new_witch_ss"
+			    android:title="@string/new_witch_ss"/>
+			<item android:id="@+id/menu_item_new_warpriest_ss"
+			    android:title="@string/new_warpriest_ss"/>
+    	    </group></menu>
+    	</item>	
+    	
+    </group>
 	
 </menu>

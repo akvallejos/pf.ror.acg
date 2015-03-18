@@ -125,6 +125,12 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_wizard:
 			addCharacter(new PC("wizard"));
 			return true;
+		case R.id.menu_item_raider_ss:
+			addCharacter(new PC("raider_ss"));
+			return true;
+		case R.id.menu_item_new_oracle_ss:
+			addCharacter(new PC("oracle_ss"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -186,13 +192,15 @@ public class CharacterListFragment extends ListFragment
 			
 			//Configure the view for this crime
 			PC c = getItem(position);
+			CharacterHelper ch = new CharacterHelper();
+			ch.setCharacterResourceArrays(getActivity(), c.role_to_enum(), c.getRoleBonus());
 			
 			//Set the Title
 			TextView nameTextView = (TextView)convertView.findViewById(R.id.character_list_item_nameTextView);
 			nameTextView.setText(c.getName());
 			
 			TextView roleTextView = (TextView)convertView.findViewById(R.id.character_list_item_roleTextView);
-			roleTextView.setText(c.getRole());
+			roleTextView.setText(ch.getRoles()[c.getRoleBonus()]);
 			
 			return convertView;
 		}

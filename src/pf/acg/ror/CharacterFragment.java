@@ -1,15 +1,8 @@
 package pf.acg.ror;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.UUID;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import android.annotation.SuppressLint;
+import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -44,38 +37,13 @@ public class CharacterFragment extends Fragment {
 	private static final int REQUEST_ROLE = 0;
 	
 	private PC mCharacter;
+	private CharacterHelper mCH;
 	private EditText mNameField;
 	private Callbacks mCallbacks;
 	private ImageButton mRoleButton;
 	private ImageButton mPhotoButton;
 	private ImageView mPhotoView;
 	
-	private String mStrBase;
-	private String mDexBase;
-	private String mConBase;
-	private String mIntBase;
-	private String mWisBase;
-	private String mChaBase;
-	private String mFavCard;
-	
-	private ArrayAdapter<CharSequence> mStrBonus;
-	private ArrayAdapter<CharSequence> mDexBonus;
-	private ArrayAdapter<CharSequence> mConBonus;
-	private ArrayAdapter<CharSequence> mIntBonus;
-	private ArrayAdapter<CharSequence> mWisBonus;
-	private ArrayAdapter<CharSequence> mChaBonus;
-	private ArrayAdapter<CharSequence> mHandLimit;
-	private ArrayAdapter<CharSequence> mProficiency;
-	
-	private ArrayAdapter<CharSequence> mWeaponsLimit;
-	private ArrayAdapter<CharSequence> mArmorsLimit;
-	private ArrayAdapter<CharSequence> mSpellsLimit;
-	private ArrayAdapter<CharSequence> mItemsLimit;
-	private ArrayAdapter<CharSequence> mAlliesLimit;
-	private ArrayAdapter<CharSequence> mBlessingsLimit;
-	
-	private String[] mSkills;
-	private String[] mRoles;
 	private TextView mRoleField;
 	private View mV;
 	
@@ -174,37 +142,37 @@ public class CharacterFragment extends Fragment {
 		
 		//Strength
 		TextView mStrField = (TextView)mV.findViewById(R.id.str_base);
-		mStrField.setText(mStrBase);
-		createBonusSpinner(R.id.str_bonus, mStrBonus, mCharacter.getStrBonus(), attr.Str);
+		mStrField.setText(mCH.getStrBase());
+		createBonusSpinner(R.id.str_bonus, mCH.getStrBonus(), mCharacter.getStrBonus(), attr.Str);
 				
 		//Dexterity
 		TextView mDexField = (TextView)mV.findViewById(R.id.dex_base);
-		mDexField.setText(mDexBase);
-		createBonusSpinner(R.id.dex_bonus, mDexBonus, mCharacter.getDexBonus(), attr.Dex);
+		mDexField.setText(mCH.getStrBase());
+		createBonusSpinner(R.id.dex_bonus, mCH.getDexBonus(), mCharacter.getDexBonus(), attr.Dex);
 		
 		//Constitution
 		TextView mConField = (TextView)mV.findViewById(R.id.con_base);
-		mConField.setText(mConBase);
-		createBonusSpinner(R.id.con_bonus, mConBonus, mCharacter.getConBonus(), attr.Con);
+		mConField.setText(mCH.getConBase());
+		createBonusSpinner(R.id.con_bonus, mCH.getConBonus(), mCharacter.getConBonus(), attr.Con);
 
 		//Intelligence
 		TextView mIntField = (TextView)mV.findViewById(R.id.int_base);
-		mIntField.setText(mIntBase);
-		createBonusSpinner(R.id.int_bonus, mIntBonus, mCharacter.getIntBonus(), attr.Int);
+		mIntField.setText(mCH.getIntBase());
+		createBonusSpinner(R.id.int_bonus, mCH.getIntBonus(), mCharacter.getIntBonus(), attr.Int);
 		
 		//Wisdom
 		TextView mWisField = (TextView)mV.findViewById(R.id.wis_base);
-		mWisField.setText(mWisBase);
-		createBonusSpinner(R.id.wis_bonus, mWisBonus, mCharacter.getWisBonus(), attr.Wis);
+		mWisField.setText(mCH.getWisBase());
+		createBonusSpinner(R.id.wis_bonus, mCH.getWisBonus(), mCharacter.getWisBonus(), attr.Wis);
 		
 		//Charisma
 		TextView mChaField = (TextView)mV.findViewById(R.id.cha_base);
-		mChaField.setText(mChaBase);
-		createBonusSpinner(R.id.cha_bonus, mChaBonus, mCharacter.getWisBonus(), attr.Cha);
+		mChaField.setText(mCH.getChaBase());
+		createBonusSpinner(R.id.cha_bonus, mCH.getChaBonus(), mCharacter.getWisBonus(), attr.Cha);
 		
 		//Skills
 		StringBuilder builder = new StringBuilder();
-		for(String s : mSkills) {
+		for(String s : mCH.getSkills()) {
 		    builder.append(s + "\n");
 		}
 		
@@ -216,26 +184,39 @@ public class CharacterFragment extends Fragment {
 		
 		//Favored Card
 		TextView favCard = (TextView)mV.findViewById(R.id.favored_card);
-		favCard.setText(mFavCard);
+		favCard.setText(mCH.getFavCard());
 		
 		//WeaponLimit
-		createBonusSpinner(R.id.weapons, mWeaponsLimit, mCharacter.getWeapons(), attr.WeaponLimit);
+		createBonusSpinner(R.id.weapons, mCH.getWeaponsLimit(), mCharacter.getWeapons(), attr.WeaponLimit);
 
 		//ArmorLimit
-		createBonusSpinner(R.id.armor, mArmorsLimit, mCharacter.getArmors(), attr.ArmorLimit);
+		createBonusSpinner(R.id.armor, mCH.getArmorsLimit(), mCharacter.getArmors(), attr.ArmorLimit);
 
 		//SpellLimit
-		createBonusSpinner(R.id.spells, mSpellsLimit, mCharacter.getSpells(), attr.SpellLimit);
+		createBonusSpinner(R.id.spells, mCH.getSpellsLimit(), mCharacter.getSpells(), attr.SpellLimit);
 		
 		//ItemLimit
-		createBonusSpinner(R.id.items, mItemsLimit, mCharacter.getItems(), attr.ItemLimit);
+		createBonusSpinner(R.id.items, mCH.getItemsLimit(), mCharacter.getItems(), attr.ItemLimit);
 		
 		//AllyLimit
-		createBonusSpinner(R.id.allies, mAlliesLimit, mCharacter.getAllies(), attr.AllyLimit);
+		createBonusSpinner(R.id.allies, mCH.getAlliesLimit(), mCharacter.getAllies(), attr.AllyLimit);
 		
 		//BlessingLimit
-		createBonusSpinner(R.id.blessings, mBlessingsLimit, mCharacter.getBlessings(), attr.BlessingLimit);
+		createBonusSpinner(R.id.blessings, mCH.getBlessingsLimit(), mCharacter.getBlessings(), attr.BlessingLimit);
 		
+		//Powers
+		for(int i = 0; i < mCH.getPowers().length(); i++){
+			ArrayAdapter<CharSequence> power_adapter;
+			try {
+				power_adapter = new ArrayAdapter<CharSequence>(getActivity(),
+						R.layout.skills_spinner,
+						mCH.getPowersList(i));
+				createPowerSpinner(mV,i,power_adapter);
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		mNameField.addTextChangedListener(new TextWatcher(){
 			
 			@Override
@@ -265,7 +246,7 @@ public class CharacterFragment extends Fragment {
 			public void onClick(View v) {
 				FragmentManager fm = getActivity().getSupportFragmentManager();
 				RolePickerFragment dialog = RolePickerFragment.newInstance(mCharacter.getRoleBonus(),
-						mRoles);
+						mCH.getRoles());
 				dialog.setTargetFragment(CharacterFragment.this, REQUEST_ROLE);
 				dialog.show(fm, DIALOG_ROLE);
 			}
@@ -313,311 +294,22 @@ public class CharacterFragment extends Fragment {
 
 	private void setCharacterResourceArrays(){
 		//Log.d(TAG, "Character role found " + mCharacter.getRole());
-		switch(mCharacter.role_to_enum()){
-		case monk:
-			setMonkValues();return;
-		case paladin:
-			setPaladinValues();return;
-		case barbarian:
-			setBarbarianValues();return;
-		case fighter:
-			setFighterValues();return;
-		case sorceress:
-			setSorceressValues();return;
-		case wizard:
-			setWizardValues(); return;
-		case rogue:
-			setRogueValues();return;
-		case cleric:
-			setClericValues();return;
-		case bard:
-			setBardValues();return;
-		case ranger:
-			setRangerValues();return;
-		case druid:
-			setDruidValues();return;
-		case none:
-			//Log.d(TAG, "none role found");
-			return;
-		default:
-			//Log.d(TAG, "no role found in switch");
-			return;
-		}		
+		mCH = new CharacterHelper();
+		mCH.setCharacterResourceArrays(getActivity(), mCharacter.role_to_enum(), mCharacter.getRoleBonus());		
 	}
 
-	private void setValuesFromJSON(InputStream role_res_io, String powers_key) {
-		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-
-		int ctr;
-		try {
-		    ctr = role_res_io.read();
-		    while (ctr != -1) {
-		        byteArrayOutputStream.write(ctr);
-		        ctr = role_res_io.read();
-		    }
-		    role_res_io.close();
-		} catch (IOException e) {
-		    e.printStackTrace();
-		}
-		//Log.v("JSON Data", byteArrayOutputStream.toString());
-		try {
-		    // Parse the data into jsonobject to get original data in form of json.
-		    JSONObject json = new JSONObject(
-		            byteArrayOutputStream.toString());
-		    mStrBase = json.getString("str");
-		    mDexBase = json.getString("dex");
-		    mConBase = json.getString("con");
-		    mIntBase = json.getString("int");
-		    mWisBase = json.getString("wis");
-		    mChaBase = json.getString("cha");
-			mFavCard = "Card Feats:         Favored Card: " + json.getString("fav_card");
-
-		    mRoles = JSONArray2Array((JSONArray) json.get("role_bonus"));
-		    mSkills = JSONArray2Array((JSONArray) json.get("skills"));
-
-		    
-		    mStrBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("str_bonus")));
-		    
-		    mDexBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("dex_bonus")));
-		    
-		    mConBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
-		    		JSONArray2List((JSONArray)json.get("con_bonus")));
-		    
-		    mIntBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
-		    		JSONArray2List((JSONArray)json.get("int_bonus")));
-		    
-		    mWisBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("wis_bonus")));
-		    
-		    mChaBonus = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("cha_bonus")));
-		    
-		    mWeaponsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("weapons")));
-		    
-		    mArmorsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("armors")));
-		    
-		    mSpellsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("spells")));
-		    
-		    mItemsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("items")));
-		    
-		    mAlliesLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("allies")));
-		    
-		    mBlessingsLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner, 
-		    		JSONArray2List((JSONArray)json.get("blessings")));
-		    		    
-			mHandLimit = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
-					JSONArray2List((json.getJSONArray("hand_limit").
-							getJSONArray(mCharacter.getRoleBonus()))));
-			
-			mProficiency = new ArrayAdapter<CharSequence>(this.getActivity(), R.layout.skills_spinner,
-					JSONArray2List(json.getJSONArray("proficiencies").
-							getJSONArray(mCharacter.getRoleBonus())));
-
-			JSONArray json_powers = json.getJSONObject("powers").getJSONArray(powers_key);
-			for(int i = 0; i < json_powers.length(); i++){
-				ArrayAdapter<CharSequence> power_adapter = new ArrayAdapter<CharSequence>(this.getActivity(),
-						R.layout.skills_spinner,
-						JSONArray2List(json_powers.getJSONArray(i)));
-				createPowerSpinner(mV,i,power_adapter);
-			}
-
-		} catch (Exception e) {
-		    e.printStackTrace();
-		}
-	}
-
-	private void setBarbarianValues(){
-		//Log.d(TAG, "grab values from resource barbarian_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.barbarian_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "barbarian");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "berserker");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "juggernaught");
-			return;
-		}	
-	}
 	
-	private void setBardValues(){
-		//Log.d(TAG, "grab values from resource bard_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.bard_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "bard");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "virtuoso");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "charlatan");
-			return;
-		}
-	}
-
-	private void setClericValues(){
-		//Log.d(TAG, "grab values from resource cleric_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.cleric_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "cleric");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "healer");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "exorcist");
-			return;
-		}
-	}
-
-	private void setDruidValues(){
-		//Log.d(TAG, "grab values from resource druid_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.druid_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "druid");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "shapeshifter");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "wild_warden");
-			return;
-		}
-	}
-
-	private void setFighterValues(){
-		//Log.d(TAG, "grab values from resource fighter_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.fighter_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "fighter");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "guardian");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "weapon_master");
-			return;
-		}
-	}
-	
-	@SuppressLint("InlinedApi")
-	private void setMonkValues(){
-		//Log.d(TAG, "grab values from resource monk_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.monk_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "monk");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "zen_archer");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "drunken_master");
-			return;
-		}
-	}
-
-	private void setPaladinValues(){
-		//Log.d(TAG, "grab values from resource paladin_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.palladin_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "palladin");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "crusaider");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "hopitaler");
-			return;
-		}	
-	}
-
-	private void setRangerValues(){
-		//Log.d(TAG, "grab values from resource ranger_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.ranger_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "ranger");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "sniper");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "tracker");
-			return;
-		}
-	}
-
-	private void setRogueValues(){
-		//Log.d(TAG, "grab values from resource rogue_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.rogue_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "rogue");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "acrobat");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "thief");
-			return;
-		}
-	}
-	
-	private void setSorceressValues(){
-		//Log.d(TAG, "grab values from resource sorceress_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.sorceress_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "sorceress");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "abyssal_sorcerer");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "celestial_sorcerer");
-			return;
-		}
-	}
-
-	private void setWizardValues(){
-		//Log.d(TAG, "grab values from resource wizard_ror.json");
-		InputStream role_res_io = this.getActivity().getResources().openRawResource(R.raw.wizard_ror);
-		switch(mCharacter.getRoleBonus()){
-		case 0:
-			setValuesFromJSON(role_res_io, "wizard");
-			return;
-		case 1:
-			setValuesFromJSON(role_res_io, "evoker");
-			return;
-		case 2:
-			setValuesFromJSON(role_res_io, "illusionist");
-			return;
-		}
-	}
 
 	private void updateRoleUI(){
-		mRoleField.setText(mRoles[mCharacter.getRoleBonus()]);
+		mRoleField.setText(mCH.getRoles()[mCharacter.getRoleBonus()]);
+		mCallbacks.onCharacterUpdated(mCharacter);
+
 		
 		//HandLimit
-		createBonusSpinner(R.id.hand_limit, mHandLimit, mCharacter.getHandLimit(), attr.HandLimit);
+		createBonusSpinner(R.id.hand_limit, mCH.getHandLimit(), mCharacter.getHandLimit(), attr.HandLimit);
 		
 		//Proficiency
-		createBonusSpinner(R.id.proficieny, mProficiency, mCharacter.getProficieny(), attr.Proficiency);
+		createBonusSpinner(R.id.proficieny, mCH.getProficiency(), mCharacter.getProficieny(), attr.Proficiency);
 
 	}
 	
@@ -632,22 +324,6 @@ public class CharacterFragment extends Fragment {
 		mPhotoView.setImageDrawable(b);
 	} //showPhoto()
 
-	private String[] JSONArray2Array(JSONArray json) {
-		ArrayList<String> list = new ArrayList<String>();
-		for (int i = 0; i < json.length(); i++) {
-	        list.add((String) json.opt(i));
-	    }
-		String[] a = new String[list.size()];
-		return list.toArray(a);
-	}
-
-	private ArrayList<CharSequence> JSONArray2List(JSONArray json_array) {
-	    ArrayList<CharSequence> list = new ArrayList<CharSequence>();
-		for (int i = 0; i < json_array.length(); i++) {
-			list.add( (String) json_array.opt(i) );
-	    }
-		return list;
-	}
 
 	private void createBonusSpinner(
 									int layoutSpinnerId, ArrayAdapter<CharSequence> bonusAdapter,

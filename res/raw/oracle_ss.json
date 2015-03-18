@@ -1,0 +1,162 @@
+{
+	"str": "1d4",
+    "dex": "1d4",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d8",
+    "cha": "1d12",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Oracle",
+        "Stargazer",
+        "Tempest"
+    ],
+    "str_bonus":[
+        "0",
+        "+1"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "weapons":[
+        "0"
+    ],
+    "spells": [
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "armors": [
+        "0",
+        "1"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "5",
+        "6",
+        "7"
+    ],
+    "skills": [
+        "Knowledge: Intelligence +2",
+        "Divine: Charisma +2"
+    ],
+    
+    "hand_limit":[
+        ["6","7"],
+        ["6","7","8"],
+        ["6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient With Nothing", "Proficient With Light Armor"],
+        ["Proficient With Nothing", "Proficient With Light Armor"],
+        ["Proficient With Nothing", "Proficient With Light Armor"]
+    ],
+
+    
+    "powers": {
+    	"oracle": [[
+    		"You may recharge a card that has the Divine trait to examine the top card of any location deck.",
+    		"You may recharge a card that has the Divine trait to examine the top card of any location deck (or the blessings deck or any character deck)."
+    	],
+    [
+        "At the end of your turn, you may discard a card that has the Divine trait to add a card that has the Divine trait from your discard pile to your hand."
+    ],
+    [
+    	"If your combat check has the Attack trait, add 2 to it.",
+    	"If your combat check has the Attack trait, add 2 to it. (You may also add the Fire trait.)"
+    ]],
+    "stargazer": [[
+    		"You may recharge a card that has the Divine trait to examine the top card of any location deck.",
+    		"You may recharge a card that has the Divine trait to examine the top card of any location deck (or the blessings deck or any character deck)."
+    	],
+    [
+        "At the end of your turn, you may discard a card that has the Divine trait to add a card that has the Divine trait from your discard pile to your hand."
+    ],
+    [
+    	"If your combat check has the Attack trait, add 2 to it.",
+    	"If your combat check has the Attack trait, add 2 to it. (You may also add the Fire trait.)",
+    	"If your combat check has the Attack trait, add (3) to it.",
+    	"If your combat check has the Attack trait, add (3) to it. (You may also add the Fire trait.)"
+    ],
+    [
+    	"At the end of your turn, you may discard a card that has the Divine trait to add a card that has the Divine trait from your discard pile to your hand.",
+    	"At the end of your turn, you may discard a card that has the Divine trait (or any card) to add a card that has the Divine trait from your discard pile to your hand.",
+    	"At the end of your turn, you may discard a card that has the Divine trait to add a card that has the Divine trait from your discard pile to your hand (or to allow a character at your location to add a card from his discard pile to his hand).",
+    	"At the end of your turn, you may discard a card that has the Divine trait (or any card) to add a card that has the Divine trait from your discard pile to your hand (or to allow a character at your location to add a card from his discard pile to his hand)."
+    ],
+    [
+    	"-",
+    	"You gain the skill Perception: Charisma +2.",
+    	"You gain the skill Perception (and Survival): Charisma +2."
+    ]],
+    
+    "tempest": [[
+    		"You may recharge a card that has the Divine trait to examine the top card of any location deck.",
+    		"You may recharge a card that has the Divine trait to examine the top card of any location deck (or the blessings deck or any character deck)."
+    	],
+    [
+        "At the end of your turn, you may discard a card that has the Divine trait to add a card that has the Divine trait from your discard pile to your hand."
+    ],
+    [
+    	"If your combat check has the Attack trait, add 2 to it.",
+    	"If your combat check has the Attack trait, add 2 to it. (You may also add the Fire trait.)",
+    	"If your combat check has the Attack trait, add (3) to it.",
+    	"If your combat check has the Attack trait, add (4) to it.",
+    	"If your combat check has the Attack trait, add (3) to it. (You may also add the Fire trait.)",
+    	"If your combat check has the Attack trait, add (4) to it. (You may also add the Fire trait.)",
+    	"If your combat check has the Attack trait, add 2 to it. (You may also add the Electricity or Fire trait.)",
+    	"If your combat check has the Attack trait, add (3) to it. (You may also add the Electricity or Fire trait.)",
+    	"If your combat check has the Attack trait, add (4) to it. (You may also add the Electricity or Fire trait.)"
+    ],
+    [
+    	"At the end of your turn, you may discard a card that has the Divine trait to add a card that has the Divine trait from your discard pile to your hand."
+    ],
+    [ 
+    	"-",
+    	"Add 2 to your check to recharge a spell that has the Attack trait.",
+    	"Add (4) to your check to recharge a spell that has the Attack trait.",
+    	"Add 2 to your check to recharge (or acquire) a spell that has the Attack trait.",
+    	"Add 2 (4) to your check to recharge (or acquire) a spell that has the Attack trait."
+    ],
+    [
+    	"-",
+    	"When you play a spell that has the Attack trait, you gain the skill Arcane: Charisma +2 until the end of the encounter."
+    ]]}
+}
