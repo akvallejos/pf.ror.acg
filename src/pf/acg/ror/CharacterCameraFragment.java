@@ -21,6 +21,7 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class CharacterCameraFragment extends Fragment {
 	private static final String TAG = "CrimeCameraFragment";
@@ -86,7 +87,7 @@ public class CharacterCameraFragment extends Fragment {
 		mProgressContainer = v.findViewById(R.id.character_camera_progressContainer);
 		mProgressContainer.setVisibility(View.INVISIBLE);
 		
-		Button takePictureButton = (Button)v.findViewById(R.id.character_camera_takePictureButton);
+		ImageButton takePictureButton = (ImageButton)v.findViewById(R.id.character_camera_takePictureButton);
 		takePictureButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

@@ -28,7 +28,7 @@
 			    android:title="@string/new_wizard"/>
 		</group></menu>
 		</item>
-		<!-- Skulls and Shackles -->
+		<!--
     	<item android:id="@+id/menu_item_new_sas"
     	    android:title="@string/new_sas">
     	    <menu><group>
@@ -58,7 +58,7 @@
 			    android:title="@string/new_warpriest_ss"/>
     	    </group></menu>
     	</item>	
-    	
+    	-->
     </group>
 	
 </menu>
