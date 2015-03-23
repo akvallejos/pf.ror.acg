@@ -1,0 +1,165 @@
+{
+	"str": "1d6",
+    "dex": "1d12",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d4",
+    "cha": "1d8",
+    "fav_card": "Item",
+    
+    "role_bonus":[
+        "Rogue",
+        "Shadow",
+        "Smuggler"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "3",
+        "4",
+        "5"
+    ],
+    "spells": [
+        "0",
+        "1",
+        "2"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5"
+    ],
+    "skills": [
+        "Acrobatics: Dexterity +2",
+        "Disable: Dexterity +2",
+        "Stealth: Dexterity +2",
+        "Craft: Intelligence +2"
+    ],
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."]
+        
+    ],
+    
+    "powers": {
+    	"rogue": [[
+        "You may evade your encounter."
+    ],
+    [
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+1) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+2) to your combat check, or discard it to add an additional 1d6."
+    ],
+    [
+    	"For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1."
+    ]],
+    "shadow": [[
+        "You may evade your encounter."
+    ],
+    [
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+1) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+2) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+3) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+4) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check (and discard it to add an additional 1d6).",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+1) to your combat check (and discard it to add an additional 1d6).",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+2) to your combat check (and discard it to add an additional 1d6).",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+3) to your combat check (and discard it to add an additional 1d6).",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+4) to your combat check (and discard it to add an additional 1d6)."
+    ],
+    [
+    	"For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1."
+    ],
+    [
+        "-",
+        "When a monster deals damage to you before the encounter, reduce that damage to 0.",
+        "When a monster deals damage to you before (or after) the encounter, reduce that damage to 0."
+    ],
+    [
+        "-",
+        "You automatically succeed at your Knowledge check."
+    ]],
+    
+    "smuggler": [[
+        "You may evade your encounter."
+    ],
+    [
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+1) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+2) to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 (+3) to your combat check, or discard it to add an additional 1d6."
+        
+    ],
+    [
+    	"For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1."
+    ],
+    [
+        " -",
+        "Add 1d4 to your non-combat check.",
+        "Add 1d4 (+1) to your non-combat check."
+    ],
+    [
+        "-",
+        "When you acquire a card, you may give it to another character."
+    ],
+    [
+        "-",
+        "When a character gives you a card on his turn, he may give you any number of cards."
+    ],
+    [
+    	"-",
+    	"When one or more plunder cards are stashed on your turn, you may stash an additional plunder card."
+    ]]}
+}

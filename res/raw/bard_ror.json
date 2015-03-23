@@ -85,9 +85,9 @@
         ["6","7","8"]
     ],
     "proficiencies": [
-        ["Proficient with nothing.", "Proficient with Light Armors", "Proficient with Weapons"],
-        ["Proficient with nothing.", "Proficient with Light Armors", "Proficient with Weapons"],
-        ["Proficient with nothing.", "Proficient with Light Armors", "Proficient with Weapons"]
+        ["Proficient with nothing.", "Proficient with Light Armors", "Proficient with Weapons", "Proficient with Light Armors and Weapons"],
+        ["Proficient with nothing.", "Proficient with Light Armors", "Proficient with Weapons", "Proficient with Light Armors and Weapons"],
+        ["Proficient with nothing.", "Proficient with Light Armors", "Proficient with Weapons", "Proficient with Light Armors and Weapons"]
         
     ],
 
