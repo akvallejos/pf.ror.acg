@@ -213,6 +213,16 @@ public class CharacterHelper {
 			setGunslingerValues(activity, roleBonus);return;
 		case rogue_ss:
 			setRogueSSValues(activity, roleBonus);return;
+		case magus_ss:
+			setMagusSSValues(activity, roleBonus);return;
+		case fighter_ss:
+			setFighterSSValues(activity, roleBonus);return;
+		case alchemist_ss:
+			setAlchemistSSValues(activity, roleBonus);return;
+		case druid_ss:
+			setDruidSSValues(activity, roleBonus);return;
+		case warpriest_ss:
+			setWarpriestSSValues(activity, roleBonus);return;
 		case none:
 			//Log.d(TAG, "none role found");
 			return;
@@ -500,7 +510,7 @@ public class CharacterHelper {
 	
 	private void setRaiderValues(Activity activity, int role_bonus){
 		//Log.d(TAG, "grab values from resource raider_ss.json");
-		InputStream role_res_io = activity.getResources().openRawResource(R.raw.raider_ss);
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.raider_sas);
 		switch(role_bonus){
 		case 0:
 			setValuesFromJSON(activity, role_res_io, "raider", role_bonus);
@@ -516,7 +526,7 @@ public class CharacterHelper {
 	
 	private void setOracleValues(Activity activity, int role_bonus){
 		//Log.d(TAG, "grab values from resource raider_ss.json");
-		InputStream role_res_io = activity.getResources().openRawResource(R.raw.oracle_ss);
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.oracle_sas);
 		switch(role_bonus){
 		case 0:
 			setValuesFromJSON(activity, role_res_io, "oracle", role_bonus);
@@ -532,7 +542,7 @@ public class CharacterHelper {
 	
 	private void setBardSSValues(Activity activity, int role_bonus){
 		//Log.d(TAG, "grab values from resource raider_ss.json");
-		InputStream role_res_io = activity.getResources().openRawResource(R.raw.oracle_ss);
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.bard_sas);
 		switch(role_bonus){
 		case 0:
 			setValuesFromJSON(activity, role_res_io, "bard", role_bonus);
@@ -548,7 +558,7 @@ public class CharacterHelper {
 	
 	private void setSwashbucklerValues(Activity activity, int role_bonus){
 		//Log.d(TAG, "grab values from resource raider_ss.json");
-		InputStream role_res_io = activity.getResources().openRawResource(R.raw.oracle_ss);
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.swashbucker_sas);
 		switch(role_bonus){
 		case 0:
 			setValuesFromJSON(activity, role_res_io, "swashbuckler", role_bonus);
@@ -564,7 +574,7 @@ public class CharacterHelper {
 	
 	private void setGunslingerValues(Activity activity, int role_bonus){
 		//Log.d(TAG, "grab values from resource raider_ss.json");
-		InputStream role_res_io = activity.getResources().openRawResource(R.raw.oracle_ss);
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.gunslinger_sas);
 		switch(role_bonus){
 		case 0:
 			setValuesFromJSON(activity, role_res_io, "gunslinger", role_bonus);
@@ -580,7 +590,7 @@ public class CharacterHelper {
 	
 	private void setRogueSSValues(Activity activity, int role_bonus){
 		//Log.d(TAG, "grab values from resource raider_ss.json");
-		InputStream role_res_io = activity.getResources().openRawResource(R.raw.oracle_ss);
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.rogue_sas);
 		switch(role_bonus){
 		case 0:
 			setValuesFromJSON(activity, role_res_io, "rogue", role_bonus);
@@ -590,6 +600,86 @@ public class CharacterHelper {
 			return;
 		case 2:
 			setValuesFromJSON(activity, role_res_io, "smuggler", role_bonus);
+			return;
+		}
+	}
+	
+	private void setMagusSSValues(Activity activity, int role_bonus){
+		//Log.d(TAG, "grab values from resource raider_ss.json");
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.magus_sas);
+		switch(role_bonus){
+		case 0:
+			setValuesFromJSON(activity, role_res_io, "magus", role_bonus);
+			return;
+		case 1:
+			setValuesFromJSON(activity, role_res_io, "marauder", role_bonus);
+			return;
+		case 2:
+			setValuesFromJSON(activity, role_res_io, "spellblade", role_bonus);
+			return;
+		}
+	}
+	
+	private void setFighterSSValues(Activity activity, int role_bonus){
+		//Log.d(TAG, "grab values from resource raider_ss.json");
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.fighter_sas);
+		switch(role_bonus){
+		case 0:
+			setValuesFromJSON(activity, role_res_io, "fighter", role_bonus);
+			return;
+		case 1:
+			setValuesFromJSON(activity, role_res_io, "corsair", role_bonus);
+			return;
+		case 2:
+			setValuesFromJSON(activity, role_res_io, "tactician", role_bonus);
+			return;
+		}
+	}
+	
+	private void setAlchemistSSValues(Activity activity, int role_bonus){
+		//Log.d(TAG, "grab values from resource alchemist_ss.json");
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.alchemist_sas);
+		switch(role_bonus){
+		case 0:
+			setValuesFromJSON(activity, role_res_io, "alchemist", role_bonus);
+			return;
+		case 1:
+			setValuesFromJSON(activity, role_res_io, "grenadier", role_bonus);
+			return;
+		case 2:
+			setValuesFromJSON(activity, role_res_io, "chirurgeon", role_bonus);
+			return;
+		}
+	}
+	
+	private void setDruidSSValues(Activity activity, int role_bonus){
+		//Log.d(TAG, "grab values from resource druidt_ss.json");
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.druid_sas);
+		switch(role_bonus){
+		case 0:
+			setValuesFromJSON(activity, role_res_io, "druid", role_bonus);
+			return;
+		case 1:
+			setValuesFromJSON(activity, role_res_io, "feral_druid", role_bonus);
+			return;
+		case 2:
+			setValuesFromJSON(activity, role_res_io, "aquamancer", role_bonus);
+			return;
+		}
+	}
+	
+	private void setWarpriestSSValues(Activity activity, int role_bonus){
+		//Log.d(TAG, "grab values from resource druidt_ss.json");
+		InputStream role_res_io = activity.getResources().openRawResource(R.raw.warpriest_sas);
+		switch(role_bonus){
+		case 0:
+			setValuesFromJSON(activity, role_res_io, "warpriest", role_bonus);
+			return;
+		case 1:
+			setValuesFromJSON(activity, role_res_io, "battle_chaplain", role_bonus);
+			return;
+		case 2:
+			setValuesFromJSON(activity, role_res_io, "shield_of_gorum", role_bonus);
 			return;
 		}
 	}

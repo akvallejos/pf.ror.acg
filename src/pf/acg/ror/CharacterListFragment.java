@@ -143,6 +143,21 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_rogue_ss:
 			addCharacter(new PC("rogue_ss"));
 			return true;
+		case R.id.menu_item_new_magus_ss:
+			addCharacter(new PC("magus_ss"));
+			return true;
+		case R.id.menu_item_new_alchemist_ss:
+			addCharacter(new PC("alchemist_ss"));
+			return true;
+		case R.id.menu_item_new_witch_ss:
+			addCharacter(new PC("witch_ss"));
+			return true;
+		case R.id.menu_item_new_druid_ss:
+			addCharacter(new PC("druid_ss"));
+			return true;
+		case R.id.menu_item_new_warpriest_ss:
+			addCharacter(new PC("warpriest_ss"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
