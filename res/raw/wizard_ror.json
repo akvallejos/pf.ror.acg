@@ -5,7 +5,7 @@
     "int": "1d12",
     "wis": "1d8",
     "cha": "1d6",
-    "fav_card": "Blessing",
+    "fav_card": "Spell",
     
     "role_bonus":[
         "Wizard",

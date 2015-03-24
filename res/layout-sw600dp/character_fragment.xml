@@ -82,11 +82,11 @@
 	    <TextView
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:text="@string/skills_detail_label"
 	        android:background="@color/pf_darkgreen"
 	        android:textColor="@color/white"
 	        android:paddingTop="1dp"
 	        android:paddingBottom="1dp"
-	        android:text="@string/skills_detail_label"
 	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        style="?android:listSeparatorTextViewStyle"/>
 	
@@ -269,11 +269,11 @@
 	    <TextView 
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:text="@string/powers_detail_label"
 	        android:background="@color/pf_darkgreen"
 	        android:textColor="@color/white"
 	        android:paddingTop="1dp"
 	        android:paddingBottom="1dp"
-	        android:text="@string/powers_detail_label"
 	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        style="?android:listSeparatorTextViewStyle"/>
 	    
@@ -325,12 +325,12 @@
 	    <TextView 
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:text="@string/cards_detail_label"
+	        android:id="@+id/favored_card"
 	        android:background="@color/pf_darkgreen"
 	        android:textColor="@color/white"
 	        android:paddingTop="1dp"
 	        android:paddingBottom="1dp"
-	        android:text="@string/cards_detail_label"
-	        android:id="@+id/favored_card"
 	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        style="?android:listSeparatorTextViewStyle"/>
 	    

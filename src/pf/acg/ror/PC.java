@@ -30,7 +30,7 @@ public class PC {
 	private static final String JSON_BLESSINGS = "blessings";
 	private static final String JSON_PHOTO = "photo";
 	private static final String JSON_POWERS_ARRAY = "powers";
-	private static final int POWERS_ARRAY_SIZE = 6;
+	private static final int POWERS_ARRAY_SIZE = 8;
 
 	private static final String TAG = "PC.class";
 

@@ -1,0 +1,170 @@
+{
+	"str": "1d6",
+    "dex": "1d10",
+    "con": "1d6",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d8",
+    "fav_card": "Ally",
+    
+    "role_bonus":[
+        "Swashbuck;er",
+        "Pirate Queen",
+        "Duelist"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "1",
+        "2",
+        "3"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5",
+        "6"
+    ],
+    "blessings": [
+        "5",
+        "6"
+    ],
+    "skills": [
+        "Acrobatics: Dexterity +1",
+        "Survival: Wisdom +3"
+    ],
+    
+    "hand_limit":[
+        ["5","6","7"],
+        ["5","6","7","8"],
+        ["5","6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"swashbucker": [[
+        "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +2."
+    ],
+    [
+        "If your check has the Swashbuckling trait, you may reroll 1 die on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait (or is a check to defeat a ship), you may reroll 1 die on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait, you may reroll 1 die (or 2 dice) on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait (or is a check to defeat a ship), you may reroll 1 die (or 2 dice) on your check; you must take the second result."
+    ],
+    [
+    	"Reduce Structural damage to your ship by 1."
+    ]],
+    "pirate_queen": [[
+        "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +2."
+    ],
+    [
+        "If your check has the Swashbuckling trait, you may reroll 1 die on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait (or is a check to defeat a ship), you may reroll 1 die on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait, you may reroll 1 die (or 2 dice) on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait (or is a check to defeat a ship), you may reroll 1 die (or 2 dice) on your check; you must take the second result."
+    ],
+    [
+    	"Reduce Structural damage to your ship by 1.",
+    	"Reduce Structural damage to your ship by (2)."
+    ],
+    [
+    	"-",
+    	"You gain the skill Diplomacy: Charisma +3.",
+    	"You gain the skill Diplomacy (and Craft): Charisma +3."
+    ],
+    [
+    	"-",
+    	"When you acquire a card that has the Pirate or Swashbuckling trait, you may immediately explore again."
+    ],
+    [
+    	"-",
+    	"You may reveal a card that has the Swashbuckling trait to add the Swashbuckling trait to your check."
+    ],
+    [
+    	"-",
+    	"If you are on a ship, you may move at the end of that character's turn.",
+    	"If you are on a ship, you (or another character on the ship) may move at the end of that character's turn."
+    ]],
+    
+    "duelist": [[
+        "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +2.",
+        "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity (+3)."
+    ],
+    [
+        "If your check has the Swashbuckling trait, you may reroll 1 die on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait (or is a check to defeat a ship), you may reroll 1 die on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait, you may reroll 1 die (or 2 dice) on your check; you must take the second result.",
+        "If your check has the Swashbuckling trait (or is a check to defeat a ship), you may reroll 1 die (or 2 dice) on your check; you must take the second result."
+    ],
+    [
+    	"Reduce Structural damage to your ship by 1."
+    ],
+    [
+    	"-",
+    	"When you defeat a monster on your turn, and your check to defeat has the Swashbuckling trait, you may discard a card to immediately explore.",
+    	"When you defeat a monster on your turn, and your check to defeat has the Swashbuckling trait, you may discard (or recharge) a card to immediately explore."
+    ],
+    [
+    	"-",
+    	"When you acquire a card that has the Finesse or Ranged trait, you may immediately recharge it to draw a card."
+    ],
+    [
+    	"-",
+    	"You may recharge an ally to recharge a random card from your discard pile.",
+    	"You may recharge an ally to recharge a random card (or a weapon of your choice) from your discard pile."
+    ],
+    [
+    	"-",
+    	"If any die rolled on your check is an 8 or higher, roll 1d4 and add it to the result."
+    ]]}
+}

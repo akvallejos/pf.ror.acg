@@ -1,0 +1,162 @@
+{
+	"str": "1d12",
+    "dex": "1d4",
+    "con": "1d8",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "Armor",
+    
+    "role_bonus":[
+        "Warpriest",
+        "Battle Chaplain",
+        "Shield of Gorum"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6"
+    ],
+    "spells": [
+        "2",
+        "3",
+        "4"
+    ],
+    "armors": [
+        "3",
+        "4",
+        "5"
+    ],
+    "items": [
+        "1",
+        "2"
+    ],
+    "allies": [
+        "0",
+        "1"
+    ],
+    "blessings": [
+        "5",
+        "6",
+        "7"
+    ],
+    "skills": [
+        "Melee: Strength +1",
+        "Divine: Wisdom +2"
+    ],
+    
+    "hand_limit":[
+        ["4","5"],
+        ["4","5","6","7"],
+        ["4","5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"warpriest": [[
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add 1 to the check. Return the displayed cards to your hand before you reset it.",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add (2) to the check. Return the displayed cards to your hand before you reset it.",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add 1 to the check. Return the displayed cards to your hand before you reset it (and at the start of your turn).",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add (2) to the check. Return the displayed cards to your hand before you reset it (and at the start of your turn)."
+    ],
+    [
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4+1 random cards from her discard pile into her deck, then discard the card you revealed.",
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4(+2) random cards from her discard pile into her deck, then discard the card you revealed."
+        
+    ]],
+    "battle_chaplain": [[
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add 1 to the check. Return the displayed cards to your hand before you reset it.",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add (2) to the check. Return the displayed cards to your hand before you reset it.",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add 1 to the check. Return the displayed cards to your hand before you reset it (and at the start of your turn).",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add (2) to the check. Return the displayed cards to your hand before you reset it (and at the start of your turn)."
+    ],
+    [
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4+1 random cards from her discard pile into her deck, then discard the card you revealed.",
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4(+2) random cards from her discard pile into her deck, then discard the card you revealed.",
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4(+3) random cards from her discard pile into her deck, then discard the card you revealed."
+    ],
+    [
+        "-",
+        "When you encounter an ally, you may banish it and immediately explore again."
+    ],
+    [
+        "-",
+        "You may automatically succeed at your check to acquire a card that has the Healing trait.",
+        "You may automatically succeed at your check to acquire (or recharge) a card that has the Healing trait."
+    ],
+    [
+        "-",
+        "When a character plays a blessing on your combat or Strength check, that character may recharge a random card from her discard pile.",
+        "When a character plays a blessing on your combat or Strength check, that character may recharge (that blessing or) a random card from her discard pile."
+    ]],
+    
+    "shield_of_gorum": [[
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add 1 to the check. Return the displayed cards to your hand before you reset it.",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add (2) to the check. Return the displayed cards to your hand before you reset it.",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add 1 to the check. Return the displayed cards to your hand before you reset it (and at the start of your turn).",
+		"When another character attempts any check, you may display any number of blessings and weapons; for each card displayed, add (2) to the check. Return the displayed cards to your hand before you reset it (and at the start of your turn)."
+    ],
+    [
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4+1 random cards from her discard pile into her deck, then discard the card you revealed.",
+        "Instead of your first exploration on a turn, you may reveal a blessing or armor to choose a character at your location. Shuffle 1d4(+2) random cards from her discard pile into her deck, then discard the card you revealed."
+        
+    ],
+    [
+        "-",
+        "When another character at your location is dealt damage, you may reveal an armor to reduce that damage by 1; you may instead discard that armor to reduce the damage by 2.",
+        "When another character at your location is dealt damage, you may reveal an armor to reduce that damage by 1; you may instead discard that armor to reduce the damage by (3).",
+        "When another character at your location is dealt damage, you may reveal an armor to reduce that damage by 1; you may instead discard that armor to reduce the damage by (4)."
+    ],
+    [
+        " -",
+        "When you would bury an armor or weapon, you may discard it instead.",
+        "When you would bury an armor or weapon, you may discard (or recharge) it instead."
+    ],
+    [
+        "-",
+        "Add 2 to your check to defeat a monster that has the Human trait."
+    ],
+    [
+    	"-",
+    	"When a character plays a blessing on your combat or Strength check, that character may recharge a random card from her discard pile; if the played card is Blessing of Gorum, the character may first recharge the blessing."
+    ]]}
+}

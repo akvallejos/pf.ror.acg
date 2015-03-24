@@ -28,11 +28,10 @@
 			    android:title="@string/new_wizard"/>
 		</group></menu>
 		</item>
-		<!--
     	<item android:id="@+id/menu_item_new_sas"
     	    android:title="@string/new_sas">
     	    <menu><group>
-    	        <item android:id="@+id/menu_item_raider_ss"
+    	        <item android:id="@+id/menu_item_new_raider_ss"
 			    android:title="@string/new_raider_ss" />
 		    <item android:id="@+id/menu_item_new_bard_ss"
 			    android:title="@string/new_bard_ss"/>	    	
@@ -58,7 +57,6 @@
 			    android:title="@string/new_warpriest_ss"/>
     	    </group></menu>
     	</item>	
-    	-->
     </group>
 	
 </menu>

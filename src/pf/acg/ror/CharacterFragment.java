@@ -147,7 +147,7 @@ public class CharacterFragment extends Fragment {
 				
 		//Dexterity
 		TextView mDexField = (TextView)mV.findViewById(R.id.dex_base);
-		mDexField.setText(mCH.getStrBase());
+		mDexField.setText(mCH.getDexBase());
 		createBonusSpinner(R.id.dex_bonus, mCH.getDexBonus(), mCharacter.getDexBonus(), attr.Dex);
 		
 		//Constitution
@@ -203,20 +203,7 @@ public class CharacterFragment extends Fragment {
 		
 		//BlessingLimit
 		createBonusSpinner(R.id.blessings, mCH.getBlessingsLimit(), mCharacter.getBlessings(), attr.BlessingLimit);
-		
-		//Powers
-		for(int i = 0; i < mCH.getPowers().length(); i++){
-			ArrayAdapter<CharSequence> power_adapter;
-			try {
-				power_adapter = new ArrayAdapter<CharSequence>(getActivity(),
-						R.layout.skills_spinner,
-						mCH.getPowersList(i));
-				createPowerSpinner(mV,i,power_adapter);
-			} catch (JSONException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+				
 		mNameField.addTextChangedListener(new TextWatcher(){
 			
 			@Override
@@ -311,6 +298,8 @@ public class CharacterFragment extends Fragment {
 		//Proficiency
 		createBonusSpinner(R.id.proficieny, mCH.getProficiency(), mCharacter.getProficieny(), attr.Proficiency);
 
+		addPowerSpinners();
+		
 	}
 	
 	private void showPhoto(){
@@ -420,5 +409,21 @@ public class CharacterFragment extends Fragment {
 			}
 		});
 		powers.addView(powersSpinner1);
+	}
+	
+	private void addPowerSpinners(){
+		//Powers
+		for(int i = 0; i < mCH.getPowers().length(); i++){
+			ArrayAdapter<CharSequence> power_adapter;
+			try {
+				power_adapter = new ArrayAdapter<CharSequence>(getActivity(),
+						R.layout.skills_spinner,
+						mCH.getPowersList(i));
+				createPowerSpinner(mV,i,power_adapter);
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 }
