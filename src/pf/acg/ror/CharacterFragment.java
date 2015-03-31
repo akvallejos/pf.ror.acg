@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -176,11 +177,14 @@ public class CharacterFragment extends Fragment {
 		    builder.append(s + "\n");
 		}
 		
-		LinearLayout skills = (LinearLayout)mV.findViewById(R.id.skills_layout);
+		RelativeLayout skills = (RelativeLayout)mV.findViewById(R.id.skills_layout);
 		TextView tv = new TextView(this.getActivity());
 		tv.setText(builder.toString());
 		tv.setTextSize(18);
-		skills.addView(tv);
+		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+				RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+		lp.addRule(RelativeLayout.BELOW, R.id.skills_table);
+		skills.addView(tv,lp);
 		
 		//Favored Card
 		TextView favCard = (TextView)mV.findViewById(R.id.favored_card);

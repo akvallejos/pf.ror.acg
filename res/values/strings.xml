@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Pathfinder ACG RoR</string>
+    <string name="app_name">CHARS for Pathfinder ACG</string>
     
     <string name="new_ror">Rise of the Rune Lords</string>
     <string name="new_sas">Skulls and Shackles</string>
