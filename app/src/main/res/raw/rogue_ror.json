@@ -1,0 +1,162 @@
+{
+	"str": "1d8",
+    "dex": "1d12",
+    "con": "1d6",
+    "int": "1d4",
+    "wis": "1d6",
+    "cha": "1d6",
+    "fav_card": "Item",
+    
+    "role_bonus":[
+        "Rogue",
+        "Acrobat",
+        "Thief"
+    ],
+    "role_bonus_keys":[
+        "rogue",
+        "acrobat",
+        "thief"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "2",
+        "3",
+        "4"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "6",
+        "7",
+        "8",
+        "9"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": [
+        "Acrobatics: Dexterity +2",
+        "Disable: Dexterity +2",
+        "Stealth: Dexterity +2",
+        "Perception: Wisdom +2"
+    ],
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"rogue": [[
+        "You may evade your encounter."
+    ],
+    [
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +1 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +2 to your combat check, or discard it to add an additional 1d6."
+    ]],
+    "acrobat": [[
+        "You may evade your encounter."
+    ],
+    [
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +1 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +2 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +3 to your combat check, or discard it to add an additional 1d6."
+    ],
+    [
+        "-",
+        "Add 2 to your noncombat check to defeat a barrier.",
+        "Add 2 to your noncombat check to defeat a barrier or close a location."
+    ],
+    [
+        "-",
+        "Add 2 to your check to acquire an item.",
+        "Add 4 to your check to acquire an item."
+    ],
+    [
+        "-",
+        "When you play a blessing to add to your Dexterity check, you may recharge it instead of discarding it."
+    ]],
+    
+    "thief": [[
+        "You may evade your encounter."
+    ],
+    [
+        "If you are the only character at your location, you may recharge a card to add 1d6 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +1 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +2 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +3 to your combat check, or discard it to add an additional 1d6.",
+        "If you are the only character at your location, you may recharge a card to add 1d6 +4 to your combat check, or discard it to add an additional 1d6."
+    ],
+    [
+        "-",
+        "Add 2 to your noncombat check to close a location."
+    ],
+    [
+        " -",
+        "Add 2 to your check to acquire an armor, item, or weapon.",
+        "Add 3 to your check to acquire an armor, item, or weapon.",
+        "Add 4 to your check to acquire an armor, item, or weapon."
+    ],
+    [
+        "-",
+        "When you play a blessing to add to your Dexterity check, you may recharge it instead of discarding it."
+    ],
+    [
+        "-",
+        "You may use Charisma in place of any skill on any check to recharge an armor, item, or weapon with the Magic trait."
+    ]]}
+}

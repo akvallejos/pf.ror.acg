@@ -1,0 +1,155 @@
+{
+	"str": "1d6",
+    "dex": "1d4",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d12",
+    "cha": "1d6",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Cleric",
+        "Healer",
+        "Exorcist"
+    ],
+    "role_bonus_keys":[
+        "cleric",
+        "healer",
+        "exorcist"
+     ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "2",
+        "3",
+        "4"
+    ],
+    "spells": [
+        "3",
+        "4",
+        "5"
+    ],
+    "armors": [
+        "2",
+        "3",
+        "4"
+    ],
+    "items": [
+        "1",
+        "2"
+    ],
+    "allies": [
+        "1",
+        "2"
+    ],
+    "blessings": [
+        "6",
+        "7",
+        "8"
+    ],
+    "skills": [
+        "Melee: Strength +2",
+        "Divine: Wisdom +2"
+    ],
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7","8"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor","Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"cleric": [[
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +1 random cards from his discard pile into his deck, then discard the card you revealed.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +2 random cards from his discard pile into his deck, then discard the card you revealed."
+    ],
+    [
+        "Add 1d8 with the Magic trait to your check to defeat a bane with the Undead trait.",
+        "Add 1d8 +1 with the Magic trait to your check to defeat a bane with the Undead trait."
+    ]],
+    "healer": [[
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +1 random cards from his discard pile into his deck, then discard the card you revealed.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +2 random cards from his discard pile into his deck, then discard the card you revealed.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +3 random cards from his discard pile into his deck, then discard the card you revealed.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +1 random cards from his discard pile into his deck, then discard the card you revealed and draw a card.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +2 random cards from his discard pile into his deck, then discard the card you revealed and draw a card.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +3 random cards from his discard pile into his deck, then discard the card you revealed and draw a card."
+    ],
+    [
+        "Add 1d8 with the Magic trait to your check to defeat a bane with the Undead trait.",
+        "Add 1d8 +1 with the Magic trait to your check to defeat a bane with the Undead trait."
+    ],
+    [
+        "-",
+        "Add 2 to your check to acquire a boon with the Divine trait.",
+        "Add 4 to your check to acquire a boon with the Divine trait."
+    ],
+    [
+        "-",
+        "When you play Blessing of Sarenrae, you may recharge it instead of discarding it.",
+        "When you play Blessing of Sarenrae, you may recharge it or shuffle it into your deck instead of discarding it."
+    ]],
+    
+    "exorcist": [[
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +1 random cards from his discard pile into his deck, then discard the card you revealed.",
+    		"Instead of your first exploration on a turn, you may reveal a card with the Divine trait to choose a character at your location. Shuffle 1d4 +2 random cards from his discard pile into his deck, then discard the card you revealed."
+    ],
+    [
+        "Add 1d8 with the Magic trait to your check to defeat a bane with the Undead trait.",
+        "Add 1d8 +1 with the Magic trait to your check to defeat a bane with the Undead trait.",
+        "Add 1d8 +1 with the Magic trait to your check to defeat a bane with the Undead or Outsider trait."
+    ],
+    [
+        "-",
+        "Add 2 to your check to acquire an armor.",
+        "Add 2 to your check to acquire an armor or weapon."
+    ],
+    [
+        "-",
+        "When you play Blessing of Sarenrae, you may recharge it instead of discarding it.",
+        "When you play Blessing of Sarenrae, you may recharge it or shuffle it into your deck instead of discarding it."
+    ],
+    [
+        "-",
+        "If you defeat a bane with the Undead trait, you may shuffle 1 random card from your discard pile into your deck.",
+        "If you defeat a bane with the Undead or Outsider trait, you may shuffle 1 random card from your discard pile into your deck."
+    ]]}
+}

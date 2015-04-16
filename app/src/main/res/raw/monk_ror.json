@@ -1,0 +1,161 @@
+{
+	"str": "1d6",
+    "dex": "1d10",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Monk",
+        "Zen Archer",
+        "Drunken Master"
+    ],
+    "role_bonus_keys":[
+        "monk",
+        "zen_archer",
+        "drunken_master"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "0",
+        "1",
+        "2",
+        "3"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "0"
+    ],
+    "items": [
+        "4",
+        "5",
+        "6"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "8",
+        "9",
+        "10"
+    ],
+    "skills": [
+        "Acrobatics: Dexterity +2",
+        "Fortitude: Constitution +2"
+    ],
+    
+    "hand_limit":[
+        ["4","5","6"],
+        ["4","5","6","7"],
+        ["4","5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with nothing."],
+        ["Proficient with nothing.", "Proficient with Weapons."],
+        ["Proficient with nothing.", "Proficient with Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"monk": [[
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die",
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die and add the Magic trait",
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die and add the Magic trait and the Fire trait"
+    ],
+    [
+        "You may play any number of blessings on your combat check; recharge them instead of discarding them."
+    ]],
+    "drunken_master": [[
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die",
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die and add the Magic trait",
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die and add the Magic trait and the Fire trait"
+    ],
+    [
+        "You may play any number of blessings on your combat check; recharge them instead of discarding them."
+    ],
+    [
+        "-",
+        "When dealt damage other than Combat damage, reduce that damage by 1.",
+        "When dealt damage other than Combat damage, reduce that damage by 2.",
+        "When dealt damage other than Combat damage, reduce that damage by 3."
+    ],
+    [
+        "-",
+        "When you play a boon with the Liquid trait, succeed at a Fortitude 6 check to recharge it instead of banishing it."
+    ],
+    [
+        "-",
+        "Add 6 to your check to acquire a boon with the Liquid trait."
+    ],
+    [
+        "-",
+        "At the start of your turn, you must draw 1 card."
+    ]],
+    
+    "zen_archer": [[
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die",
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die and add the Magic trait",
+        "When you attempt a combat check without playing a weapon, you may use your Dexterity die instead of your Strength die and add the Magic trait and the Fire trait"
+    ],
+    [
+        "You may play any number of blessings on your combat check; recharge them instead of discarding them."
+    ],
+    [
+        "-",
+        "When dealt damage other than Combat damage, reduce that damage by 1.",
+        "When dealt damage other than Combat damage, reduce that damage by 2."
+    ],
+    [
+        " -",
+        "When you play a weapon with the Ranged trait, you may recharge it instead of discarding it."
+    ],
+    [
+        "-",
+        "Add 2 to your check to acquire a boon with the Ranged trait.",
+        "Add 4 to your check to acquire a boon with the Ranged trait."
+    ],
+    [
+        "-",
+        "At the start of your turn with no cards in hand, you may draw 1 card."
+    ]]}
+}

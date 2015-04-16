@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CHARS for Pathfinder ACG</string>
+    
+    <string name="new_ror">Rise of the Rune Lords</string>
+    <string name="new_sas">Skulls and Shackles</string>
+    
+    <string name="new_monk">New Monk (RoR)</string>
+    <string name="new_paladin">New Paladin (RoR)</string>
+    <string name="new_wizard">New Wizard (RoR)</string>
+    <string name="new_fighter">New Fighter (RoR)</string>
+    <string name="new_sorceress">New Sorceress (RoR)</string>
+    <string name="new_rogue">New Rogue (RoR)</string>
+    <string name="new_ranger">New Ranger (RoR)</string>
+    <string name="new_bard">New Bard (RoR)</string>
+    <string name="new_cleric">New Cleric (RoR)</string>
+    <string name="new_druid">New Druid (RoR)</string>
+    <string name="new_barbarian">New Barbarian (RoR)</string>
+    
+    <string name="new_raider_ss">New Raider (SaS)</string>
+    <string name="new_oracle_ss">New Oracle (SaS)</string>
+    <string name="new_swashbuckler_ss">New Swashbuckler (SaS)</string>
+    <string name="new_bard_ss">New Bard (SaS)</string>
+    <string name="new_gunslinger_ss">New Gunslinger (SaS)</string>
+    <string name="new_rogue_ss">New Rogue (SaS)</string>
+    <string name="new_magus_ss">New Magus (SaS)</string>
+    <string name="new_fighter_ss">New Fighter (SaS)</string>
+    <string name="new_alchemist_ss">New Alchemist (SaS)</string>
+    <string name="new_witch_ss">New Witch (SaS)</string>
+    <string name="new_druid_ss">New Druid (SaS)</string>
+    <string name="new_warpriest_ss">New Warpriest (SaS)</string>
+    
+    <string name="delete_character">Delete</string>
+    
+    <string name="skills_detail_label">Skill Feats:</string>
+    <string name="powers_detail_label">Power Feats:</string>
+    <string name="cards_detail_label">Card Feats:</string>
+    
+    <string name="take">Take</string>
+</resources>

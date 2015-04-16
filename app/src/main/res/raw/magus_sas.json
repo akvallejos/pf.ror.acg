@@ -1,0 +1,173 @@
+{
+	"str": "1d8",
+    "dex": "1d6",
+    "con": "1d8",
+    "int": "1d8",
+    "wis": "1d4",
+    "cha": "1d6",
+    "fav_card": "Weapon or Spell",
+    
+    "role_bonus":[
+        "Magus",
+        "Marauder",
+        "Spellblade"
+    ],
+    "role_bonus_keys":[
+        "magus",
+        "marauder",
+        "spellblade"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "spells": [
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "1",
+        "2"
+    ],
+    "allies": [
+        "1",
+        "2"
+    ],
+    "blessings": [
+        "4",
+        "5"
+    ],
+    "skills": [
+        "Melee: Strength +3",
+        "Arcane: Intelligence +3",
+        "Craft: Intelligence +1"
+    ],
+    
+    "hand_limit":[
+        ["5","6","7"],
+        ["5","6","7"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armor and Weapons."],
+        ["Proficient with Light Armor and Weapons."],
+        ["Proficient with Light Armor and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"magus": [[
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add 1d6 and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add 1d6  and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add (2d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add (2d6) and that card’s traits to the check."
+        ],
+    [
+        "At the end of your turn, you may attempt to recharge a spell in your discard pile."
+    ]],
+    	
+    "marauder": [[
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add 1d6 and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add 1d6  and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add (2d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add (2d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add (3d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add (3d6) and that card’s traits to the check."        
+        ],
+    [
+        "At the end of your turn, you may attempt to recharge a spell in your discard pile."
+    ],
+    [
+    	"-",
+    	"You may discard a spell that has the Attack trait to add 1d6 to any check to defeat a ship or barrier.",
+    	"You may discard a spell that has the Attack trait to add 1d6 (2d6) to any check to defeat a ship or barrier."
+    ],
+    [
+    	"-",
+    	"You gain the skill Ranged: Intelligence +2."
+    ],
+    [
+    	"-",
+    	"When you discard a card that has the Pirate or Swashbuckling trait, you may draw 1 card.",
+    	"When you discard (or recharge) a card that has the Pirate or Swashbuckling trait, you may draw 1 card.",
+    	"When you discard a card that has the Pirate or Swashbuckling trait, you may draw 1 card (or 2 cards).",
+    	"When you discard (or recharge) a card that has the Pirate or Swashbuckling trait, you may draw 1 card (or 2 cards)."
+    ],
+    [
+    	"-",
+    	"When you play a blessing on a Craft check, recharge the blessing."
+    ]],
+    
+    "spellblade": [[
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add 1d6 and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add 1d6  and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add (2d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add (2d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other to add (3d6) and that card’s traits to the check.",
+        "Choose a weapon that doesn’t have the 2-Handed trait and a spell that has the Attack trait. When you play one for your combat check, you may recharge the other (or shuffle it into your deck) to add (3d6) and that card’s traits to the check."        
+        ],
+    [
+        "At the end of your turn, you may attempt to recharge a spell in your discard pile.",
+        "At the end of your turn, you may attempt to recharge a spell in your discard pile. (If you succeed, you may put the card on top of your deck instead of recharging it.)"
+    ],
+    [
+    	"-",
+    	"When you play a weapon that has the Sword trait, you may add your Intelligence skill to your combat check."
+    	],
+    [
+    	"-",
+    	"Add 2 to your check to acquire a spell or a weapon.",
+    	"Add (4) to your check to acquire a spell or a weapon."
+    	],
+    [
+    	"-",
+    	"When you acquire a spell or a weapon on your turn, you may immediately explore again."
+    ],
+    [
+    	"-",
+    	"Discard a spell to put a weapon from your discard pile into your hand.",
+    	"Discard a spell to put a weapon from your discard pile into your hand (or discard a weapon to put a spell from your discard pile into your hand)."
+    ]]}
+}
