@@ -41,6 +41,8 @@ public class CharacterHelper {
 	private ArrayAdapter<CharSequence> mItemsLimit;
 	private ArrayAdapter<CharSequence> mAlliesLimit;
 	private ArrayAdapter<CharSequence> mBlessingsLimit;
+
+    private ArrayAdapter<CharSequence> mRorAdventures;
 	
 	private JSONArray mPowers;
 	
@@ -88,6 +90,7 @@ public class CharacterHelper {
 		return mFavCard;
 	}
 
+    public ArrayAdapter<CharSequence> getRorAdventures(){return mRorAdventures;}
 
 	public ArrayAdapter<CharSequence> getStrBonus() {
 		return mStrBonus;
@@ -257,17 +260,45 @@ public class CharacterHelper {
 			return;
 		}
         setValuesFromJSON(activity,mInputStream, roleBonus);
+        InputStream rorProgressIO = activity.getResources().openRawResource(R.raw.adventure_ror);
+        setProgressList(activity, rorProgressIO);
+
         try {
             mInputStream.close();
+            rorProgressIO.close();
         } catch (IOException e) {
             //Log.d(TAG, e.printStackTrace());
         }
     }
 
-    private void setValuesFromJSON(Activity activity, InputStream role_res_io, int role_bonus) {
+    private void setProgressList(Activity activity, InputStream progress_io){
+        // Parse the data into jsonobject to get original data in form of json.
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
         int ctr;
+        try {
+            ctr = progress_io.read();
+            while (ctr != -1) {
+                byteArrayOutputStream.write(ctr);
+                ctr = progress_io.read();
+            }
+            progress_io.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            JSONObject json = new JSONObject(byteArrayOutputStream.toString());
+            mRorAdventures = new ArrayAdapter<CharSequence>(activity, R.layout.skills_spinner,
+                    JSONArray2List((JSONArray)json.get("adventures")));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    private void setValuesFromJSON(Activity activity, InputStream role_res_io, int role_bonus) {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
+       int ctr;
         try {
             ctr = role_res_io.read();
             while (ctr != -1) {
@@ -279,6 +310,7 @@ public class CharacterHelper {
             e.printStackTrace();
         }
         //Log.v("JSON Data", byteArrayOutputStream.toString());
+
         try {
             // Parse the data into jsonobject to get original data in form of json.
             JSONObject json = new JSONObject(

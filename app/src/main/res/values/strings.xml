@@ -36,6 +36,6 @@
     <string name="skills_detail_label">Skill Feats:</string>
     <string name="powers_detail_label">Power Feats:</string>
     <string name="cards_detail_label">Card Feats:</string>
-    
+    <string name="progress_label">Adventure Progress:</string>
     <string name="take">Take</string>
 </resources>

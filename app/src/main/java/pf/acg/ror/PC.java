@@ -59,8 +59,11 @@ public class PC {
 	private Integer mBlessings = 0;
 	
 	private Integer mProficieny = 0;
-	
+
 	private Integer[] mPowersArray = new Integer[POWERS_ARRAY_SIZE];
+
+    private Integer mRoRProgress = 0;
+    private Integer mSoSProgress = 0;
 	
 	// Used to convert String role value into enum for use in switch statements
 	public enum valid_roles{ 
@@ -308,4 +311,20 @@ public class PC {
 	public void setPhoto(Photo p){
 		mPhoto = p;
 	}
+
+    public Integer getRoRProgress() {
+        return mRoRProgress;
+    }
+
+    public void setRoRProgress(Integer RoRProgress) {
+        mRoRProgress = RoRProgress;
+    }
+
+    public Integer getSoSProgress() {
+        return mSoSProgress;
+    }
+
+    public void setSoSProgress(Integer SoSProgress) {
+        mSoSProgress = SoSProgress;
+    }
 }

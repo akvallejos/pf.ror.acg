@@ -207,7 +207,9 @@ public class CharacterFragment extends Fragment {
 		
 		//BlessingLimit
 		createBonusSpinner(R.id.blessings, mCH.getBlessingsLimit(), mCharacter.getBlessings(), attr.BlessingLimit);
-				
+
+        //Progress Update
+
 		mNameField.addTextChangedListener(new TextWatcher(){
 			
 			@Override
@@ -303,6 +305,8 @@ public class CharacterFragment extends Fragment {
 		createBonusSpinner(R.id.proficieny, mCH.getProficiency(), mCharacter.getProficieny(), attr.Proficiency);
 
 		addPowerSpinners();
+
+        createProgressSpinner(mCH.getRorAdventures(), mCharacter.getRoRProgress());
 		
 	}
 	
@@ -317,15 +321,36 @@ public class CharacterFragment extends Fragment {
 		mPhotoView.setImageDrawable(b);
 	} //showPhoto()
 
+    private void createProgressSpinner(ArrayAdapter<CharSequence> progressAdapter,
+                                       Integer progessSelection) {
+        Spinner spinner = new Spinner(mV.getContext(),Spinner.MODE_DIALOG);
+        spinner.setAdapter(progressAdapter);
+        spinner.setSelection(progessSelection);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                mCharacter.setRoRProgress(pos);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+
+        LinearLayout layout = (LinearLayout)mV.findViewById(R.id.progress_layout);
+        layout.addView(spinner);
+    }
 	private void createBonusSpinner(
 									int layoutSpinnerId, ArrayAdapter<CharSequence> bonusAdapter,
 									Integer bonusSelection, final attr attribute){
 		
-		Spinner mStrSpinner = (Spinner)mV.findViewById(layoutSpinnerId);
-		mStrSpinner.setAdapter(bonusAdapter);
-		mStrSpinner.setSelection(bonusSelection);
-		mStrSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+		Spinner spinner = (Spinner)mV.findViewById(layoutSpinnerId);
+		spinner.setAdapter(bonusAdapter);
+        spinner.setSelection(bonusSelection);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
