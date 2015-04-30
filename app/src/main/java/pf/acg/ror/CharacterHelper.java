@@ -43,6 +43,7 @@ public class CharacterHelper {
 	private ArrayAdapter<CharSequence> mBlessingsLimit;
 
     private ArrayAdapter<CharSequence> mRorAdventures;
+    private ArrayAdapter<CharSequence> mSosAdventures;
 	
 	private JSONArray mPowers;
 	
@@ -90,7 +91,9 @@ public class CharacterHelper {
 		return mFavCard;
 	}
 
-    public ArrayAdapter<CharSequence> getRorAdventures(){return mRorAdventures;}
+    public ArrayAdapter<CharSequence> getRorAdventures(){ return mRorAdventures; }
+
+    public ArrayAdapter<CharSequence> getSosAdventures(){ return mSosAdventures; }
 
 	public ArrayAdapter<CharSequence> getStrBonus() {
 		return mStrBonus;
@@ -261,17 +264,21 @@ public class CharacterHelper {
 		}
         setValuesFromJSON(activity,mInputStream, roleBonus);
         InputStream rorProgressIO = activity.getResources().openRawResource(R.raw.adventure_ror);
-        setProgressList(activity, rorProgressIO);
+        mRorAdventures = setProgressList(activity, rorProgressIO);
+
+        InputStream sosProgressIO = activity.getResources().openRawResource(R.raw.adventure_sos);
+        mSosAdventures = setProgressList(activity, sosProgressIO);
 
         try {
             mInputStream.close();
             rorProgressIO.close();
+            sosProgressIO.close();
         } catch (IOException e) {
             //Log.d(TAG, e.printStackTrace());
         }
     }
 
-    private void setProgressList(Activity activity, InputStream progress_io){
+    private ArrayAdapter<CharSequence> setProgressList(Activity activity, InputStream progress_io){
         // Parse the data into jsonobject to get original data in form of json.
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
@@ -289,11 +296,13 @@ public class CharacterHelper {
 
         try {
             JSONObject json = new JSONObject(byteArrayOutputStream.toString());
-            mRorAdventures = new ArrayAdapter<CharSequence>(activity, R.layout.skills_spinner,
+            ArrayAdapter<CharSequence> arrayAdapter = new ArrayAdapter<CharSequence>(activity, R.layout.skills_spinner,
                     JSONArray2List((JSONArray)json.get("adventures")));
+            return arrayAdapter;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return null;
     }
     private void setValuesFromJSON(Activity activity, InputStream role_res_io, int role_bonus) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();

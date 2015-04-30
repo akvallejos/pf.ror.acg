@@ -443,13 +443,34 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             style="?android:listSeparatorTextViewStyle"/>
 
-        <LinearLayout
-            android:orientation="vertical"
+        <TableLayout
             android:id="@+id/progress_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:id="@+id/ror_progress_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rise of the Rune Lords:"/>
+                <Spinner
+                    android:id="@+id/ror_progress_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/sos_progress_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swords and Shackles:"/>
+                <Spinner
+                    android:id="@+id/sos_progress_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
 
-         </LinearLayout>
+         </TableLayout>
 	 </LinearLayout>
   </ScrollView>
 </LinearLayout>

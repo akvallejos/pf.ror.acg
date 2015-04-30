@@ -50,6 +50,7 @@ public class CharacterFragment extends Fragment {
 	
 	private enum attr{Str, Dex, Con, Int, Wis, Cha, 
 		HandLimit, WeaponLimit, ArmorLimit, SpellLimit, ItemLimit, AllyLimit, BlessingLimit, Proficiency; }
+    private enum adv{ror, sos;}
 
 	public static Fragment newInstance(UUID pcId) {
 		Bundle args = new Bundle();
@@ -306,7 +307,8 @@ public class CharacterFragment extends Fragment {
 
 		addPowerSpinners();
 
-        createProgressSpinner(mCH.getRorAdventures(), mCharacter.getRoRProgress());
+        createProgressSpinner(mCH.getRorAdventures(),R.id.ror_progress_spinner, mCharacter.getRoRProgress(), adv.ror);
+        createProgressSpinner(mCH.getSosAdventures(),R.id.sos_progress_spinner, mCharacter.getSoSProgress(), adv.sos);
 		
 	}
 	
@@ -321,16 +323,25 @@ public class CharacterFragment extends Fragment {
 		mPhotoView.setImageDrawable(b);
 	} //showPhoto()
 
-    private void createProgressSpinner(ArrayAdapter<CharSequence> progressAdapter,
-                                       Integer progessSelection) {
-        Spinner spinner = new Spinner(mV.getContext(),Spinner.MODE_DIALOG);
+    private void createProgressSpinner(ArrayAdapter<CharSequence> progressAdapter, int layoutSpinnerId,
+                                       Integer progessSelection, final adv adventure) {
+        Spinner spinner = (Spinner)mV.findViewById(layoutSpinnerId);
         spinner.setAdapter(progressAdapter);
         spinner.setSelection(progessSelection);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-                mCharacter.setRoRProgress(pos);
+                switch(adventure){
+                    case ror:
+                        mCharacter.setRoRProgress(pos);
+                        return;
+                    case sos:
+                        mCharacter.setSoSProgress(pos);
+                        return;
+                    default:
+                        return;
+                }
             }
 
             @Override
@@ -339,9 +350,6 @@ public class CharacterFragment extends Fragment {
 
             }
         });
-
-        LinearLayout layout = (LinearLayout)mV.findViewById(R.id.progress_layout);
-        layout.addView(spinner);
     }
 	private void createBonusSpinner(
 									int layoutSpinnerId, ArrayAdapter<CharSequence> bonusAdapter,
