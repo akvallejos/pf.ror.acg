@@ -442,35 +442,40 @@
             android:text="@string/progress_label"
             android:textAppearance="?android:attr/textAppearanceMedium"
             style="?android:listSeparatorTextViewStyle"/>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp">
+        	<TableLayout
+            	android:id="@+id/progress_layout"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content">
+            	<TableRow>
+                	<TextView
+						android:id="@+id/ror_progress_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Rise of the Rune Lords:"/>
+					<Spinner
+						android:id="@+id/ror_progress_spinner"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+            	</TableRow>
+				<TableRow>
+					<TextView
+						android:id="@+id/sos_progress_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Swords and Shackles:"/>
+					<Spinner
+						android:id="@+id/sos_progress_spinner"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+				</TableRow>
 
-        <TableLayout
-            android:id="@+id/progress_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TableRow>
-                <TextView
-                    android:id="@+id/ror_progress_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rise of the Rune Lords:"/>
-                <Spinner
-                    android:id="@+id/ror_progress_spinner"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:id="@+id/sos_progress_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Swords and Shackles:"/>
-                <Spinner
-                    android:id="@+id/sos_progress_spinner"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </TableRow>
-
-         </TableLayout>
+         	</TableLayout>
+		</RelativeLayout>
 	 </LinearLayout>
   </ScrollView>
 </LinearLayout>
