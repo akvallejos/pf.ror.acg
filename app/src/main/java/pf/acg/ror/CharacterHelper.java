@@ -255,6 +255,9 @@ public class CharacterHelper {
 		case warpriest_ss:
             mInputStream = activity.getResources().openRawResource(R.raw.warpriest_sas);
             break;
+        case witch_ss:
+            mInputStream = activity.getResources().openRawResource(R.raw.witch_sas);
+            break;
 		case none:
 			//Log.d(TAG, "none role found");
 			return;

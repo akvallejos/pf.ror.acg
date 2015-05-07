@@ -8,12 +8,12 @@
     "fav_card": "Spell",
     
     "role_bonus":[
-        "Wizard",
+        "Witch",
         "Sea Witch",
         "Hexer"
     ],
     "role_bonus_keys":[
-        "wizard",
+        "witch",
         "sea_witch",
         "hexer"
     ],
