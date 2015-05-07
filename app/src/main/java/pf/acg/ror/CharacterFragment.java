@@ -181,6 +181,7 @@ public class CharacterFragment extends Fragment {
 		RelativeLayout skills = (RelativeLayout)mV.findViewById(R.id.skills_layout);
 		TextView tv = new TextView(this.getActivity());
 		tv.setText(builder.toString());
+		tv.setTextAppearance(mV.getContext(), android.R.style.TextAppearance_Medium);
 		tv.setTextSize(18);
 		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
 				RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
