@@ -5,7 +5,8 @@
     
     <string name="new_ror">Rise of the Rune Lords</string>
     <string name="new_sas">Skulls and Shackles</string>
-    
+    <string name="new_wor">Wrath of the Righteous</string>
+
     <string name="new_monk">New Monk (RoR)</string>
     <string name="new_paladin">New Paladin (RoR)</string>
     <string name="new_wizard">New Wizard (RoR)</string>
@@ -30,6 +31,18 @@
     <string name="new_witch_ss">New Witch (SaS)</string>
     <string name="new_druid_ss">New Druid (SaS)</string>
     <string name="new_warpriest_ss">New Warpriest (SaS)</string>
+
+    <string name="new_cavalier_wr">New Cavalier (WoR)</string>
+    <string name="new_summoner_wr">New Summoner (WoR)</string>
+    <string name="new_arcanist_wr">New Arcanist (WoR)</string>
+    <string name="new_ranger_wr">New Ranger (WoR)</string>
+    <string name="new_inquisitor_wr">Inquisition (WoR)</string>
+    <string name="new_cleric_wor">New Cleric (WoR)</string>
+    <string name="new_paladin_wor">New Paladin (WoR)</string>
+    <string name="new_hunter_wor">New Hunter (WoR)</string>
+    <string name="new_bloodrager_wr">New Bloodrager (WoR)</string>
+    <string name="new_sorcerer_wr">New Sorceress (WoR)</string>
+    <string name="new_shaman_wr">New Shaman (WoR)</string>
     
     <string name="delete_character">Delete</string>
     
@@ -38,4 +51,6 @@
     <string name="cards_detail_label">Card Feats:</string>
     <string name="progress_label">Adventure Progress:</string>
     <string name="take">Take</string>
+    <string name="rate_my_app">Rate This App</string>
+
 </resources>

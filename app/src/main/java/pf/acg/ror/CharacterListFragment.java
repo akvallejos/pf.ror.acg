@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.util.Log;
@@ -17,6 +21,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -92,6 +97,9 @@ public class CharacterListFragment extends ListFragment
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item){
 		switch(item.getItemId()){
+		case R.id.rate_my_app:
+			launchPlayStore();
+			return true;
 		case R.id.menu_item_new_monk:
 			addCharacter(new PC("monk"));
 			return true;
@@ -178,13 +186,21 @@ public class CharacterListFragment extends ListFragment
 		switch(item.getItemId()){
 		case R.id.menu_item_delete:
 			CharacterBinder.get(getActivity()).deleteCharacter(character);
+			cleanDetailView();
 			adapter.notifyDataSetChanged();
 			return true;
 		default:
 			return super.onContextItemSelected(item);
 		}
 	}
-	
+
+	private void cleanDetailView() {
+		FrameLayout detailFragment = (FrameLayout)getActivity().findViewById(R.id.detailedFragmentContainer);
+		if(detailFragment != null){
+			detailFragment.removeAllViewsInLayout();
+		}
+	}
+
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id){
 		PC c = ((CharacterAdapter)getListAdapter()).getItem(position);
@@ -230,6 +246,18 @@ public class CharacterListFragment extends ListFragment
 			roleTextView.setText(ch.getRoles()[c.getRoleBonus()]);
 			
 			return convertView;
+		}
+	}
+
+	private void launchPlayStore()
+	{
+		Context context = getActivity().getApplicationContext();
+		Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
+		Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+		try {
+			startActivity(goToMarket);
+		} catch (ActivityNotFoundException e) {
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + context.getPackageName())));
 		}
 	}
 }

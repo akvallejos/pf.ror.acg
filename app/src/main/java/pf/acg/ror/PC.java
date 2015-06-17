@@ -7,8 +7,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-//import com.bignerdranch.android.criminalintent.Photo;
-
 
 public class PC {
 	private static final String JSON_ID = "id";
@@ -66,7 +64,9 @@ public class PC {
     private Integer mSoSProgress = 0;
 	
 	// Used to convert String role value into enum for use in switch statements
-	public enum valid_roles{ 
+	public enum valid_roles{
+		cavalier_wr, summoner_wr, arcanist_wr, ranger_wr, inquisitioner_wr, cleric_wr,
+		paladin_wr, hunter_wr, bloodrager_wr, sorceress_wr, shaman_wr,
 		raider_ss, oracle_ss, swashbuckler_ss, bard_ss, gunslinger_ss, rogue_ss, magus_ss, fighter_ss,
 		alchemist_ss, witch_ss, druid_ss, warpriest_ss,
 		monk, paladin, fighter, sorceress, wizard, rogue, cleric, bard, ranger, druid, barbarian, none;

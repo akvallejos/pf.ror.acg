@@ -400,32 +400,6 @@ public class CharacterFragment extends Fragment {
 		});
 	}
 	
-	private void createPowerSpinner(View v, final int powerIndex, int res){
-		LinearLayout powers = (LinearLayout)v.findViewById(R.id.role_powers_layout);
-		
-		Spinner powersSpinner1 = new Spinner(v.getContext(),Spinner.MODE_DIALOG);
-		ArrayAdapter<CharSequence> power1 = ArrayAdapter.createFromResource(this.getActivity(), 
-																			res, 
-																			R.layout.skills_spinner);
-		power1.setDropDownViewResource(R.layout.skills_spinner);
-		powersSpinner1.setAdapter(power1);
-		powersSpinner1.setSelection(mCharacter.getPowersAt(powerIndex));
-		powersSpinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-			@Override
-			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-				mCharacter.setPowersAt(powerIndex, pos);
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
-		powers.addView(powersSpinner1);
-	}
-	
 	private void createPowerSpinner(View v, final int powerIndex, ArrayAdapter<CharSequence> powerAdapter){
 		LinearLayout powers = (LinearLayout)v.findViewById(R.id.role_powers_layout);
 		

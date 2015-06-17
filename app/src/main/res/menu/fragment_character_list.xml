@@ -56,7 +56,36 @@
 			<item android:id="@+id/menu_item_new_warpriest_ss"
 			    android:title="@string/new_warpriest_ss"/>
     	    </group></menu>
-    	</item>	
-    </group>
+    	</item>
+		<item android:id="@+id/menu_item_new_wor"
+			android:title="@string/new_wor">
+			<menu><group>
+				<item android:id="@+id/menu_item_new_cavalier_wr"
+					android:title="@string/new_cavalier_wr" />
+				<item android:id="@+id/menu_item_new_summoner_wr"
+					android:title="@string/new_summoner_wr"/>
+				<item android:id="@+id/menu_item_new_arcanist_wr"
+					android:title="@string/new_arcanist_wr"/>
+				<item android:id="@+id/menu_item_new_ranger_wr"
+					android:title="@string/new_ranger_wr"/>
+				<item android:id="@+id/menu_item_new_inquisitor_wr"
+					android:title="@string/new_inquisitor_wr"/>
+				<item android:id="@+id/menu_item_new_cleric_wr"
+					android:title="@string/new_cleric_wor"/>
+				<item android:id="@+id/menu_item_new_paladin_wr"
+					android:title="@string/new_paladin_wor"/>
+				<item android:id="@+id/menu_item_new_hunter_wr"
+					android:title="@string/new_hunter_wor"/>
+				<item android:id="@+id/menu_item_new_bloodrager_wr"
+					android:title="@string/new_bloodrager_wr"/>
+				<item android:id="@+id/menu_item_new_sorcerer_wr"
+					android:title="@string/new_sorcerer_wr"/>
+				<item android:id="@+id/menu_item_new_shaman_wr"
+					android:title="@string/new_shaman_wr"/>
+			</group></menu>
+		</item>
+		<item android:id="@+id/rate_my_app"
+			android:title="@string/rate_my_app"/>
+	</group>
 	
 </menu>
