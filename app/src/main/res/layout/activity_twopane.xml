@@ -16,6 +16,7 @@
     <FrameLayout android:id="@+id/detailedFragmentContainer"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         android:layout_weight="3"/>
 
 </LinearLayout>

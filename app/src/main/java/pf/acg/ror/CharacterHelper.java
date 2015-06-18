@@ -11,9 +11,7 @@ import org.json.JSONObject;
 
 import pf.acg.ror.PC.valid_roles;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 
 public class CharacterHelper {
@@ -183,93 +181,17 @@ public class CharacterHelper {
 		return mRoles;
 	}
 
+    public void setCharacterResourceArrays(Activity activity, PC character){
+        //Log.d(TAG, "Character role found " + mCharacter.getRole());
 
+        mInputStream = activity.getResources().openRawResource(
+                activity.getResources().getIdentifier(character.getRole(), "raw", activity.getPackageName()));
 
-	public void setCharacterResourceArrays(Activity activity, valid_roles role, int roleBonus){
-		//Log.d(TAG, "Character role found " + mCharacter.getRole());
-
-		switch(role){
-		case monk:
-            mInputStream = activity.getResources().openRawResource(R.raw.monk_ror);
-            break;
-		case paladin:
-            mInputStream = activity.getResources().openRawResource(R.raw.palladin_ror);
-            break;
-		case barbarian:
-            mInputStream = activity.getResources().openRawResource(R.raw.barbarian_ror);
-            break;
-        case fighter:
-            mInputStream = activity.getResources().openRawResource(R.raw.fighter_ror);
-            break;
-		case sorceress:
-            mInputStream = activity.getResources().openRawResource(R.raw.sorceress_ror);
-            break;
-		case wizard:
-            mInputStream = activity.getResources().openRawResource(R.raw.wizard_ror);
-            break;
-		case rogue:
-            mInputStream = activity.getResources().openRawResource(R.raw.rogue_ror);
-            break;
-		case cleric:
-            mInputStream = activity.getResources().openRawResource(R.raw.cleric_ror);
-            break;
-		case bard:
-            mInputStream = activity.getResources().openRawResource(R.raw.bard_ror);
-            break;
-		case ranger:
-            mInputStream = activity.getResources().openRawResource(R.raw.ranger_ror);
-            break;
-		case druid:
-            mInputStream = activity.getResources().openRawResource(R.raw.druid_ror);
-            break;
-		case raider_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.raider_sas);
-            break;
-		case oracle_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.oracle_sas);
-            break;
-		case swashbuckler_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.swashbucker_sas);
-            break;
-		case bard_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.bard_sas);
-            break;
-		case gunslinger_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.gunslinger_sas);
-            break;
-		case rogue_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.rogue_sas);
-            break;
-		case magus_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.magus_sas);
-            break;
-		case fighter_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.fighter_sas);
-            break;
-		case alchemist_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.alchemist_sas);
-            break;
-		case druid_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.druid_sas);
-            break;
-		case warpriest_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.warpriest_sas);
-            break;
-        case witch_ss:
-            mInputStream = activity.getResources().openRawResource(R.raw.witch_sas);
-            break;
-		case none:
-			//Log.d(TAG, "none role found");
-			return;
-		default:
-			//Log.d(TAG, "no role found in switch");
-			return;
-		}
-        setValuesFromJSON(activity,mInputStream, roleBonus);
+        setValuesFromJSON(activity,mInputStream, character.getRoleBonus());
         InputStream rorProgressIO = activity.getResources().openRawResource(R.raw.adventure_ror);
         mRorAdventures = setProgressList(activity, rorProgressIO);
 
-        InputStream sosProgressIO = activity.getResources().openRawResource(R.raw.adventure_sos);
+        InputStream sosProgressIO = activity.getResources().openRawResource(R.raw.adventure_ss);
         mSosAdventures = setProgressList(activity, sosProgressIO);
 
         try {
@@ -280,6 +202,7 @@ public class CharacterHelper {
             //Log.d(TAG, e.printStackTrace());
         }
     }
+
 
     private ArrayAdapter<CharSequence> setProgressList(Activity activity, InputStream progress_io){
         // Parse the data into jsonobject to get original data in form of json.

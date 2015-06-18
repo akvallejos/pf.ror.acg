@@ -233,10 +233,10 @@ public class CharacterListFragment extends ListFragment
 				convertView = getActivity().getLayoutInflater().inflate(R.layout.list_item_character,null);
 			}
 			
-			//Configure the view for this crime
+			//Configure the view for this character
 			PC c = getItem(position);
 			CharacterHelper ch = new CharacterHelper();
-			ch.setCharacterResourceArrays(getActivity(), c.role_to_enum(), c.getRoleBonus());
+			ch.setCharacterResourceArrays(getActivity(), c);
 			
 			//Set the Title
 			TextView nameTextView = (TextView)convertView.findViewById(R.id.character_list_item_nameTextView);

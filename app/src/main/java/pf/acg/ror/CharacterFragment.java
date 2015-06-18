@@ -290,7 +290,8 @@ public class CharacterFragment extends Fragment {
 	private void setCharacterResourceArrays(){
 		//Log.d(TAG, "Character role found " + mCharacter.getRole());
 		mCH = new CharacterHelper();
-		mCH.setCharacterResourceArrays(getActivity(), mCharacter.role_to_enum(), mCharacter.getRoleBonus());		
+		mCH.setCharacterResourceArrays(getActivity(), mCharacter);
+		//mCH.setCharacterResourceArrays(getActivity(), mCharacter.role_to_enum(), mCharacter.getRoleBonus());
 	}
 
 	
