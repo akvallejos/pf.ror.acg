@@ -166,6 +166,9 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_warpriest_ss:
 			addCharacter(new PC("warpriest_ss"));
 			return true;
+		case R.id.menu_item_new_cavalier_wr:
+			addCharacter(new PC("cavalier_wr"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}

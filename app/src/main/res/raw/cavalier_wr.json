@@ -1,0 +1,162 @@
+{
+	"str": "1d10",
+    "dex": "1d4",
+    "con": "1d8",
+    "int": "1d6",
+    "wis": "1d6",
+    "cha": "1d8",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Cavalier",
+        "Glory Hound",
+        "Lancer"
+    ],
+    "role_bonus_keys":[
+        "cavalier",
+        "glory_hound",
+        "lancer"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "3",
+        "4",
+        "5"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "3",
+        "4",
+        "5"
+    ],
+    "skills": [
+        "Melee: Strength +2",
+        "Perception: Wisdom +1",
+        "Diplomacy: Charisma +3"
+    ],
+    
+    "hand_limit":[
+        ["4","5","6"],
+        ["4","5","6","7"],
+        ["4","5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"cavalier": [[
+    		"You may discard a card to add 1 plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check.",
+            "You may discard a card to add (2) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check."
+    	],
+    [
+        "At the end of your turn, you may recharge any number of weapons.",
+        "At the end of your turn, you may recharge any number of weapons (or allies or items)."
+    ]],
+    "glory_hound": [[
+        "You may discard a card to add 1 plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (2) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (3) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (1) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top (or under the top) of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (2) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top (or under the top) of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (3) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top (or under the top) of its location deck. Other characters may not play cards or use powers on this check."
+
+    ],
+    [
+        "At the end of your turn, you may recharge any number of weapons.",
+        "At the end of your turn, you may recharge any number of weapons (or allies or items)."
+    ],
+    [
+        "-",
+        "When you play an ally to explore your location, you may add your Diplomacy skill and the Mental trait to your Melee checks during that exploration.",
+        "When you play an ally to explore your location, you may add your Diplomacy skill and the Mental trait to your Melee checks (or checks to acquire items) during that exploration."
+    ],
+    [
+        "-",
+        "When another character at your location would encounter a monster, discard a card; you encounter it instead.",
+        "When another character at your location would encounter a monster (or a weapon), discard a card; you encounter it instead.",
+        "When another character at your location would encounter a monster, discard (or recharge) a card; you encounter it instead.",
+        "When another character at your location would encounter a monster (or a weapon), discard (or recharge) a card; you encounter it instead."
+    ]],
+    
+    "lancer": [[
+        "You may discard a card to add 1 plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (2) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check.",
+        "You may discard a card to add (1) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check. (If defeated, recharge a random card from your discard pile.)",
+        "You may discard a card to add (2) plus its adventure deck number to your check to defeat a non-villain monster. If undefeated, return it to the top of its location deck. Other characters may not play cards or use powers on this check. (If defeated, recharge a random card from your discard pile.)"
+    ],
+    [
+        "At the end of your turn, you may recharge any number of weapons.",
+        "At the end of your turn, you may recharge any number of weapons (or allies or items)."
+    ],
+    [
+        "-",
+        "Recharge a card to search your deck or discard pile for a card that has the Mount trait and add it to your hand.",
+        "Recharge a card (or put it on top of your deck) to search your deck or discard pile for a card that has the Mount trait and add it to your hand."
+    ],
+    [
+        "-",
+        "When you would discard a weapon that has the Polearm or Spear trait for its power, recharge it instead.",
+        "When you would discard a weapon that has the Polearm or Spear trait for its power, recharge it instead (or shuffle it into your deck).",
+        "When you would discard a weapon that has the Polearm or Spear trait for its power, recharge it instead (or put it on top of your deck).",
+        "When you would discard a weapon that has the Polearm or Spear trait for its power, recharge it instead (or shuffle it into your deck) (or put it on top of your deck)."
+    ],
+    [
+        "-",
+        "On your turn, discard a card that has the Mount trait to move to another location and examine the top card of that location deck. If it is a monster, you may encounter it.",
+        "On your turn, discard a card that has the Mount trait (or put it on the top of your deck) to move to another location and examine the top card of that location deck. If it is a monster, you may encounter it."
+    ]]}
+}
