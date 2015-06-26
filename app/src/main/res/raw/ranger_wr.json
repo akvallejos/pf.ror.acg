@@ -1,0 +1,177 @@
+{
+	"str": "1d6",
+    "dex": "1d8",
+    "con": "1d10",
+    "int": "1d6",
+    "wis": "1d8",
+    "cha": "1d4",
+    "fav_card": "weapon",
+    
+    "role_bonus":[
+        "Ranger",
+        "Demonslayer",
+        "Abyssal Walker"
+    ],
+    "role_bonus_keys":[
+        "ranger",
+        "demonslayer",
+        "abyssal_walker"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "2",
+        "3"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "2",
+        "3",
+        "4"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": [
+        "Ranged: Dexterity +3",
+        "Stealth: Dexterity +2",
+        "Perception: Wisdom +1",
+        "Survival: Wisdom +2"
+    ],
+    
+    "hand_limit":[
+        ["5","6","7"],
+        ["5","6","7","8"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"ranger": [[
+            "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 (2d4) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 (2d4) to your checks against it."
+        ],
+        [
+            "When you would bury or discard a weapon that has the Ranged trait for its power, you may recharge it instead."
+        ]],
+    "demonslayer": [[
+            "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 (2d4) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 (2d4) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin trait (and you may put it on top of its location deck); otherwise, add 1d4 to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait (and you may put it on top of its location deck); otherwise, add 1d4 to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin trait (and you may put it on top of its location deck); otherwise, add 1d4 (2d4) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait (and you may put it on top of its location deck); otherwise, add 1d4 (2d4) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 (2d6) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 (2d6) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin trait (and you may put it on top of its location deck); otherwise, add 1d4 (2d6) to your checks against it.",
+            "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait (and you may put it on top of its location deck); otherwise, add 1d4 (2d6) to your checks against it."
+        ],
+        [
+            "When you would bury or discard a weapon that has the Ranged trait for its power, you may recharge it instead."
+        ],
+        [
+            "-",
+            "When you attempt a Knowledge check against a monster, you may use your Survival skill instead of your Knowledge skill."
+        ],
+        [
+            "-",
+            "If you would fail a check against a bane that has the Demon trait, you may reroll 1 die; take the new result."
+        ],
+        [
+            "-",
+            "On the first exploration of your turn, if you defeat a bane that has the Demon trait, you may explore again."
+        ],
+        [
+            "-",
+            "You may recharge a card to add 1d4 to another character's check to defeat a bane that has the Demon trait.",
+            "You may recharge a card to add 1d4 (+1) to another character's check to defeat a bane that has the Demon trait."
+        ]],
+    
+    "abyssal_walker": [[
+        "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 to your checks against it.",
+        "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 to your checks against it.",
+        "You may evade a bane you encounter that has the Animal or Vermin trait; otherwise, add 1d4 (2d4) to your checks against it.",
+        "You may evade a bane you encounter that has the Animal or Vermin (or Demon) trait; otherwise, add 1d4 (2d4) to your checks against it."
+    ],
+        [
+            "When you would bury or discard a weapon that has the Ranged trait for its power, you may recharge it instead."
+        ],
+    [
+        "-",
+        "At the start of your turn, you may examine the top card of your location deck.",
+        "At the start (or end) of your turn, you may examine the top card of your location deck.",
+        "At the start of your turn, you may examine the top card (or 2 cards) of your location deck.",
+        "At the start of your turn, you may examine the top card of your location deck (and you may move to a location that has the Abyssal trait).",
+        "At the start (or end) of your turn, you may examine the top card (or 2 cards) of your location deck.",
+        "At the start of your turn, you may examine the top card of your location deck (and you may move to a location that has the Abyssal trait).",
+        "At the start of your turn, you may examine the top card (or 2 cards) of your location deck (and you may move to a location that has the Abyssal trait).",
+        "At the start (or end) of your turn, you may examine the top card (or 2 cards) of your location deck (and you may move to a location that has the Abyssal trait)."
+
+    ],
+    [
+        "-",
+        "When you close a location that has the Abyssal trait, you may acquire a boon from your location deck.",
+        "When you close (or a character at your location closes) a location that has the Abyssal trait, you may acquire a boon from your location deck."
+    ],
+    [
+        "-",
+        "On your turn, if you are at a location that has the Abyssal trait, you may discard the top card of your deck to ignore your location's At This Location power until the end of the turn.",
+        "On your turn, if you are at a location that has the Abyssal trait, you may discard the top card of your deck (or a card from your hand) to ignore your location's At This Location power until the end of the turn."
+    ]]}
+}

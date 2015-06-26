@@ -1,0 +1,174 @@
+{
+	"str": "1d10",
+    "dex": "1d8",
+    "con": "1d6",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "blessing",
+    
+    "role_bonus":[
+        "Inquisitor",
+        "Wandering Judge",
+        "Cold Iron Warden"
+    ],
+    "role_bonus_keys":[
+        "inquisitor",
+        "wandering_judge",
+        "cold_iron_warden"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "3",
+        "4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7"
+    ],
+    "spells": [
+        "1",
+        "2",
+        "3"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "1",
+        "2"
+    ],
+    "blessings": [
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "skills": [
+        "Ranged: Strength +1",
+        "Knowledge: Wisdom +2",
+        "Divine: Wisdom +1"
+    ],
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"inquisitor": [[
+            "-",
+            "You gain the skill Perception: Wisdom +2."
+        ],
+        [
+            "You may recharge a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster.",
+            "You may recharge (or reveal) a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster."
+        ],
+        [
+            "When you defeat a monster on your turn, you may roll d6; on a 4, 5, or 6, explore your location.",
+            "When you defeat a monster on your turn, you may roll d6; on a ( 3,) 4, 5, or 6, explore your location."
+        ]],
+    "wandering_judge": [[
+        "-",
+        "You gain the skill Perception: Wisdom +2."
+        ],
+        [
+            "You may recharge a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster.",
+            "You may recharge (or reveal) a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster."
+        ],
+        [
+            "When you defeat a monster on your turn, you may roll d6; on a 4, 5, or 6, explore your location.",
+            "When you defeat a monster on your turn, you may roll d6; on a (3,) 4, 5, or 6, explore your location.",
+            "When you defeat a monster on your turn, you may roll d6; on a 4, 5, or 6, explore your location. (and before you explore, you may draw a card).",
+            "When you defeat a monster on your turn, you may roll d6; on a 4, 5, or 6, explore your location. (and before you explore, you may draw a card). (Add 1d4 to your checks during this exploration.)",
+            "When you defeat a monster on your turn, you may roll d6; on a (3,) 4, 5, or 6, explore your location. (and before you explore, you may draw a card).",
+            "When you defeat a monster on your turn, you may roll d6; on a (3,) 4, 5, or 6, explore your location. (and before you explore, you may draw a card). (Add 1d4 to your checks during this exploration.)"
+        ],
+        [
+            "-",
+            "Recharge a card that has the Ranged or Divine trait to add 1d4 to a combat check at another location.",
+            "Recharge a card that has the Ranged or Divine trait to add 1d4 (+1) to a combat check at another location.",
+            "Recharge a card that has the Ranged or Divine trait to add 1d4 (+2) to a combat check at another location."
+        ],
+        [
+            "-",
+            "When you play a blessing that matches the top card of the blessings discard pile, you may shuffle the top card of the blessings discard pile into the blessings deck."
+        ],
+        [
+            "-",
+            "Add 2 to your check to acquire an ally or a blessing."
+        ]],
+    
+    "cold_iron_warden": [[
+            "-",
+            "You gain the skill Perception: Wisdom +2."
+        ],
+        [
+            "You may recharge a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster.",
+            "You may recharge (or reveal) a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster.",
+            "You may recharge (or reveal) a card that has the Divine or Ranged trait to add 1d4 and the Divine and Magic traits to your check against a monster. (If that monster has the Cultist trait, add another 1d8.)"
+        ],
+        [
+            "When you defeat a monster on your turn, you may roll d6; on a 4, 5, or 6, explore your location.",
+            "When you defeat a monster on your turn, you may roll d6; on a (□ 3,) 4, 5, or 6, explore your location.",
+            "When you defeat a monster on your turn, (you may examine the top card of your location deck, and if it is not a monster, put it on the bottom of the location deck, then) you may roll d6; on a 4, 5, or 6, explore your location.",
+            "When you defeat a monster on your turn, (you may examine the top card of your location deck, and if it is not a monster, put it on the bottom of the location deck, then) you may roll d6; on a (3,) 4, 5, or 6, explore your location."
+
+        ],
+        [
+            "-",
+            "When you attempt a Diplomacy check, you may use your Strength skill instead of your Diplomacy skill."
+        ],
+        [
+            "-",
+            "When you play a blessing that has the Basic trait on any check to defeat a bane, you may recharge it instead of discarding it.",
+            "When you play a blessing that has the Basic trait on any check to defeat a bane, you may recharge it (or put it on top of your deck) instead of discarding it."
+        ],
+        [
+            "-",
+            "You may evade a barrier you encounter.",
+            "You may evade a barrier you encounter (and you may put it on the bottom of its location deck)."
+        ]]}
+}

@@ -145,6 +145,9 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_bard_ss:
 			addCharacter(new PC("bard_ss"));
 			return true;
+		case R.id.menu_item_new_fighter_ss:
+			addCharacter(new PC("fighter_ss"));
+			return true;
 		case R.id.menu_item_new_gunslinger_ss:
 			addCharacter(new PC("gunslinger_ss"));
 			return true;
@@ -168,6 +171,18 @@ public class CharacterListFragment extends ListFragment
 			return true;
 		case R.id.menu_item_new_cavalier_wr:
 			addCharacter(new PC("cavalier_wr"));
+			return true;
+		case R.id.menu_item_new_summoner_wr:
+			addCharacter(new PC("summoner_wr"));
+			return true;
+		case R.id.menu_item_new_arcanist_wr:
+			addCharacter(new PC("arcanist_wr"));
+			return true;
+		case R.id.menu_item_new_ranger_wr:
+			addCharacter(new PC("ranger_wr"));
+			return true;
+		case R.id.menu_item_new_inquisitor_wr:
+			addCharacter(new PC("inquisitor_wr"));
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
