@@ -184,6 +184,9 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_inquisitor_wr:
 			addCharacter(new PC("inquisitor_wr"));
 			return true;
+		case R.id.menu_item_new_cleric_wr:
+			addCharacter(new PC("cleric_wr"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}

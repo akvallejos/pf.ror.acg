@@ -1,0 +1,166 @@
+{
+	"str": "1d6",
+    "dex": "1d4",
+    "con": "1d6",
+    "int": "1d8",
+    "wis": "1d12",
+    "cha": "1d6",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Cleric",
+        "Dawnflower's Flare",
+        "Everlight's Grace"
+    ],
+    "role_bonus_keys":[
+        "cleric",
+        "dawnflowers_flare",
+        "everlights_grace"
+     ],
+    "str_bonus":[
+        "0",
+        "+1"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "weapons":[
+        "1",
+        "2"
+    ],
+    "spells": [
+        "5",
+        "6",
+        "7"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "1",
+        "2"
+    ],
+    "allies": [
+        "2",
+        "3",
+        "4"
+    ],
+    "blessings": [
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "skills": [
+        "Knowledge: Intelligence +2",
+        "Divine: Wisdom +2",
+        "Diplomacy: Charisma +2"
+    ],
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor","Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"cleric": [[
+            "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell  to use your Divine skill + 1d8 and add the Attack, Divine, and Magic trait",
+            "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell (or blessing) to use your Divine skill + 1d8 and add the Attack, Divine, and Magic trait"
+    ],
+    [
+        "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s check to defeat, a character at your location may shuffle 1 random card from his discard pile into his deck after the check.",
+        "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s (or your) check to defeat, a character at your location may shuffle 1 random card from his discard pile into his deck after the check."
+    ]],
+    "dawnflowers_flare": [[
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell  to use your Divine skill + 1d8 and add the Attack, Divine, and Magic trait",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell (or blessing) to use your Divine skill + 1d8 and add the Attack, Divine, and Magic trait",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge (or shuffle into your deck) a spell to use your Divine skill + 1d8 and add the Attack, Divine, and Magic traits.",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic traits.",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell to use your Divine skill + 1d8 and add the Attack, Divine, and Magic traits. (You may add an additional 1d8 and the Fire trait.)",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge (or shuffle into your deck) a spell (or blessing) to use your Divine skill + 1d8 and add the Attack, Divine, and Magic traits.",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge (or shuffle into your deck) a spell to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic traits.",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge (or shuffle into your deck) a spell to use your Divine skill + 1d8 and add the Attack, Divine, and Magic traits. (You may add an additional 1d8 and the Fire trait.)",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell (or blessing) to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic traits.",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell (or blessing) to use your Divine skill + 1d8 and add the Attack, Divine, and Magic traits. (You may add an additional 1d8 and the Fire trait.)",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic traits. (You may add an additional 1d8 and the Fire trait.)",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge (or shuffle into your deck) a spell (or blessing) to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic traits. (You may add an additional 1d8 and the Fire trait.)"
+    ],
+        [
+            "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s check to defeat, a character at your location may shuffle 1 random card from his discard pile into his deck after the check.",
+            "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s (or your) check to defeat, a character at your location may shuffle 1 random card from his discard pile into his deck after the check."
+        ],
+    [
+        "-",
+        "When you play a blessing on your check to defeat a bane that has the Demon or Undead trait, you may recharge that blessing."
+    ],
+    [
+        "-",
+        "Add 1d4 to your check to recharge a card that has the Attack trait.",
+        "Add 1d4 (+2) to your check to recharge a card that has the Attack trait."
+    ],
+    [
+        "-",
+        "When another character plays a Blessing of Sarenrae on your check, that character may recharge it.",
+        "When another character plays a Blessing of Sarenrae on your check, that character may recharge it (and a random card from her discard pile)."
+    ]],
+    
+    "everlights_grace": [[
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell  to use your Divine skill + 1d8 and add the Attack, Divine, and Magic trait",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell (or blessing) to use your Divine skill + 1d8 and add the Attack, Divine, and Magic trait",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell  to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic trait",
+        "For your check to defeat a bane that has the Demon or Undead trait, you may recharge a spell (or blessing) to use your Divine skill + 1d8 (2d8) and add the Attack, Divine, and Magic trait"
+    ],
+        [
+            "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s check to defeat, a character at your location may shuffle 1 random card from his discard pile into his deck after the check.",
+            "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s (or your) check to defeat, a character at your location may shuffle 1 random card from his discard pile into his deck after the check.",
+            "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s check to defeat, a character at your location may shuffle 1 random card (of a type of your choice) from his discard pile into his deck after the check.",
+            "When you use the above power or play a blessing that does not have the Corrupted trait on another character’s (or your) check to defeat, a character at your location may shuffle 1 random card (of a type of your choice) from his discard pile into his deck after the check."
+        ],
+    [
+        "-",
+        "When you play a boon that has the Healing trait on a character, any armors that would be shuffled into that character's deck may be put into that character's hand instead.",
+        "When you play a boon that has the Healing trait on a character, any armors (or allies) that would be shuffled into that character's deck may be put into that character's hand instead.",
+        "When you play a boon that has the Healing trait on a character, any armors that would be shuffled into that character's deck may be put into that character's hand instead. (Then you may recharge the boon.)",
+        "When you play a boon that has the Healing trait on a character, any armors (or allies) that would be shuffled into that character's deck may be put into that character's hand instead. (Then you may recharge the boon.)"
+    ],
+    [
+        "-",
+        "When you would bury an armor for its power, that character may discard it instead.",
+        "When you (or a character at your location) would bury an armor for its power, that character may discard it instead."
+    ]]}
+}
