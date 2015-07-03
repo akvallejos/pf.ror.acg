@@ -1,0 +1,171 @@
+{
+	"str": "1d8",
+    "dex": "1d4",
+    "con": "1d8",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d10",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Palladin",
+        "Inheritor's Blade",
+        "Wardstone Sentry"
+    ],
+    "role_bonus_keys":[
+        "palladin",
+        "inheritors_blade",
+        "wardstone_sentry"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6"
+    ],
+    "spells": [
+        "1",
+        "2",
+        "3"
+    ],
+    "armors": [
+        "3",
+        "4"
+    ],
+    "items": [
+        "1"
+    ],
+    "allies": [
+        "2",
+        "3",
+        "4"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "skills": [
+        "Melee: Strength +3",
+        "Fortitude: Constitution +1",
+        "Divine: Wisdom +1",
+        "Diplomacy: Charimsa +1"
+    ],
+    
+    "hand_limit":[
+        ["4","5","6"],
+        ["4","5","6","7"],
+        ["4","5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"palladin": [[
+            "When you attempt a check before you act, you may use your Charisma skill instead of any listed skill."
+        ],
+        [
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)"
+        ],
+        [
+            "When you acquire a boon that has the Corrupted trait, bury it."
+        ]],
+    "inheritors_blade": [[
+            "When you attempt a check before you act, you may use your Charisma skill instead of any listed skill."
+        ],
+        [
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)",
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.) (If the top card has the Heavy Armor or Sword trait, recharge it instead of discarding it.)",
+            "You may discard the top card of your deck to add 1d6 (+1)to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.) (If the top card has the Heavy Armor or Sword trait, recharge it instead of discarding it.)"
+        ],
+        [
+            "When you acquire a boon that has the Corrupted trait, bury it.",
+            "When you acquire a boon that has the Corrupted trait, bury it. (If it does not have that trait, you may give it to a character at your location.)"
+        ],
+        [
+            "-",
+            "You may be dealt 1 Combat damage to reduce Combat damage dealt to a character at your location by 1.",
+            "You may be dealt 1 Combat damage to reduce Combat (or any type of) damage dealt to a character at your location by 1.",
+            "You may be dealt 1 Combat damage to reduce Combat damage dealt to a character at your location by 1 (2).",
+            "You may be dealt 1 Combat damage to reduce Combat (or any type of) damage dealt to a character at your location by 1 (2).",
+            "You may be dealt 1 Combat damage to reduce Combat damage dealt to a character at your location by 1 (3).",
+            "You may be dealt 1 Combat damage to reduce Combat (or any type of) damage dealt to a character at your location by 1 (3)."
+        ],
+        [
+            "-",
+            "When you play a blessing that has the Iomedae trait, a character at your location may shuffle an ally in their discard pile into his deck."
+        ]],
+    
+    "wardstone_sentry": [[
+            "When you attempt a check before you act, you may use your Charisma skill instead of any listed skill.",
+            "When you attempt a check before you act, you may use your Charisma skill (+2) instead of any listed skill.",
+            "When you attempt a check before you act, you may use your Charisma skill (+4) instead of any listed skill."
+        ],
+        [
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)",
+            "You may discard the top card of your deck to add 1d6 (+2) to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 (+3) to any check by a character at your location.",
+            "You may discard the top card of your deck to add 1d6 (+2) to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)",
+            "You may discard the top card of your deck to add 1d6 (+3) to any check by a character at your location. (If that character defeats a monster on that check, he may draw a card.)"
+        ],
+        [
+            "When you acquire a boon that has the Corrupted trait, bury it.",
+            "When you acquire a boon that has the Corrupted trait, bury it. (If it is your turn, you may then explore again.)"
+        ],
+        [
+            "-",
+            "You may add 1d8 and the Magic trait to your check to defeat a bane that has the Demon trait.",
+            "You may add 1d8 and the Magic trait to your check to defeat a bane that has the Demon (or Undead) trait."
+        ],
+        [
+            "-",
+            "When another character encounters a monster that has the Cultist or Demon trait, you may immediately move to his location."
+        ]]}
+}
