@@ -28,7 +28,7 @@ public class PC {
 	private static final String JSON_BLESSINGS = "blessings";
 	private static final String JSON_PHOTO = "photo";
 	private static final String JSON_POWERS_ARRAY = "powers";
-	private static final int POWERS_ARRAY_SIZE = 8;
+	private static final int POWERS_ARRAY_SIZE = 16;
 
 	private static final String TAG = "PC.class";
 
@@ -62,6 +62,7 @@ public class PC {
 
     private Integer mRoRProgress = 0;
     private Integer mSoSProgress = 0;
+	private Integer mWoRProgress = 0;
 	
 	// Used to convert String role value into enum for use in switch statements
 	public enum valid_roles{
@@ -327,4 +328,10 @@ public class PC {
     public void setSoSProgress(Integer SoSProgress) {
         mSoSProgress = SoSProgress;
     }
+
+	public Integer getWoRProgress() {
+		return mWoRProgress;
+	}
+
+	public void setWoRProgress(Integer WoRProgress) { mWoRProgress = WoRProgress; }
 }

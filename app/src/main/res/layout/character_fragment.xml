@@ -473,6 +473,18 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"/>
 				</TableRow>
+				<TableRow>
+					<TextView
+						android:id="@+id/wor_progress_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Swords and Shackles:"/>
+					<Spinner
+						android:id="@+id/wor_progress_spinner"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+				</TableRow>
+
 
          	</TableLayout>
 		</RelativeLayout>

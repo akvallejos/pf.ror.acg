@@ -1,0 +1,167 @@
+{
+	"str": "1d6",
+    "dex": "1d4",
+    "con": "1d10",
+    "int": "1d6",
+    "wis": "1d10",
+    "cha": "1d6",
+    "fav_card": "Spell",
+    
+    "role_bonus":[
+        "Shaman",
+        "Visionary",
+        "Spirit Guide"
+    ],
+    "role_bonus_keys":[
+        "shaman",
+        "visionary",
+        "spirit_guide"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "0",
+        "1"
+    ],
+    "spells": [
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "armors": [
+        "1",
+        "2",
+        "3"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "5",
+        "6",
+        "7"
+    ],
+    "skills": [
+        "Fortitude: Constitution +2",
+        "Divine: Wisdom +3",
+        "Knowledge: Wisdom +2"
+    ],
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6"]
+    ],
+    "proficiencies": [
+        [ "Proficient With Light Armor", "Proficient with Light Armor and Heavy Armor"],
+        [ "Proficient With Light Armor", "Proficient with Light Armor and Heavy Armor"],
+        [ "Proficient With Light Armor", "Proficient with Light Armor and Heavy Armor", "Proficient with Light Armor, Heavy Armor, and Weapons"]
+    ],
+
+    
+    "powers": {
+    	"shaman": [[
+    		"When a character at your location would fail a check to defeat a bane, you may recharge a spell to allow that character to reroll the dice; that character takes the new result."
+    	],
+        [
+            "When you succeed at a Knowledge check, you may examine the top card of your location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card of your (or any) location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your (or any) location deck."
+        ]],
+    "visionary": [[
+            "When a character at your location would fail a check to defeat a bane, you may recharge a spell to allow that character to reroll the dice; that character takes the new result."
+        ],
+        [
+            "When you succeed at a Knowledge check, you may examine the top card of your location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card of your (or any) location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your (or any) location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card of your location deck. (If an examined card is a boon, you may exchange it for a random card of that type from the box without looking at it and put it on top of the location deck.)",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your location deck. (If an examined card is a boon, you may exchange it for a random card of that type from the box without looking at it and put it on top of the location deck.)",
+            "When you succeed at a Knowledge check, you may examine the top card of your (or any) location deck. (If an examined card is a boon, you may exchange it for a random card of that type from the box without looking at it and put it on top of the location deck.)",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your (or any) location deck. (If an examined card is a boon, you may exchange it for a random card of that type from the box without looking at it and put it on top of the location deck.)"
+        ],
+        [
+            "-",
+            "When you attempt(s) a check to defeat a barrier, you may use your Knowledge skill instead of the listed skill.",
+            "When you (or a character at your location) attempt(s) a check to defeat a barrier, you may use your Knowledge skill instead of the listed skill.",
+            "When you  attempt(s) a check to defeat a barrier (or close a location), you may use your Knowledge skill instead of the listed skill.",
+            "When you (or a character at your location) attempt(s) a check to defeat a barrier (or close a location), you may use your Knowledge skill instead of the listed skill."
+        ],
+        [
+            "-",
+            "Characters may gain the skill Knowledge: Wisdom +2 while at your location",
+            "Characters may gain the skill Knowledge: Wisdom +2 (or Fortitude: Constitution +2) while at your location",
+            "Characters may gain the skill Knowledge: Wisdom +2 (or Divine: Wisdom +3) while at your location",
+            "Characters may gain the skill Knowledge: Wisdom +2 (or Fortitude: Constitution +2) (or Divine: Wisdom +3) while at your location"
+        ]],
+    
+    "spirit_guide": [[
+            "When a character at your location would fail a check to defeat a bane, you may recharge a spell to allow that character to reroll the dice; that character takes the new result."
+        ],
+        [
+            "When you succeed at a Knowledge check, you may examine the top card of your location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card of your (or any) location deck.",
+            "When you succeed at a Knowledge check, you may examine the top card (or 2 cards) of your (or any) location deck."
+        ],
+        [
+            "-",
+            "You gain the skill Arcane: Wisdom +1."
+        ],
+        [
+            "-",
+            "Discard a card to add 1d6 and the Mental trait to your combat check to defeat a monster.",
+            "Discard a card to add 1d6 (+2) and the Mental trait to your combat check to defeat a monster.",
+            "Discard a card to add 1d6 (+4) and the Mental trait to your combat check to defeat a monster."
+        ],
+        [
+            "-",
+            "When you defeat a bane, you may recharge a spell from your discard pile.",
+            "When you defeat a bane, you may recharge a spell from your discard pile (and draw a card)."
+        ],
+        [
+            "-",
+            "When you play a blessing on a check to defeat a monster by another character at your location, add d12 instead of the normal die."
+        ]]}
+}
