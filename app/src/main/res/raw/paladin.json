@@ -8,12 +8,12 @@
     "fav_card": "Armor",
     
     "role_bonus":[
-        "Palladin",
+        "Paladin",
         "Crusaider",
         "Hospitaler"
     ],
     "role_bonus_keys":[
-        "palladin",
+        "paladin",
         "crusaider",
         "hospitaler"
     ],
@@ -97,7 +97,7 @@
 
     
     "powers": {
-    	"palladin": [[
+    	"paladin": [[
 		"You may discard the top card of your deck to add 1d6 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 +1 to your check. If the top card was a blessing, recharge it instead of discarding it.",
 		"You may discard the top card of your deck to add 1d6 to your check. If the top card was a blessing or spell, recharge it instead of discarding it.",
