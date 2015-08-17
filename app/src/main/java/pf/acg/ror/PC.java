@@ -28,6 +28,10 @@ public class PC {
 	private static final String JSON_BLESSINGS = "blessings";
 	private static final String JSON_PHOTO = "photo";
 	private static final String JSON_POWERS_ARRAY = "powers";
+	private static final String JSON_PROFICIENCY = "proficiency";
+	private static final String JSON_ROR_PROGRESS = "ror_progress";
+	private	static final String JSON_SOS_PROGRESS = "sos_progress";
+	private static final String JSON_WOR_PROGRESS = "wor_progress";
 	private static final int POWERS_ARRAY_SIZE = 16;
 
 	private static final String TAG = "PC.class";
@@ -118,6 +122,12 @@ public class PC {
 		mItems = json.getInt(JSON_ITEMS);
 		mAllies = json.getInt(JSON_ALLIES);
 		mBlessings = json.getInt(JSON_BLESSINGS);
+
+		mProficieny = json.getInt(JSON_PROFICIENCY);
+
+		mRoRProgress = json.getInt(JSON_ROR_PROGRESS);
+		mWoRProgress = json.getInt(JSON_WOR_PROGRESS);
+		mSoSProgress = json.getInt(JSON_SOS_PROGRESS);
 		
 		JSONArray powers = (JSONArray) json.get(JSON_POWERS_ARRAY);
 		for(int i = 0; i < powers.length(); i++){
@@ -150,6 +160,12 @@ public class PC {
 		json.put(JSON_ITEMS, mItems);
 		json.put(JSON_ALLIES, mAllies);
 		json.put(JSON_BLESSINGS, mBlessings);
+
+		json.put(JSON_PROFICIENCY, mProficieny);
+
+		json.put(JSON_ROR_PROGRESS, mRoRProgress);
+		json.put(JSON_SOS_PROGRESS, mSoSProgress);
+		json.put(JSON_WOR_PROGRESS, mWoRProgress);
 		
 		json.put(JSON_POWERS_ARRAY, new JSONArray(Arrays.asList(mPowersArray)));
 
@@ -275,7 +291,7 @@ public class PC {
 		return mAllies;
 	}
 	
-	public void setAlllies(Integer allies) {
+	public void setAllies(Integer allies) {
 		mAllies = allies;
 	}
 	

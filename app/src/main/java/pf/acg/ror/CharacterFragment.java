@@ -170,7 +170,7 @@ public class CharacterFragment extends Fragment {
 		//Charisma
 		TextView mChaField = (TextView)mV.findViewById(R.id.cha_base);
 		mChaField.setText(mCH.getChaBase());
-		createBonusSpinner(R.id.cha_bonus, mCH.getChaBonus(), mCharacter.getWisBonus(), attr.Cha);
+		createBonusSpinner(R.id.cha_bonus, mCH.getChaBonus(), mCharacter.getChaBonus(), attr.Cha);
 		
 		//Skills
 		StringBuilder builder = new StringBuilder();
@@ -342,6 +342,9 @@ public class CharacterFragment extends Fragment {
                     case sos:
                         mCharacter.setSoSProgress(pos);
                         return;
+					case wor:
+						mCharacter.setWoRProgress(pos);
+						return;
                     default:
                         return;
                 }
@@ -383,6 +386,24 @@ public class CharacterFragment extends Fragment {
 					return;
 				case Cha:
 					mCharacter.setChaBonus(pos);
+					return;
+				case WeaponLimit:
+					mCharacter.setWeapons(pos);
+					return;
+				case ArmorLimit:
+					mCharacter.setArmors(pos);
+					return;
+				case SpellLimit:
+					mCharacter.setSpells(pos);
+					return;
+				case ItemLimit:
+					mCharacter.setItems(pos);
+					return;
+				case AllyLimit:
+					mCharacter.setAllies(pos);
+					return;
+				case BlessingLimit:
+					mCharacter.setBlessings(pos);
 					return;
 				case HandLimit:
 					mCharacter.setHandLimit(pos);
