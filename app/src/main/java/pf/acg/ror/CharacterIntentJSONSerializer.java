@@ -70,6 +70,6 @@ public class CharacterIntentJSONSerializer {
 				reader.close();
 		}
 		return characters;
-	} //end loadCrimes()
+	} //end loadCharacters()
 
 }
