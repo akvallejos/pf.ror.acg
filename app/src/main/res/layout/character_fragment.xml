@@ -478,7 +478,7 @@
 						android:id="@+id/wor_progress_title"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:text="Swords and Shackles:"/>
+						android:text="Wrath of the Righteous:"/>
 					<Spinner
 						android:id="@+id/wor_progress_spinner"
 						android:layout_width="wrap_content"
