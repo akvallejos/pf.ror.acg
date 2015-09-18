@@ -78,11 +78,14 @@
         "4",
         "5"
     ],
-    "skills": [
-        "Melee: Strength +2",
-        "Perception: Wisdom +1",
-        "Diplomacy: Charisma +3"
-    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Perception: Wisdom +1"],
+        "cha": ["Diplomacy: Charisma +3"]
+    },
     
     "hand_limit":[
         ["4","5","6"],

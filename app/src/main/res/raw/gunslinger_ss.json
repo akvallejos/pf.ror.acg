@@ -78,10 +78,18 @@
         "5",
         "6"
     ],
+    "skills": {
+        "str": [],
+        "dex": ["Ranged: Dexterity +3"],
+        "con": ["Fortitude: Constitution +1"],
+        "int": [],
+        "wis": ["Perception: Wisdom +2"],
+        "cha": []
+    },
     "skills": [
-        "Ranged: Dexterity +3",
-        "Fortitude: Constitution +1",
-        "Perception: Wisdom +2"
+
+
+
     ],
     
     "hand_limit":[

@@ -78,11 +78,15 @@
         "7",
         "8"
     ],
-    "skills": [
-        "Ranged: Strength +1",
-        "Knowledge: Wisdom +2",
-        "Divine: Wisdom +1"
-    ],
+    "skills": {
+        "str": ["Ranged: Strength +1"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Divine: Wisdom +1",
+                "Knowledge: Wisdom +2"],
+        "cha": []
+    },
     
     "hand_limit":[
         ["5","6"],

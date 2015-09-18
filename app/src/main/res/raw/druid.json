@@ -78,11 +78,15 @@
         "4",
         "5"
     ],
-    "skills": [
-        "Knowledge: Intelligence +3",
-        "Divine: Wisdom +1",
-        "Survival: Wisdom +1"
-    ],
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": ["Knowledge: Intelligence +3"],
+        "wis": ["Divine: Wisdom +1",
+                "Survival: Wisdom +1"],
+        "cha": []
+    },
     
     "hand_limit":[
         ["5"],

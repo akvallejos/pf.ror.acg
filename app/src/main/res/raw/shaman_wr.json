@@ -80,11 +80,15 @@
         "6",
         "7"
     ],
-    "skills": [
-        "Fortitude: Constitution +2",
-        "Divine: Wisdom +3",
-        "Knowledge: Wisdom +2"
-    ],
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": ["Fortitude: Constitution +2"],
+        "int": [],
+        "wis": ["Divine: Wisdom +3",
+                "Knowledge: Wisdom +2"],
+        "cha": []
+    },
     
     "hand_limit":[
         ["5","6"],

@@ -77,11 +77,15 @@
         "4",
         "5"
     ],
-    "skills": [
-        "Disable: Dexterity +2",
-        "Ranged: Dexterity +2",
-        "Craft: Intelligence +3"
-    ],
+    "skills": {
+        "str": [],
+        "dex": ["Disable: Dexterity +2",
+                "Ranged: Dexterity +2"],
+        "con": [],
+        "int": ["Craft: Intelligence +3"],
+        "wis": [],
+        "cha": []
+    },
     
     "hand_limit":[
         ["6","7"],

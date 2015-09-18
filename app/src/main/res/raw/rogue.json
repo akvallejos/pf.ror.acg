@@ -78,12 +78,16 @@
         "5",
         "6"
     ],
-    "skills": [
-        "Acrobatics: Dexterity +2",
-        "Disable: Dexterity +2",
-        "Stealth: Dexterity +2",
-        "Perception: Wisdom +2"
-    ],
+    "skills": {
+        "str": [],
+        "dex": ["Acrobatics: Dexterity +2",
+                "Disable: Dexterity +2",
+                "Stealth: Dexterity +2"],
+        "con": [],
+        "int": [],
+        "wis": ["Perception: Wisdom +2"],
+        "cha": []
+    },
     
     "hand_limit":[
         ["5","6"],

@@ -78,11 +78,15 @@
     "blessings": [
         "0"
     ],
-    "skills": [
-        "Arcane: Intelligence +2",
-        "Knowledge: Intelligence +2"
-    ],
-    
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": ["Arcane: Intelligence +2",
+                "Knowledge: Intelligence +2"],
+        "wis": [],
+        "cha": []
+    },
     "hand_limit":[
         ["6","7","8"],
         ["6","7","8","9"],

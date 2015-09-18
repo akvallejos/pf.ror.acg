@@ -78,11 +78,16 @@
         "5",
         "6"
     ],
-    "skills": [
-        "Arcane: Intelligence +1",
-        "Craft: Intelligence +1",
-        "Knowledge: Intelligence +3"
-    ],
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": ["Arcane: Intelligence +1",
+                "Craft: Intelligence +1",
+                "Knowledge: Intelligence +3"],
+        "wis": [],
+        "cha": []
+    },
     
     "hand_limit":[
         ["6","7"],

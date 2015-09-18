@@ -1,8 +1,5 @@
 package pf.acg.ror;
 
-import java.util.UUID;
-
-import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,6 +10,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,9 +21,13 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TableRow;
 import android.widget.TextView;
+
+import org.json.JSONException;
+
+import java.util.UUID;
 
 @SuppressWarnings("deprecation")
 public class CharacterFragment extends Fragment {
@@ -173,6 +175,7 @@ public class CharacterFragment extends Fragment {
 		createBonusSpinner(R.id.cha_bonus, mCH.getChaBonus(), mCharacter.getChaBonus(), attr.Cha);
 		
 		//Skills
+		/*
 		StringBuilder builder = new StringBuilder();
 		for(String s : mCH.getSkills()) {
 		    builder.append(s + "\n");
@@ -187,7 +190,16 @@ public class CharacterFragment extends Fragment {
 				RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 		lp.addRule(RelativeLayout.BELOW, R.id.skills_table);
 		skills.addView(tv,lp);
-		
+		*/
+
+		addSkillsToTable(R.id.str_skills, mCH.getStrSkills());
+		addSkillsToTable(R.id.dex_skills, mCH.getDexSkills());
+		addSkillsToTable(R.id.con_skills, mCH.getConSkills());
+		addSkillsToTable(R.id.int_skills, mCH.getIntSkills());
+		addSkillsToTable(R.id.wis_skills, mCH.getWisSkills());
+		addSkillsToTable(R.id.cha_skills, mCH.getChaSkills());
+
+
 		//Favored Card
 		TextView favCard = (TextView)mV.findViewById(R.id.favored_card);
 		favCard.setText(mCH.getFavCard());
@@ -285,6 +297,16 @@ public class CharacterFragment extends Fragment {
 		});
 		
 		return mV;
+	}
+
+	private void addSkillsToTable(int view_id, String[] skills) {
+		if(skills == null)
+				return;
+
+		TableRow strSkill = (TableRow)mV.findViewById(view_id);
+		TextView tv = new TextView(this.getActivity());
+		tv.setText(TextUtils.join("\n", skills));
+		strSkill.addView(tv);
 	}
 
 	private void setCharacterResourceArrays(){

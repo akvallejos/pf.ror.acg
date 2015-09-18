@@ -78,11 +78,14 @@
         "5",
         "6"
     ],
-    "skills": [
-        "Knowledge: Intelligence +2",
-        "Perception: Wisdom +2",
-        "Diplomacy: Charimsa +2"
-    ],
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": ["Knowledge: Intelligence +2"],
+        "wis": ["Perception: Wisdom +2"],
+        "cha": ["Diplomacy: Charimsa +2"]
+    },
     
     "hand_limit":[
         ["6","7"],

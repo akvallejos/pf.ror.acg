@@ -78,12 +78,15 @@
         "5",
         "6"
     ],
-    "skills": [
-        "Acrobatics: Dexterity +1",
-        "Fortitude: Constitution +2",
-        "Survival: Wisdom +3"
-    ],
-    
+    "skills": {
+        "str": [],
+        "dex": ["Acrobatics: Dexterity +1"],
+        "con": ["Fortitude: Constitution +2"],
+        "int": [],
+        "wis": ["Survival: Wisdom +3"],
+        "cha": []
+    },
+
     "hand_limit":[
         ["5","6","7"],
         ["5","6","7","8"],

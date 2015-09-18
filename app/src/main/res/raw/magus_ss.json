@@ -78,11 +78,15 @@
         "4",
         "5"
     ],
-    "skills": [
-        "Melee: Strength +3",
-        "Arcane: Intelligence +3",
-        "Craft: Intelligence +1"
-    ],
+    "skills": {
+        "str": ["Melee: Strength +3"],
+        "dex": [],
+        "con": [],
+        "int": ["Arcane: Intelligence +3",
+                "Craft: Intelligence +1"],
+        "wis": [],
+        "cha": []
+    },
     
     "hand_limit":[
         ["5","6","7"],

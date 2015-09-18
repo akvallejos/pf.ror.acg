@@ -129,7 +129,12 @@
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1" />
 		       	</TableRow>
-		       	
+
+				<TableRow
+					android:id="@+id/str_skills"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
 		       	<TableRow
 		       	    android:layout_width="match_parent"
 		       	    android:layout_height="wrap_content">
@@ -154,6 +159,12 @@
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1" />
 		       	</TableRow>
+
+				<TableRow
+					android:id="@+id/dex_skills"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
 		       	<TableRow
 		       	    android:layout_width="match_parent"
 		       	    android:layout_height="wrap_content">
@@ -177,6 +188,12 @@
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1" />
 		       	</TableRow>
+
+				<TableRow
+					android:id="@+id/con_skills"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
 		       	<TableRow 
 		       	    android:layout_width="match_parent"
 		       	    android:layout_height="wrap_content">
@@ -201,6 +218,12 @@
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1" />
 		       	</TableRow>
+
+				<TableRow
+					android:id="@+id/int_skills"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
 		       <TableRow 
 		           android:layout_width="match_parent"
 		           android:layout_height="wrap_content">
@@ -224,6 +247,12 @@
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1" />
 		       </TableRow>
+
+				<TableRow
+					android:id="@+id/wis_skills"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
 		       <TableRow
 		           android:layout_width="match_parent"
 		           android:layout_height="wrap_content">
@@ -248,6 +277,12 @@
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1" />
 		       </TableRow>
+
+				<TableRow
+					android:id="@+id/cha_skills"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
 	       	</TableLayout>
 	    </RelativeLayout>
 
@@ -348,7 +383,7 @@
 			            android:layout_width="match_parent"
 			            android:layout_height="wrap_content"
 			            android:layout_weight="1" />
-		        </TableRow>		    
+		        </TableRow>
 	        	<TableRow 
 		            android:layout_width="match_parent"
 		            android:layout_height="wrap_content">

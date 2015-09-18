@@ -78,12 +78,14 @@
         "6",
         "7"
     ],
-    "skills": [
-        "Melee: Strength +3",
-        "Fortitude: Constitution +1",
-        "Divine: Wisdom +1",
-        "Diplomacy: Charimsa +1"
-    ],
+    "skills": {
+        "str": ["Melee: Strength +3"],
+        "dex": [],
+        "con": ["Fortitude: Constitution +1"],
+        "int": [],
+        "wis": ["Divine: Wisdom +1"],
+        "cha": ["Diplomacy: Charimsa +1"]
+    },
     
     "hand_limit":[
         ["4","5","6"],

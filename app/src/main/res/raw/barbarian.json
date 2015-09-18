@@ -78,10 +78,14 @@
         "5",
         "6"
     ],
-    "skills": [
-        "Melee: Strength +2",
-        "Survival: Wisdom +3"
-    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Survival: Wisdom +3"],
+        "cha": []
+    },
     
     "hand_limit":[
         ["4","5"],

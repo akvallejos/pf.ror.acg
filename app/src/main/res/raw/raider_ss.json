@@ -77,12 +77,15 @@
         "4",
         "5"
     ],
-    "skills": [
-        "Disable: Dexterity +1",
-        "Stealth: Dexterity +1",
-        "Fortitude: Constitution +1",
-        "Survival: Wisdom +1"
-    ],
+    "skills": {
+        "str": [],
+        "dex": ["Disable: Dexterity +1",
+                "Stealth: Dexterity +1"],
+        "con": ["Fortitude: Constitution +1"],
+        "int": [],
+        "wis": ["Survival: Wisdom +1"],
+        "cha": []
+    },
     
     "hand_limit":[
         ["7","8","9"],

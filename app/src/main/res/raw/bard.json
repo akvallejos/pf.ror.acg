@@ -78,12 +78,17 @@
         "5",
         "6"
     ],
-    "skills": [
-        "Arcane: Charisma +1",
-        "Diplomacy: Charimsa +2",
-        "Divine: Charisma +1"
-    ],
-    
+
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": [],
+        "cha": ["Arcane: Charisma +1",
+                "Diplomacy: Charimsa +2",
+                "Divine: Charisma +1"]
+    },
     "hand_limit":[
         ["6"],
         ["6","7"],

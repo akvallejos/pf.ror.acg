@@ -45,11 +45,18 @@ public class CharacterHelper {
 	private ArrayAdapter<CharSequence> mWorAdventures;
 
 	private JSONArray mPowers;
-	
+
 	private String[] mSkills;
 	private String[] mRoles;
+	private String[] mStrSkills;
+	private String[] mDexSkills;
+	private String[] mConSkills;
+	private String[] mIntSkills;
+	private String[] mWisSkills;
+	private String[] mChaSkills;
 
-    private InputStream mInputStream;
+
+	private InputStream mInputStream;
 	
 	//private PC mCharacter;
 	
@@ -169,7 +176,19 @@ public class CharacterHelper {
 	public JSONArray getPowers() {
 		return mPowers;
 	}
-	
+
+	public String[] getStrSkills() {return mStrSkills; }
+
+	public String[] getDexSkills() {return mDexSkills; }
+
+	public String[] getConSkills() {return mConSkills; }
+
+	public String[] getIntSkills() {return mIntSkills; }
+
+	public String[] getWisSkills() {return mWisSkills; }
+
+	public String[] getChaSkills() {return mChaSkills; }
+
 	public ArrayList<CharSequence> getPowersList(int i) throws JSONException{
 		return JSONArray2List(getPowers().getJSONArray(i));
 	}
@@ -266,10 +285,18 @@ public class CharacterHelper {
 
             mRoles = JSONArray2Array((JSONArray) json.get("role_bonus"));
             String[] roleBonusKeys = JSONArray2Array((JSONArray) json.get("role_bonus_keys"));
-            mSkills = JSONArray2Array((JSONArray) json.get("skills"));
+            //mSkills = JSONArray2Array((JSONArray) json.get("skills"));
+
+			mStrSkills = JSONArray2Array((JSONArray) ((JSONObject) json.get("skills")).get("str"));
+			mDexSkills = JSONArray2Array((JSONArray) ((JSONObject) json.get("skills")).get("dex"));
+			mConSkills = JSONArray2Array((JSONArray) ((JSONObject) json.get("skills")).get("con"));
+			mIntSkills = JSONArray2Array((JSONArray) ((JSONObject) json.get("skills")).get("int"));
+			mWisSkills = JSONArray2Array((JSONArray) ((JSONObject) json.get("skills")).get("wis"));
+			mChaSkills = JSONArray2Array((JSONArray) ((JSONObject) json.get("skills")).get("cha"));
 
 
-            mStrBonus = new ArrayAdapter<CharSequence>(activity, R.layout.skills_spinner,
+
+			mStrBonus = new ArrayAdapter<CharSequence>(activity, R.layout.skills_spinner,
                     JSONArray2List((JSONArray)json.get("str_bonus")));
 
             mDexBonus = new ArrayAdapter<CharSequence>(activity, R.layout.skills_spinner,
