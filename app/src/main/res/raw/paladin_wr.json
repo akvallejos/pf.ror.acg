@@ -8,12 +8,12 @@
     "fav_card": "Blessing",
     
     "role_bonus":[
-        "Palladin",
+        "Paladin",
         "Inheritor's Blade",
         "Wardstone Sentry"
     ],
     "role_bonus_keys":[
-        "palladin",
+        "paladin",
         "inheritors_blade",
         "wardstone_sentry"
     ],
@@ -101,7 +101,7 @@
 
     
     "powers": {
-    	"palladin": [[
+    	"paladin": [[
             "When you attempt a check before you act, you may use your Charisma skill instead of any listed skill."
         ],
         [

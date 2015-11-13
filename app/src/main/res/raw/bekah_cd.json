@@ -1,0 +1,181 @@
+{
+	"str": "1d6",
+    "dex": "1d8",
+    "con": "1d8",
+    "int": "1d6",
+    "wis": "1d6",
+    "cha": "1d8",
+    "fav_card": "Your Choice",
+    
+    "role_bonus":[
+        "Bard",
+        "Troublemaker",
+        "Warchief"
+    ],
+    "role_bonus_keys":[
+            "bard",
+            "troublemaker",
+            "warchief"
+        ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+    ],
+    "spells": [
+        "3",
+        "4",
+        "5"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "4",
+        "5"
+    ],
+
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": [],
+        "cha": ["Arcane: Charisma +1",
+                "Diplomacy: Charimsa +3",
+                "Divine: Charisma +1"]
+    },
+    "hand_limit":[
+        ["5","6","7"],
+        ["5","6","7","8"],
+        ["5","6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons"],
+        ["Proficient with Light Armors and Weapons"],
+        ["Proficient with Light Armors and Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"bard": [[
+        "At the start of your turn, you may put an ally from your hand on top of your deck and draw the bottom card of your deck."
+        ],
+    [
+        "You may recharge a weapon or a spell to add 1d4 to a check by another character at your location.",
+        "You may recharge a weapon or a spell to add 1d4 (+1) to a check by another character at your location.",
+        "You may recharge a weapon or a spell to add 1d4 to a check by another character at your location (or your check).",
+        "You may recharge a weapon or a spell to add 1d4 (+1) to a check by another character at your location (or your check)."
+    ],
+        [
+            "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1."
+        ]],
+    	
+    "troublemaker": [[
+        "At the start of your turn, you may put an ally from your hand on top of your deck and draw the bottom card of your deck."
+    ],
+        [
+            "You may recharge a weapon or a spell to add 1d4 to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 (+1) to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 to a check by another character at your location (or your check).",
+            "You may recharge a weapon or a spell to add 1d4 (+1) to a check by another character at your location (or your check).",
+            "You may recharge a weapon or a spell to add 1d4 (+2) to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 (+2) to a check by another character at your location (or your check).",
+            "You may recharge a weapon or a spell to add 1d4 (+3) to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 (+3) to a check by another character at your location (or your check)."
+        ],
+        [
+            "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1.",
+            "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1 (+3)."
+        ],
+        [
+            "-",
+            "When another character at your location acquires a boon, he may give it to you."
+        ],
+        [
+            "-",
+            "When another character plays a blessing to add to your Charisma check, add a d12 in place of the normal die.",
+            "When another character plays a blessing to add to your Charisma (or Dexterity) check, add a d12 in place of the normal die."
+        ],
+        [
+            "-",
+            "When you fail a check to acquire an ally, you may immediately explore again."
+        ]],
+    
+    "warchief": [[
+        "At the start of your turn, you may put an ally from your hand on top of your deck and draw the bottom card of your deck."
+    ],
+        [
+            "You may recharge a weapon or a spell to add 1d4 to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 (+1) to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 to a check by another character at your location (or your check).",
+            "You may recharge a weapon or a spell to add 1d4 (+1) to a check by another character at your location (or your check).",
+            "You may recharge a weapon or a spell to add 1d4 (+2) to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 (+2) to a check by another character at your location (or your check).",
+            "You may recharge a weapon or a spell to add 1d4 (+3) to a check by another character at your location.",
+            "You may recharge a weapon or a spell to add 1d4 (+3) to a check by another character at your location (or your check)."
+        ],
+        [
+            "For your check that has or is against a card that has the Finesse trait, you gain the skill Melee: Dexterity +1."
+        ],
+        [
+            "-",
+            "You may add 2 to your check to acquire a weapon.",
+            "You may add 2 to your check to acquire a weapon (or defeat a henchman).",
+            "You may add 2 to your check to acquire a weapon (or defeat a henchman) (or villain)."
+        ],
+        [
+            "-",
+            "When you play a blessing on a check by another character at your location, that character may recharge a random weapon from his discard pile."
+        ],
+        [
+            "-",
+            "When you fail a check to defeat a barrier, you may immediately explore again."
+        ]]}
+}

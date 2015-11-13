@@ -86,12 +86,6 @@
         "wis": ["Perception: Wisdom +2"],
         "cha": []
     },
-    "skills": [
-
-
-
-    ],
-    
     "hand_limit":[
         ["4","5"],
         ["4","5","6"],

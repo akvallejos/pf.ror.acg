@@ -6,6 +6,15 @@
     <string name="new_ror">Rise of the Rune Lords</string>
     <string name="new_sas">Skulls and Shackles</string>
     <string name="new_wor">Wrath of the Righteous</string>
+    <string name="new_cd">Character Decks</string>
+    <string name="new_bard_cd">New Bard (CD)</string>
+    <string name="new_cleric_cd">New Cleric (CD)</string>
+    <string name="new_fighter_cd">New Fighter (CD)</string>
+    <string name="new_paladin_cd">New Paladin (CD)</string>
+    <string name="new_ranger_cd">New Ranger (CD)</string>
+    <string name="new_rogue_cd">New Rogue (CD)</string>
+    <string name="new_sorcerer_cd">New Sorcerer (CD)</string>
+    <string name="new_wizard_cd">New Wizard (CD)</string>
 
     <string name="new_monk">New Monk (RoR)</string>
     <string name="new_paladin">New Paladin (RoR)</string>
@@ -43,7 +52,12 @@
     <string name="new_bloodrager_wr">New Bloodrager (WoR)</string>
     <string name="new_sorcerer_wr">New Sorceress (WoR)</string>
     <string name="new_shaman_wr">New Shaman (WoR)</string>
-    
+
+    <string name="new_bekah_cd">New Bekah (CD)</string>
+    <string name="new_lem_cd">New Lem (CD)</string>
+    <string name="new_meliski">New Meliski (CD)</string>
+    <string name="new_siwar">New Siwar (CD)</string>
+
     <string name="delete_character">Delete</string>
     
     <string name="skills_detail_label">Skill Feats:</string>

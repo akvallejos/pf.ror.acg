@@ -1,5 +1,7 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <group android:showAsAction="never">
+<menu xmlns:tools="http://schemas.android.com/tools"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:showAsAction="never"
+		tools:ignore="AppCompatResource">
         <!--  Rise of the Rune Lords -->
     	<item android:id="@+id/menu_item_new_ror"
     	    android:title="@string/new_ror">
@@ -82,6 +84,32 @@
 					android:title="@string/new_sorcerer_wr"/>
 				<item android:id="@+id/menu_item_new_shaman_wr"
 					android:title="@string/new_shaman_wr"/>
+			</group></menu>
+		</item>
+		<item android:id="@+id/menu_item_new_cd"
+			android:title="@string/new_cd">
+			<menu><group>
+				<item android:title="@string/new_bard_cd">
+					<menu><group>
+						<item android:title="@string/new_bekah_cd"
+							android:id="@+id/menu_item_new_bekah_cd"/>
+						<item android:title="@string/new_lem_cd"
+							android:id="@+id/menu_item_new_lem_cd"/>
+						<item android:title="@string/new_meliski"
+							android:id="@+id/menu_item_new_meliski_cd"/>
+						<item android:title="@string/new_siwar"
+							android:id="@+id/menu_item_new_siwar_cd"/>
+					</group></menu>
+				</item>
+				<!--
+				<item android:title="@string/new_cleric_cd"/>
+				<item android:title="@string/new_fighter_cd"/>
+				<item android:title="@string/new_paladin_cd"/>
+				<item android:title="@string/new_ranger_cd"/>
+				<item android:title="@string/new_rogue_cd"/>
+				<item android:title="@string/new_sorcerer_cd"/>
+				<item android:title="@string/new_wizard_cd"/>
+				-->
 			</group></menu>
 		</item>
 		<item android:id="@+id/rate_my_app"

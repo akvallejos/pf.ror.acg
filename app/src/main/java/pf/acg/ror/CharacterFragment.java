@@ -22,6 +22,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
@@ -300,13 +301,17 @@ public class CharacterFragment extends Fragment {
 	}
 
 	private void addSkillsToTable(int view_id, String[] skills) {
-		if(skills == null)
-				return;
+		TableRow rowSkill = (TableRow)mV.findViewById(view_id);
 
-		TableRow strSkill = (TableRow)mV.findViewById(view_id);
+		if(skills == null) {
+			TableLayout skillsTable = (TableLayout)mV.findViewById(R.id.skills_table);
+			skillsTable.removeView(rowSkill);
+			return;
+		}
+
 		TextView tv = new TextView(this.getActivity());
 		tv.setText(TextUtils.join("\n", skills));
-		strSkill.addView(tv);
+		rowSkill.addView(tv);
 	}
 
 	private void setCharacterResourceArrays(){
