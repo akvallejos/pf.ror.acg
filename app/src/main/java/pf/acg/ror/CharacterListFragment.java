@@ -214,6 +214,18 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_siwar_cd:
 			addCharacter(new PC("sinwar_cd"));
 			return true;
+		case R.id.menu_item_new_flenta_cd:
+			addCharacter(new PC("flenta_cd"));
+			return true;
+		case R.id.menu_item_new_tontelizi_cd:
+			addCharacter(new PC("tontelizi_cd"));
+			return true;
+		case R.id.menu_item_new_valeros_cd:
+			addCharacter(new PC("valeros_cd"));
+			return true;
+		case R.id.menu_item_new_vika_cd:
+			addCharacter(new PC("vika_cd"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -252,12 +264,6 @@ public class CharacterListFragment extends ListFragment
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id){
 		PC c = ((CharacterAdapter)getListAdapter()).getItem(position);
-		//Log.d(TAG, c.getRole() + " was clicked");
-		
-		//Start a Character Pager Activity
-		//Intent i = new Intent(getActivity(), CharacterPagerActivity.class);
-		//i.putExtra(CharacterFragment.EXTRA_CHARACTER_ID, c.getId());
-		//startActivity(i);
 		mCallbacks.onCharacterSelected(c);
 	}
 	

@@ -1,0 +1,171 @@
+{
+	"str": "1d10",
+    "dex": "1d6",
+    "con": "1d6",
+    "int": "1d8",
+    "wis": "1d6",
+    "cha": "1d6",
+    "fav_card": "Weapon or Spell",
+    
+    "role_bonus":[
+        "Fighter",
+        "Arcane Pretender",
+        "Martial Adept"
+    ],
+    "role_bonus_keys":[
+        "fighter",
+        "arcane_pretender",
+        "martial_adept"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6"
+    ],
+    "spells": [
+        "3",
+        "4",
+        "5"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "3",
+        "4",
+        "5"
+    ],
+    "allies": [
+        "1",
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "3",
+        "4"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": ["Acrobatics: Dexterity +2"],
+        "con": [],
+        "int": ["Knowledge: Intelligence +2"],
+        "wis": [],
+        "cha": []
+    },
+    "hand_limit":[
+        ["5","6","7"],
+        ["5","6","7","8"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+    
+    "powers": {
+    	"fighter": [[
+    		"After you play a spell that has the Arcane trait for its power, draw a random spell from the box that does not have an adventure deck number and has the Arcane trait and recharge it."
+    	],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead."
+        ],
+        [
+            "-",
+            "For your combat check that has the Attack trait, you may use the skill Arcane: Intelligence +2."
+        ]],
+    "arcane_pretender": [[
+        "After you play a spell that has the Arcane trait for its power, draw a random spell from the box that does not have an adventure deck number and has the Arcane trait and recharge it."
+    ],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead."
+        ],
+        [
+            "-",
+            "For your combat check that has the Attack trait, you may use the skill Arcane: Intelligence +2."
+        ],
+    [
+        "-",
+        "After you reset your hand, you may discard 1 weapon or spell from your hand then draw 1 weapon from your discard pile."
+    ],
+    [
+        "-",
+        "You may recharge a spell to add 1 plus its adventure deck number, if any, to your combat check.",
+        "You may recharge a spell (or an item that has the Magic trait) to add 1 plus its adventure deck number, if any, to your combat check.",
+        "You may recharge a spell to add 1 plus its adventure deck number, if any, to your combat (or non-combat) check.",
+        "You may recharge a spell ( or an item that has the Magic trait) to add 1 plus its adventure deck number, if any, to your combat (or non-combat) check."
+    ],
+    [
+        "-",
+        "You automatically succeed at your check to recharge an item that has the Magic trait.",
+        "You automatically succeed at your check to recharge (or acquire) an item that has the Magic trait."
+    ],
+    [
+        "-",
+        "When you play a blessing to add to an Intelligence check, you may add a d12 instead of the normal die."
+    ]],
+    
+    "martial_adept": [[
+        "After you play a spell that has the Arcane trait for its power, draw a random spell from the box that does not have an adventure deck number and has the Arcane trait and recharge it."
+    ],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon for its power, you may recharge it (or shuffle it into your deck) instead."
+        ],
+        [
+            "-",
+            "For your combat check that has the Attack trait, you may use the skill Arcane: Intelligence +2."
+        ],
+    [
+        "-",
+        "Add 1d4 to a combat check by a character at your location",
+        "Add 1d4 (+1) to a combat check by a character at your location",
+        "Add 1d4 (+2) to a combat check by a character at your location"
+    ],
+    [
+        "-",
+        "Add 2 to your check to recharge a boon that has the Magic trait.",
+        "Add (4) to your check to recharge a boon that has the Magic trait.",
+        "Add 2 to your check to recharge (or acquire) a boon that has the Magic trait.",
+        "Add (4) to your check to recharge (or acquire) a boon that has the Magic trait."
+    ],
+    [
+        "-",
+        "When you play a blessing to add to a Strength check, you may add a d12 instead of the normal die."
+    ]]}
+}

@@ -101,9 +101,19 @@
 							android:id="@+id/menu_item_new_siwar_cd"/>
 					</group></menu>
 				</item>
+				<item android:title="@string/new_fighter_cd">
+					<menu><group>
+						<item android:title="New Flenta (CD)"
+							android:id="@+id/menu_item_new_flenta_cd"/>
+						<item android:title="New Tontelizi (CD)"
+							android:id="@+id/menu_item_new_tontelizi_cd"/>
+						<item android:title="New Valeros (CD)"
+							android:id="@+id/menu_item_new_valeros_cd"/>
+						<item android:title="New Vika (CD)"
+							android:id="@+id/menu_item_new_vika_cd"/>
+					</group></menu>
+				</item>
 				<!--
-				<item android:title="@string/new_cleric_cd"/>
-				<item android:title="@string/new_fighter_cd"/>
 				<item android:title="@string/new_paladin_cd"/>
 				<item android:title="@string/new_ranger_cd"/>
 				<item android:title="@string/new_rogue_cd"/>

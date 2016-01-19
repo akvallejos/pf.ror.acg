@@ -1,0 +1,164 @@
+{
+	"str": "1d10",
+    "dex": "1d6",
+    "con": "1d8",
+    "int": "1d6",
+    "wis": "1d4",
+    "cha": "1d6",
+    "fav_card": "Weapon or Ally",
+    
+    "role_bonus":[
+        "Fighter",
+        "Daredevil",
+        "Liberator"
+    ],
+    "role_bonus_keys":[
+        "fighter",
+        "daredevil",
+        "liberator"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "2",
+        "3",
+        "4"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "3",
+        "4"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +3"],
+        "dex": [],
+        "con": ["Fortitude: Constitution +1"],
+        "int": [],
+        "wis": [],
+        "cha": ["Diplomacy: Charisma +3"]
+    },
+    "hand_limit":[
+        ["4","5"],
+        ["4","5","6"],
+        ["4","5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"fighter": [[
+    		"Reveal an ally from your hand to add 1d6 to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+1) to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+2) to a combat check by another character at your location."
+    	],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon for its power, you may recharge it (or shuffle it into your deck) instead."
+        ]],
+    "daredevil": [[
+            "Reveal an ally from your hand to add 1d6 to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+1) to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+2) to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+3) to a combat check by another character at your location."
+        ],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon for its power, you may recharge it (or shuffle it into your deck) instead.",
+            "When you would discard a weapon (or armor) for its power, you may recharge it instead.",
+            "When you would discard a weapon (or armor) for its power, you may recharge it (or shuffle it into your deck) instead."
+        ],
+        [
+            "-",
+            "When another character at your location is dealt damage, you may reduce that damage by 1.",
+            "When another character at your location is dealt damage, you may reduce that damage by (2)."
+        ],
+        [
+            "-",
+            "When another character at your location encounters a monster, you may bury a card. That character evades the monster; you encounter it instead."
+        ],
+        [
+            "-",
+            "When you play Blessing of Cayden Cailean, you may add a d12 in place of the normal die.",
+            "When you play Blessing of Cayden Cailean, you may add a d12 in place of the normal die (and you may recharge the blessing instead of discarding it)."
+        ]],
+    
+    "liberator": [[
+            "Reveal an ally from your hand to add 1d6 to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+1) to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+2) to a combat check by another character at your location.",
+            "Reveal an ally from your hand to add 1d6 (+3) to a combat check by another character at your location."
+        ],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon for its power, you may recharge it (or shuffle it into your deck) instead."
+        ],
+        [
+            "-",
+            "You may discard a weapon to recharge a random ally from your discard pile.",
+            "You may discard a weapon (or armor) to recharge a random ally from your discard pile."
+        ],
+        [
+            "-",
+            "Before you are dealt damage, you may display 1 allies; after you are dealt damage, return them to your hand.",
+            "Before you are dealt damage, you may display (2) allies; after you are dealt damage, return them to your hand.",
+            "Before you are dealt damage, you may display (any number of) allies; after you are dealt damage, return them to your hand."
+        ],
+        [
+            "-",
+            "After you banish an ally, bury a random ally from the box."
+        ]]}
+}

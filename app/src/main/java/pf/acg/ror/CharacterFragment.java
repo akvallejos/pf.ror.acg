@@ -176,23 +176,6 @@ public class CharacterFragment extends Fragment {
 		createBonusSpinner(R.id.cha_bonus, mCH.getChaBonus(), mCharacter.getChaBonus(), attr.Cha);
 		
 		//Skills
-		/*
-		StringBuilder builder = new StringBuilder();
-		for(String s : mCH.getSkills()) {
-		    builder.append(s + "\n");
-		}
-		
-		RelativeLayout skills = (RelativeLayout)mV.findViewById(R.id.skills_layout);
-		TextView tv = new TextView(this.getActivity());
-		tv.setText(builder.toString());
-		tv.setTextAppearance(mV.getContext(), android.R.style.TextAppearance_Medium);
-		tv.setTextSize(18);
-		RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-				RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-		lp.addRule(RelativeLayout.BELOW, R.id.skills_table);
-		skills.addView(tv,lp);
-		*/
-
 		addSkillsToTable(R.id.str_skills, mCH.getStrSkills());
 		addSkillsToTable(R.id.dex_skills, mCH.getDexSkills());
 		addSkillsToTable(R.id.con_skills, mCH.getConSkills());

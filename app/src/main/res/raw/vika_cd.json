@@ -1,0 +1,169 @@
+{
+	"str": "1d10",
+    "dex": "1d6",
+    "con": "1d10",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d4",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Fighter",
+        "Blacksmith",
+        "Pulverizer"
+    ],
+    "role_bonus_keys":[
+        "fighter",
+        "blacksmith",
+        "pulverizer"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "2",
+        "3",
+        "4"
+    ],
+    "items": [
+        "3",
+        "4"
+    ],
+    "allies": [
+        "2",
+        "3",
+        "4"
+    ],
+    "blessings": [
+        "3",
+        "4"
+    ],
+    "skills": {
+        "str": ["Craft: Strength +1", "Melee: Strength +2"],
+        "dex": ["Disable: Dexterity +2"],
+        "con": ["Fortitude: Constitution +1"],
+        "int": [],
+        "wis": [],
+        "cha": []
+    },
+    "hand_limit":[
+        ["4","5"],
+        ["4","5","6"],
+        ["4","5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"fighter": [[
+    		"Recharge a card that has the Bludgeoning trait to add 1d6 to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+1) to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+2) to a combat check by another character at your location."
+    	],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon (or armor) for its power, you may recharge it instead."
+        ]],
+        "blacksmith": [[
+            "Recharge a card that has the Bludgeoning trait to add 1d6 to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+1) to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+2) to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 to a combat check by another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+1) to a combat check by another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+2) to a combat check by another character at your location.(You may draw a card.)"
+        ],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon (or armor) for its power, you may recharge it instead.",
+            "When you would discard a weapon for its power, you may recharge it (or another card of the same type in your discard pile) instead.",
+            "When you would discard a weapon (or armor) for its power, you may recharge it (or another card of the same type in your discard pile) instead."
+        ],
+        [
+            "-",
+            "When you would bury an armor or weapon, you may discard it instead."
+        ],
+        [
+            "-",
+            "Add 2 to any check to acquire a weapon or armor by another character at your location.",
+            "Add 2 to any check to acquire a weapon or armor by (you or) another character at your location."
+        ],
+        [
+            "-",
+            "Reveal an armor to reduce all damage dealt to you by 1.",
+            "Reveal an armor to reduce all damage dealt to you by (2)."
+        ]],
+    
+        "pulverizer": [[
+            "Recharge a card that has the Bludgeoning trait to add 1d6 to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+1) to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+2) to a combat check by another character at your location.",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 to a combat check by another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+1) to a combat check by another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+2) to a combat check by another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 to a combat check by (you or) another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+1) to a combat check by (you or) another character at your location.(You may draw a card.)",
+            "Recharge a card that has the Bludgeoning trait to add 1d6 (+2) to a combat check by (you or) another character at your location.(You may draw a card.)"
+        ],
+        [
+            "When you would discard a weapon for its power, you may recharge it instead.",
+            "When you would discard a weapon (or armor) for its power, you may recharge it instead."
+        ],
+        [
+            "-",
+            "Add 2 to your check to acquire a weapon.",
+            "Add (4) to your check to acquire a weapon."
+        ],
+        [
+            "-",
+            "You automatically succeed at your check to close an empty location."
+        ],
+        [
+            "-",
+            "When you attempt to defeat a barrier that has the Lock or Obstacle trait, you may recharge a card to use your Strength or Melee skill in place of any listed skill for your check."
+        ]]}
+}

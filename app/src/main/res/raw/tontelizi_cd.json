@@ -1,0 +1,164 @@
+{
+	"str": "1d8",
+    "dex": "1d6",
+    "con": "1d8",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d8",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Fighter",
+        "Halberdier",
+        "Legbreaker"
+    ],
+    "role_bonus_keys":[
+        "fighter",
+        "halberdier",
+        "legbreaker"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "3",
+        "4",
+        "5"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "3",
+        "4",
+        "5"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +3"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Survival: Wisdom +1"],
+        "cha": ["Diplomacy: Charisma +2"]
+    },
+    "hand_limit":[
+        ["4","5","6"],
+        ["4","5","6"],
+        ["4","5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+    
+    "powers": {
+    	"fighter": [[
+    		"Add 1d4 to a combat check by another character at your location.",
+            "Add 1d4 (+1) to a combat check by another character at your location."
+    	],
+        [
+            "When you would discard a weapon that has the Polearm trait for its power, you may recharge it instead.",
+            "When you would discard a weapon that has the Polearm trait for its power, you may recharge it instead (and add 1 die to your check)."
+        ]],
+    "halberdier": [[
+            "Add 1d4 to a combat check by another character at your location.",
+            "Add 1d4 (+1) to a combat check by another character at your location.",
+            "Add 1d4 (+2) to a combat check by another character at your location."
+        ],
+        [
+            "When you would discard a weapon that has the Polearm trait for its power, you may recharge it instead.",
+            "When you would discard a weapon that has the Polearm trait for its power, you may recharge it instead (and add 1 die to your check)."
+        ],
+        [
+            "-",
+            "You may recharge a weapon to add 1d4 to a combat check by a character at another location.",
+            "You may recharge a weapon to add 1d4 (+1) to a combat check by a character at another location.",
+            "You may recharge a weapon to add 1d4 (+2) to a combat check by a character at another location."
+        ],
+        [
+            "-",
+            "If a power allows you to reroll dice on your check, you may add 1d4 to the new result.",
+            "If a power allows you to reroll dice on your check, you may add (2d4) to the new result."
+        ],
+        [
+            "-",
+            "Reduce Combat damage dealt to another character at your location by 1.",
+            "Reduce Combat damage dealt to (you or) another character at your location by 1."
+        ]],
+    
+    "legbreaker": [[
+            "Add 1d4 to a combat check by another character at your location.",
+            "Add 1d4 (+1) to a combat check by another character at your location.",
+            "Add 1d4 (+2) to a combat check by another character at your location."
+        ],
+        [
+            "When you would discard a weapon that has the Polearm trait for its power, you may recharge it instead.",
+            "When you would discard a weapon that has the Polearm trait for its power, you may recharge it instead (and add 1 die to your check)."
+        ],
+        [
+            "-",
+            "When you defeat a monster, you may recharge an ally from your discard pile; if the ally has an adventure deck number, it must be lower than that of the currrent scenario."
+        ],
+        [
+            "-",
+            "When you would fail a check to acquire an ally, you may bury a card to succeed."
+        ],
+        [
+            "-",
+            "At the start of your turn, you may bury an ally to draw 3 cards.",
+            "At the start of your turn, you may bury (or discard) an ally to draw 3 cards."
+        ],
+        [
+            "-",
+            "You may discard an ally to add 1 die to your check to defeat a monster.",
+            "You may discard an ally to add 1 die to your check to defeat a monster (or barrier).",
+            "You may discard an ally to add 1 die to your check to defeat a monster (or barrier) (or to close a location)."
+        ]]}
+}
