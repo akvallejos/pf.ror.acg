@@ -113,8 +113,17 @@
 							android:id="@+id/menu_item_new_vika_cd"/>
 					</group></menu>
 				</item>
+				<item android:title="@string/new_paladin_cd">
+					<menu><group>
+						<item android:title="New Koren (CD)"
+							android:id="@+id/menu_item_new_koren_cd"/>
+						<item android:title="New Raz (CD)"
+							android:id="@+id/menu_item_new_raz_cd"/>
+						<item android:title="New Seelah (CD)"
+							android:id="@+id/menu_item_new_seelah_cd"/>
+					</group></menu>
+				</item>
 				<!--
-				<item android:title="@string/new_paladin_cd"/>
 				<item android:title="@string/new_ranger_cd"/>
 				<item android:title="@string/new_rogue_cd"/>
 				<item android:title="@string/new_sorcerer_cd"/>

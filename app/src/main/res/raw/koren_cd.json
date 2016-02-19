@@ -1,0 +1,179 @@
+{
+	"str": "1d8",
+    "dex": "1d4",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d10",
+    "cha": "1d8",
+    "fav_card": "Spell or Armor",
+    
+    "role_bonus":[
+        "Paladin",
+        "Gilded Fist",
+        "Unflagging Companion"
+    ],
+    "role_bonus_keys":[
+        "paladin",
+        "gilded_fist",
+        "unflagging_companion"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "3",
+        "4",
+        "5"
+    ],
+    "spells": [
+        "3",
+        "4",
+        "5"
+    ],
+    "armors": [
+        "3",
+        "4",
+        "5"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "0",
+        "1"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": ["Fortitude: Constitution +2"],
+        "int": [],
+        "wis": [],
+        "cha": ["Divine: Charisma +3"]
+    },
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"paladin": [[
+		    "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by 2.",
+            "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by (3)."
+        ],
+        [
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it."
+        ]],
+    "gilded_fist": [[
+            "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by 2.",
+            "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by (3).",
+            "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by (3).(If that damage is dealt by a bane that has the Undead trait, you may reveal that armor instead of recharging it.)"
+        ],
+        [
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to (your check or) any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to (your check or) any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to (your check or) any check by another character at your location. If that card is an armor (or blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor (or a blessing)(or a spell), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor (or a blessing)(or a spell), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to (your check or) any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to (your check or) any check by another character at your location. If that card is an armor (or a blessing)(or a spell), you may recharge it instead of discarding it."
+        ],
+        [
+            "-",
+            "Add 1d8 and the Magic trait to your check against a bane that has the Undead trait."
+        ],
+        [
+            "-",
+            "When you play a blessing on another character's check against a bane, you may recharge that blessing instead of discarding it.",
+            "When you play a blessing on another character's check against a bane, you may recharge that blessing instead of discarding it. (If the bane has the Undead trait,  you may put that blessing on top of your deck instead of discarding it.)"
+        ],
+        [
+            "-",
+            "You may treat any power that has the word Undead on this card or on any card you play as if it has the word Aberration or Outsider instead."
+        ]],
+    
+    "unflagging_companion": [[
+            "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by 2.",
+            "When another character at your location is dealt damage, you may recharge an armor to reduce that damage by (3)."
+        ],
+        [
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to (your check or) any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to (your check or) any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to (your check or) any check by another character at your location. If that card is an armor (or blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it. (If the character succeeds at the check, she may recharge a random card from her discard pile.)",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it. (If the character succeeds at the check, she may recharge a random card from her discard pile.)",
+            "You may discard the top card of your deck to add 1d6 to (your check or) any check by another character at your location. If that card is an armor, you may recharge it instead of discarding it. (If the character succeeds at the check, she may recharge a random card from her discard pile.)",
+            "You may discard the top card of your deck to add 1d6 to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it. (If the character succeeds at the check, she may recharge a random card from her discard pile.)",
+            "You may discard the top card of your deck to add 1d6 (+1) to any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it. (If the character succeeds at the check, she may recharge a random card from her discard pile.)",
+            "You may discard the top card of your deck to add 1d6 (+1) to (your check or) any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it.",
+            "You may discard the top card of your deck to add 1d6 (+1) to (your check or) any check by another character at your location. If that card is an armor (or a blessing), you may recharge it instead of discarding it. (If the character succeeds at the check, she may recharge a random card from her discard pile.)"
+        ],
+        [
+            "-",
+            "After another character moves from your location, you may discard a card to move to that character's location",
+            "After another character moves from your location, you may discard (or recharge) a card to move to that character's location"
+        ],
+        [
+            "-",
+            "At the start or end of your turn, if a bane is displayed next to the deck of another character at your location, you may display it next to your deck instead."
+        ],
+        [
+            "-",
+            "When a character at your location fails to acquire a boon, you may recharge a blessing; she evades the boon and you immediately encounter it.",
+            "When a character at your location fails to acquire a boon, you may recharge (or reveal) a blessing; she evades the boon and you immediately encounter it."
+        ]]}
+}

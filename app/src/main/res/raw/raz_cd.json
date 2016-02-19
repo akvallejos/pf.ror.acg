@@ -1,0 +1,172 @@
+{
+	"str": "1d8",
+    "dex": "1d8",
+    "con": "1d6",
+    "int": "1d4",
+    "wis": "1d6",
+    "cha": "1d10",
+    "fav_card": "Ally",
+    
+    "role_bonus":[
+        "Paladin",
+        "Dog Rider Knight",
+        "Fair Trader"
+    ],
+    "role_bonus_keys":[
+        "paladin",
+        "dog_rider_knight",
+        "fair_trader"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "3",
+        "4"
+    ],
+    "items": [
+        "1",
+        "2",
+        "3"
+    ],
+    "allies": [
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "blessings": [
+        "3",
+        "4"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Divine: Wisdom +1"],
+        "cha": ["Diplomacy: Charisma +2"]
+    },
+    "hand_limit":[
+        ["4","5"],
+        ["4","5"],
+        ["4","5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"paladin": [[
+		    "You may discard the top card of your deck to add 1d6 to your check. If that card has the Mount trait, you may recharge it instead.",
+            "You may discard the top card of your deck to add 1d6 (+1) to your check. If that card has the Mount trait, you may recharge it instead."
+        ],
+        [
+            "When you attempt a check to acquire a weapon or an armor, you may use your Diplomacy skill instead of any listed skill.",
+            "When you attempt a check to acquire a weapon or an armor (or an item or an ally), you may use your Diplomacy skill instead of any listed skill."
+        ],
+        [
+            "When a character at another location encounters a monster, you may bury a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it.",
+            "When a character at another location encounters a monster, you may bury (or discard) a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it."
+        ]],
+        "dog_rider_knight": [[
+            "You may discard the top card of your deck to add 1d6 to your check. If that card has the Mount trait, you may recharge it instead.",
+            "You may discard the top card of your deck to add 1d6 (+1) to your check. If that card has the Mount trait, you may recharge it instead.",
+            "You may discard the top card of your deck to add 1d6 (+2) to your check. If that card has the Mount trait, you may recharge it instead.",
+            "You may discard the top card of your deck to add 1d6 (+3) to your check. If that card has the Mount trait, you may recharge it instead."
+        ],
+        [
+            "When you attempt a check to acquire a weapon or an armor, you may use your Diplomacy skill instead of any listed skill.",
+            "When you attempt a check to acquire a weapon or an armor (or an item or an ally), you may use your Diplomacy skill instead of any listed skill."
+        ],
+        [
+            "When a character at another location encounters a monster, you may bury a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it.",
+            "When a character at another location encounters a monster, you may bury (or discard) a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it."
+        ],
+        [
+            "-",
+            "At the start of your turn, you may discard a card from your hand to draw a card that has the Mount trait from your discard pile.",
+            "At the start (or end) of your turn, you may discard a card from your hand to draw a card that has the Mount trait from your discard pile."
+        ],
+        [
+            "-",
+            "Add 2 to your check that has or is against a card that has the Polearm trait.",
+            "Add (4) to your check that has or is against a card that has the Polearm trait."
+        ],
+        [
+            "-",
+            "When you would bury an armor for its power, you may discard it instead.",
+            "When you would bury an armor for its power, you may discard (or recharge) it instead."
+        ]],
+    
+        "fair_trader": [[
+            "You may discard the top card of your deck to add 1d6 to your check. If that card has the Mount trait, you may recharge it instead.",
+            "You may discard the top card of your deck to add 1d6 (+1) to your check. If that card has the Mount trait, you may recharge it instead.",
+            "You may discard the top card of your deck to add 1d6 (+2) to your check. If that card has the Mount trait, you may recharge it instead."
+        ],
+        [
+            "When you attempt a check to acquire a weapon or an armor, you may use your Diplomacy skill instead of any listed skill.",
+            "When you attempt a check to acquire a weapon or an armor (or an item or an ally), you may use your Diplomacy skill instead of any listed skill."
+        ],
+        [
+            "When a character at another location encounters a monster, you may bury a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it.",
+            "When a character at another location encounters a monster, you may bury (or discard) a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it.",
+            "When a character at another location encounters a monster (or a weapon or an armor), you may bury a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it.",
+            "When a character at another location encounters a monster (or a weapon or an armor), you may bury (or discard) a card that has the Mount trait to allow that character to evade the monster; you then move to that location and encounter it."
+        ],
+        [
+            "-",
+            "You may recharge a card that has the Mount trait to give a card to another character. This power may not be used during an encounter.",
+            "You may recharge a card that has the Mount trait to give a card to another character (and that character may give you a card). This power may not be used during an encounter."
+        ],
+        [
+            "-",
+            "When you acquire a weapon or an armor, you may exchange it for a random card of the same type from the box.",
+            "When you acquire (or a character at your location acquires) a weapon or an armor, you may exchange it for a random card of the same type from the box.",
+            "When you acquire a weapon or an armor (or a spell or an item), you may exchange it for a random card of the same type from the box.",
+            "When you acquire (or a character at your location acquires) a weapon or an armor (or a spell or an item), you may exchange it for a random card of the same type from the box."
+        ]]}
+}

@@ -1,0 +1,180 @@
+{
+	"str": "1d10",
+    "dex": "1d4",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d8",
+    "cha": "1d8",
+    "fav_card": "Spell or Item",
+    
+    "role_bonus":[
+        "Paladin",
+        "Faith Healer",
+        "Light of the Sword"
+    ],
+    "role_bonus_keys":[
+        "paladin",
+        "faith_healer",
+        "light_of_the_sword"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "spells": [
+        "1",
+        "2"
+    ],
+    "armors": [
+        "3",
+        "4"
+    ],
+    "items": [
+        "1",
+        "2"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "3",
+        "4",
+        "5"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Divine: Wisdom +1"],
+        "cha": ["Diplomacy: Charisma +3"]
+    },
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"paladin": [[
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck.",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck.",
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck.",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck."
+
+        ],
+        [
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, put it on the bottom of the deck.",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, put it on the bottom of the deck (and add 1d6 to your next check this turn)."
+        ]],
+        "faith_healer": [[
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck.",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck.",
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck.",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck.",
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck. (Then you may draw a card.)",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck. (Then you may draw a card.)",
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck. (Then you may draw a card.)",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck. (Then you may draw a card.)"
+
+
+        ],
+        [
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, put it on the bottom of the deck.",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, put it on the bottom of the deck (and add 1d6 to your next check this turn).",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, (encounter it or) put it on the bottom of the deck.",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, (encounter it or) put it on the bottom of the deck (and add 1d6 to your next check this turn)."
+        ],
+        [
+            "-",
+            "When you would discard a card that has the Healing or Iomedae trait for its power, you may reveal a card that has the Divine trait to recharge it instead of discarding it."
+        ],
+        [
+            "-",
+            "When a character at your location attempts a check before he acts, add 2.",
+            "When a character at your location attempts a check before he acts, add (4)."
+        ],
+        [
+            "-",
+            "At the start of another character's turn, you may recharge a blessing to move that character to your location. That character may not move during his move step."
+        ],
+        [
+            "-",
+            "When a character at your location does not defeat a non-villain bane he encounters, you may recharge a card to put that bane on top of your location deck."
+        ]],
+    
+        "light_of_the_sword": [[
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck.",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles 2 random cards from his discard pile into his deck.",
+            "At the start of your turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck.",
+            "At the start of your (or any) turn, you may choose another character at your location, then discard a card. That character shuffles (3) random cards from his discard pile into his deck."
+
+        ],
+        [
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, put it on the bottom of the deck.",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, put it on the bottom of the deck (and add 1d6 to your next check this turn).",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, (you may) put it on the bottom of the deck.",
+            "At the start of your turn, you may examine the top card of your location deck. If it is a boon, (you may) put it on the bottom of the deck (and add 1d6 to your next check this turn)."
+        ],
+        [
+            "-",
+            "Add 2 to your combat check that has the Sword trait; you may discard a card to add another 1d8 and the Fire and Magic traits.",
+            "Add (4) to your combat check that has the Sword trait; you may discard a card to add another 1d8 and the Fire and Magic traits.",
+            "Add 2 to your combat check that has the Sword trait; you may discard (or recharge) a card to add another 1d8 and the Fire and Magic traits.",
+            "Add (4) to your combat check that has the Sword trait; you may discard (or recharge) a card to add another 1d8 and the Fire and Magic traits."
+        ],
+        [
+            "-",
+            "At the end of your turn, you may exchange a card in your hand for a weapon in your discard pile.",
+            "At the end of your turn, you may exchange a card in your hand for a weapon (or a spell) in your discard pile."
+        ],
+        [
+            "-",
+            "At the start of each turn, you may recharge a card that has the Sword trait to examine the top card of your location deck.",
+            "At the start of each turn, you may recharge a card that has the Sword trait (or put it on top of your deck) to examine the top card of your location deck."
+        ]]}
+}
