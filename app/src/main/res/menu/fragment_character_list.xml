@@ -123,8 +123,20 @@
 							android:id="@+id/menu_item_new_seelah_cd"/>
 					</group></menu>
 				</item>
+
+				<item android:title="@string/new_ranger_cd">
+					<menu><group>
+						<item android:title="New Agna (CD)"
+							android:id="@+id/menu_item_new_agna_cd" />
+						<item android:title="New Arabundi (CD)"
+							android:id="@+id/menu_item_new_arabundi_cd" />
+						<item android:title="New Harsk (CD)"
+							android:id="@+id/menu_item_new_harsk_cd" />
+						<item android:title="New Wrathack (CD)"
+							android:id="@+id/menu_item_new_wrathack_cd" />
+					</group></menu>
+				</item>
 				<!--
-				<item android:title="@string/new_ranger_cd"/>
 				<item android:title="@string/new_rogue_cd"/>
 				<item android:title="@string/new_sorcerer_cd"/>
 				<item android:title="@string/new_wizard_cd"/>

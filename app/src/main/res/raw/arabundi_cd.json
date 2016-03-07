@@ -1,0 +1,179 @@
+{
+	"str": "1d6",
+    "dex": "1d8",
+    "con": "1d10",
+    "int": "1d6",
+    "wis": "1d8",
+    "cha": "1d4",
+    "fav_card": "weapon or spell",
+    
+    "role_bonus":[
+        "Ranger",
+        "Nature Adept",
+        "Mage Hunter"
+    ],
+    "role_bonus_keys":[
+        "ranger",
+        "nature_adept",
+        "mage_hunter"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "4",
+        "5"
+    ],
+    "spells": [
+        "2",
+        "3",
+        "4"
+    ],
+    "armors": [
+        "1",
+        "2",
+        "3"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": {
+        "str": [],
+        "dex": ["Ranged: Dexterity +3"],
+        "con": [],
+        "int": ["Knowledge: Intelligence +2"],
+        "wis": ["Divine: Wisdom +1"],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["6","7","8"],
+        ["6","7","8"],
+        ["6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"ranger": [[
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire damage dealt to you by 1.",
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire damage dealt to you by (2)."
+        ],
+        [
+            "Add 2 to your check to acquire a spell that has the Divine trait.",
+            "Add (4) to your check to acquire a spell that has the Divine trait."
+        ],
+        [
+            "You may recharge a card to add 1d4 to a combat check by a character at another location."
+        ]],
+    "nature_adept": [[
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire damage dealt to you by 1.",
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire damage dealt to you by (2)."
+        ],
+        [
+            "Add 2 to your check to acquire a spell that has the Divine trait.",
+            "Add (4) to your check to acquire a spell that has the Divine trait.",
+            "Add 2 to your check to acquire (or recharge) a spell that has the Divine trait.",
+            "Add (4) to your check to acquire (or recharge) a spell that has the Divine trait."
+        ],
+        [
+            "You may recharge a card to add 1d4 to a combat check by a character at another location.",
+            "You may recharge a card to add 1d4 (+1) to a combat check by a character at another location."
+        ],
+        [
+            "-",
+            "If your check has the Attack trait, add +2 to it.",
+            "If your check has the Attack trait, add (+3) to it."
+        ],
+        [
+            "-",
+            "When you succeed at a check to recharge a spell, you may draw a card."
+        ],
+        [
+            "-",
+            "When you would recharge a spell, you may shuffle it into your deck instead.",
+            "When you would recharge a spell, you may shuffle it into your deck (or put it on top of your deck) instead."
+        ],
+        [
+            "-",
+            "At the end of your turn, you may examine the top card of your location deck. If it is not a spell, you may shuffle it into the deck."
+        ]],
+    
+    "mage_hunter": [[
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire damage dealt to you by 1.",
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire damage dealt to you by (2).",
+            "You may reveal a spell (or weapon) to reduce Acid, Cold, Electricity, or Fire damage dealt to you by 1.",
+            "You may reveal a spell to reduce Acid, Cold, Electricity, or Fire (or any) damage dealt to you by 1.",
+            "You may reveal a spell (or weapon) to reduce Acid, Cold, Electricity, or Fire (or any) damage dealt to you by 1.",
+            "You may reveal a spell (or weapon) to reduce Acid, Cold, Electricity, or Fire damage dealt to you by (2).",
+            "You may reveal a spell (or weapon) to reduce Acid, Cold, Electricity, or Fire (or any) damage dealt to you by (2)."
+        ],
+        [
+            "Add 2 to your check to acquire a spell that has the Divine trait.",
+            "Add (4) to your check to acquire a spell that has the Divine trait."
+        ],
+        [
+            "You may recharge a card to add 1d4 to a combat check by a character at another location.",
+            "You may recharge a card to add 1d4 (+1) to a combat check by a character at another location."
+        ],
+        [
+           "-",
+            "When you are dealt damage before you act on your turn, you may add the number of cards you discarded as damage to your next combat check."
+        ],
+        [
+            "-",
+            "At the end of your turn, you may examine the top card of your location deck.",
+            "At the end of your turn, you may examine the top card of your location deck. (If it is a boon, you may shuffle the deck.)"
+        ],
+        [
+            "-",
+            "When you play a Basic blessing on your non-combat check, you may recharge a random spell from your discard pile.",
+            "When you play a Basic blessing (or any blessing) on your non-combat check, you may recharge a random spell from your discard pile."
+        ]]}
+}

@@ -1,0 +1,167 @@
+{
+	"str": "1d12",
+    "dex": "1d6",
+    "con": "1d8",
+    "int": "1d4",
+    "wis": "1d6",
+    "cha": "1d6",
+    "fav_card": "weapon",
+    
+    "role_bonus":[
+        "Ranger",
+        "Doombringer",
+        "Sentry"
+    ],
+    "role_bonus_keys":[
+        "ranger",
+        "doombringer",
+        "sentry"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7",
+        "8"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "2",
+        "3",
+        "4"
+    ],
+    "items": [
+        "3",
+        "4"
+    ],
+    "allies": [
+        "1",
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +1"],
+        "dex": [],
+        "con": ["Fortitude: Constitution +2"],
+        "int": [],
+        "wis": ["Survival: Wisdom +3"],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["4","5","6"],
+        ["4","5","6","7"],
+        ["4","5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"ranger": [[
+            "When you defeat a monster, you may examine the bottom card of its location deck.",
+            "When you defeat a monster, you may examine the bottom card (or bottom 2 cards) of its location deck."
+        ],
+        [
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 to a combat check by a character at your location.",
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 (+1) to a combat check by a character at your location."
+        ]],
+    "doombringer": [[
+            "When you defeat a monster, you may examine the bottom card of its location deck.",
+            "When you defeat a monster, you may examine the bottom card (or bottom 2 cards) of its location deck."
+        ],
+        [
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 to a combat check by a character at your location.",
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 (+1) to a combat check by a character at your location.",
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 (+2) to a combat check by a character at your location."
+        ],
+        [
+            "-",
+            "You gain the skill Diplomacy: Charisma +2."
+        ],
+        [
+            "-",
+            "When you would discard a weapon that has the 2-Handed trait for its power, you may recharge it instead.",
+            "When you would discard a weapon that has the 2-Handed trait for its power, you may recharge it (or shuffle it into your deck) instead."
+        ],
+        [
+            "-",
+            "Add 1d8 to your check to defeat a bane that has the Outsider trait.",
+            "Add 1d8 (+1) to your check to defeat a bane that has the Outsider trait.",
+            "Add 1d8 to your check to defeat a bane that has the Outsider (or Undead) trait.",
+            "Add 1d8 (+1) to your check to defeat a bane that has the Outsider (or Undead) trait."
+
+        ]],
+    
+    "sentry": [[
+            "When you defeat a monster, you may examine the bottom card of its location deck.",
+            "When you defeat a monster, you may examine the bottom card (or bottom 2 cards) of its location deck.",
+            "When you defeat (or another character at your location defeats) a monster, you may examine the bottom card of its location deck.",
+            "When you defeat a monster, you may examine the bottom card of its location deck (and return them in any order).",
+            "When you defeat (or another character at your location defeats) a monster, you may examine the bottom card (or bottom 2 cards) of its location deck.",
+            "When you defeat a monster, you may examine the bottom card (or bottom 2 cards) of its location deck (and return them in any order).",
+            "When you defeat (or another character at your location defeats) a monster, you may examine the bottom card of its location deck (and return them in any order).",
+            "When you defeat (or another character at your location defeats) a monster, you may examine the bottom card (or bottom 2 cards) of its location deck (and return them in any order)."
+        ],
+        [
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 to a combat check by a character at your location.",
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 (+1) to a combat check by a character at your location.",
+            "You may recharge a weapon that has the 2-Handed trait to add 1d4 (+2) to a combat check by a character at your location."
+        ],
+        [
+            "-",
+            "You gain the skill Perception: Wisdom +2."
+        ],
+        [
+            "-",
+            "When you start your turn with no cards in your hand, you may draw 1 card.",
+            "When you start your turn with no cards in your hand, you may draw 1 card (or 2 cards)."
+        ],
+        [
+            "-",
+            "After you close a location, you may move."
+        ]]}
+}

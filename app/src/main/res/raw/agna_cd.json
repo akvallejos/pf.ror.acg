@@ -1,0 +1,173 @@
+{
+	"str": "1d10",
+    "dex": "1d8",
+    "con": "1d6",
+    "int": "1d4",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "ally",
+    
+    "role_bonus":[
+        "Ranger",
+        "Aggressor",
+        "Beast Master"
+    ],
+    "role_bonus_keys":[
+        "ranger",
+        "aggresor",
+        "beast_master"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "4",
+        "5",
+        "6"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Perception: Wisdom +3",
+                "Survival: Wisdom +3"],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["5","6","7"],
+        ["5","6","7"],
+        ["5","6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"ranger": [[
+        "When you play an ally that has the Animal trait, you may recharge it instead of discarding it."
+    ],
+    [
+        "You may recharge a card that has the Offhand trait to add 1d6 and that card’s traits to your combat check.",
+        "You may recharge a card that has the Offhand trait to add 1d6 (+1) and that card’s traits to your combat check."
+    ],
+    [
+        "At the end of your turn, you may examine the top card of your location deck.",
+        "At the end of your turn, you may examine the top (or bottom) card of your location deck."
+    ]],
+    "aggressor": [[
+        "When you play an ally that has the Animal trait, you may recharge it instead of discarding it."
+    ],
+        [
+            "You may recharge a card that has the Offhand trait to add 1d6 and that card’s traits to your combat check.",
+            "You may recharge a card that has the Offhand trait to add 1d6 (+1) and that card’s traits to your combat check.",
+            "You may recharge a card that has the Offhand trait to add 1d6 (+2) and that card’s traits to your combat check.",
+            "You may recharge a card that has the Offhand trait to add 1d6 (+3) and that card’s traits to your combat check.",
+            "You may recharge a card that has the Offhand trait to add 1d6 (+4) and that card’s traits to your combat check."
+        ],
+        [
+            "At the end of your turn, you may examine the top card of your location deck.",
+            "At the end of your turn, you may examine the top (or bottom) card of your location deck.",
+            "At the (start or) end of your turn, you may examine the top card of your location deck.",
+            "At the (start or) end of your turn, you may examine the top (or bottom) card of your location deck."
+        ],
+    [
+        "-",
+        "Before you act, if you have no cards in your hand, you may draw 1 card.",
+        "Before you act, if you have no cards in your hand, you may draw 1 card (or 2 cards)."
+    ],
+    [
+        "-",
+        "When you play a weapon that has the Offhand trait, add 1d6 to your combat checks during that encounter"
+    ],
+    [
+        "-",
+        "When you play a blessing to add to your Dexterity check, you may add a d12 instead of the normal die."
+    ]],
+    
+    "beast_master": [[
+        "When you play an ally that has the Animal trait, you may recharge it instead of discarding it."
+    ],
+        [
+            "You may recharge a card that has the Offhand trait to add 1d6 and that card’s traits to your combat check.",
+            "You may recharge a card that has the Offhand trait to add 1d6 (+1) and that card’s traits to your combat check.",
+            "You may recharge a card that has the Offhand trait to add 1d6 (+2) and that card’s traits to your combat check."
+        ],
+        [
+            "At the end of your turn, you may examine the top card of your location deck.",
+            "At the end of your turn, you may examine the top (or bottom) card of your location deck."
+        ],
+    [
+        "-",
+        "Add 2 to your check to acquire a boon that has the Animal trait.",
+        "Add (4) to your check to acquire a boon that has the Animal trait."
+    ],
+    [
+        "-",
+        "You may reveal an ally that has the Animal trait to add 1d4 to your check.",
+        "You may reveal an ally that has the Animal trait to add 1d4 (+1) to your check.",
+        "You may reveal an ally that has the Animal trait to add 1d4 (+2) to your check."
+    ],
+    [
+        "-",
+        "When you play a blessing that adds to your Wisdom check, you may add a d12 instead of the normal die."
+    ]]}
+}
