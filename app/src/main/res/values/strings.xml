@@ -58,6 +58,25 @@
     <string name="new_meliski">New Meliski (CD)</string>
     <string name="new_siwar">New Siwar (CD)</string>
 
+    <string name="new_flenta_cd">New Flenta (CD)</string>
+    <string name="new_tontelizi_cd">New Tontelizi (CD)</string>
+    <string name="new_valeros_cd">New Valeros (CD)</string>
+    <string name="new_vika_cd">New Vika (CD)</string>
+
+    <string name="new_koren_cd">New Koren (CD)</string>
+    <string name="new_raz_cd">New Raz (CD)</string>
+    <string name="new_seelah_cd">New Seelah (CD)</string>
+
+    <string name="new_agna_cd">New Agna (CD)</string>
+    <string name="new_arabundi_cd">New Arabundi (CD)</string>
+    <string name="new_harsk_cd">New Harsk (CD)</string>
+    <string name="new_wrathack_cd">New Wrathack (CD)</string>
+
+    <string name="new_lesath_cd">New Lesath (CD)</string>
+    <string name="new_merisiel_cd">New Merisiel (CD)</string>
+    <string name="new_olenjack_cd">New Olenjack (CD)</string>
+    <string name="new_wu_shen_cd">New Wu Shen (CD)</string>
+
     <string name="delete_character">Delete</string>
     
     <string name="skills_detail_label">Skill Feats:</string>

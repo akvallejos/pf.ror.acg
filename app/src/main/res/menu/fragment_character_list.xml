@@ -103,41 +103,52 @@
 				</item>
 				<item android:title="@string/new_fighter_cd">
 					<menu><group>
-						<item android:title="New Flenta (CD)"
+						<item android:title="@string/new_flenta_cd"
 							android:id="@+id/menu_item_new_flenta_cd"/>
-						<item android:title="New Tontelizi (CD)"
+						<item android:title="@string/new_tontelizi_cd"
 							android:id="@+id/menu_item_new_tontelizi_cd"/>
-						<item android:title="New Valeros (CD)"
+						<item android:title="@string/new_valeros_cd"
 							android:id="@+id/menu_item_new_valeros_cd"/>
-						<item android:title="New Vika (CD)"
+						<item android:title="@string/new_vika_cd"
 							android:id="@+id/menu_item_new_vika_cd"/>
 					</group></menu>
 				</item>
 				<item android:title="@string/new_paladin_cd">
 					<menu><group>
-						<item android:title="New Koren (CD)"
+						<item android:title="@string/new_koren_cd"
 							android:id="@+id/menu_item_new_koren_cd"/>
-						<item android:title="New Raz (CD)"
+						<item android:title="@string/new_raz_cd"
 							android:id="@+id/menu_item_new_raz_cd"/>
-						<item android:title="New Seelah (CD)"
+						<item android:title="@string/new_seelah_cd"
 							android:id="@+id/menu_item_new_seelah_cd"/>
 					</group></menu>
 				</item>
 
 				<item android:title="@string/new_ranger_cd">
 					<menu><group>
-						<item android:title="New Agna (CD)"
+						<item android:title="@string/new_agna_cd"
 							android:id="@+id/menu_item_new_agna_cd" />
-						<item android:title="New Arabundi (CD)"
+						<item android:title="@string/new_arabundi_cd"
 							android:id="@+id/menu_item_new_arabundi_cd" />
-						<item android:title="New Harsk (CD)"
+						<item android:title="@string/new_harsk_cd"
 							android:id="@+id/menu_item_new_harsk_cd" />
-						<item android:title="New Wrathack (CD)"
+						<item android:title="@string/new_wrathack_cd"
 							android:id="@+id/menu_item_new_wrathack_cd" />
 					</group></menu>
 				</item>
+				<item android:title="@string/new_rogue_cd">
+					<menu><group>
+						<item android:title="@string/new_lesath_cd"
+							android:id="@+id/menu_item_new_lesath_cd" />
+						<item android:title="@string/new_merisiel_cd"
+							android:id="@+id/menu_item_new_merisiel_cd" />
+						<item android:title="@string/new_olenjack_cd"
+							android:id="@+id/menu_item_new_olenjack_cd"/>
+						<item android:title="@string/new_wu_shen_cd"
+							android:id="@+id/menu_item_new_wu_shen_cd"/>
+					</group></menu>
+				</item>
 				<!--
-				<item android:title="@string/new_rogue_cd"/>
 				<item android:title="@string/new_sorcerer_cd"/>
 				<item android:title="@string/new_wizard_cd"/>
 				-->

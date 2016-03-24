@@ -247,6 +247,18 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_wrathack_cd:
 			addCharacter(new PC("wrathack_cd"));
 			return true;
+		case R.id.menu_item_new_lesath_cd:
+			addCharacter(new PC("lesath_cd"));
+			return true;
+		case R.id.menu_item_new_merisiel_cd:
+			addCharacter(new PC("merisiel_cd"));
+			return true;
+		case R.id.menu_item_new_olenjack_cd:
+			addCharacter(new PC("olenjack_cd"));
+			return true;
+		case R.id.menu_item_new_wu_shen_cd:
+			addCharacter(new PC("wu_shen_cd"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
