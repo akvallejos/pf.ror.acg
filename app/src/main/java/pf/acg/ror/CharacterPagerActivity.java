@@ -44,11 +44,11 @@ public class CharacterPagerActivity extends FragmentActivity
 		
 		mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener(){
 			public void onPageScrollStateChanged(int state){
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 			}
 			
 			public void onPageScrolled(int pos, float posOffset, int posOffsetPizels){
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 			}
 			
 			public void onPageSelected(int pos){

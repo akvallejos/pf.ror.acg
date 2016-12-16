@@ -27,7 +27,6 @@ public class RolePickerFragment extends DialogFragment {
 	
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState){
-		//TODO
 		final CharSequence[] items = getArguments().getCharSequenceArray(EXTRA_ROLES_AVAIL);
 		mRoleBonus = (Integer)getArguments().getSerializable(EXTRA_ROLE_BONUS);
 

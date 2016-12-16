@@ -218,14 +218,14 @@ public class CharacterFragment extends Fragment {
 
 			@Override
 			public void afterTextChanged(Editable arg0) {
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 				
 			}
 
 			@Override
 			public void beforeTextChanged(CharSequence arg0, int arg1,
 					int arg2, int arg3) {
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 				
 			}
 		});
@@ -362,7 +362,7 @@ public class CharacterFragment extends Fragment {
 
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
-                // TODO Auto-generated method stub
+                // Auto-generated method stub
 
             }
         });
@@ -428,7 +428,7 @@ public class CharacterFragment extends Fragment {
 
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 			}
 		});
 	}
@@ -449,7 +449,7 @@ public class CharacterFragment extends Fragment {
 
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 				
 			}
 		});
@@ -466,7 +466,6 @@ public class CharacterFragment extends Fragment {
 						mCH.getPowersList(i));
 				createPowerSpinner(mV,i,power_adapter);
 			} catch (JSONException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
