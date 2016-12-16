@@ -259,6 +259,9 @@ public class CharacterListFragment extends ListFragment
 		case R.id.menu_item_new_wu_shen_cd:
 			addCharacter(new PC("wu_shen_cd"));
 			return true;
+		case R.id.menu_item_new_oracle_mm:
+			addCharacter(new PC("oracle_mm"));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}

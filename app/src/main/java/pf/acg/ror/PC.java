@@ -79,6 +79,7 @@ public class PC {
 		koren_cd, raz_cd, seelah_cd,
 		agna_cd, arabundi_cd, harsk_cd, wrathack_cd,
 		lesath_cd, merisiel_cd, olenjack_cd, wu_shen_cd,
+		oracle_mm,
 		monk, paladin, fighter, sorceress, wizard, rogue, cleric, bard, ranger, druid, barbarian, none;
 	
 		public static valid_roles role_to_enum(String lRole) {

@@ -86,6 +86,12 @@
 					android:title="@string/new_shaman_wr"/>
 			</group></menu>
 		</item>
+		<item android:id="@+id/menu_item_new_mm" android:title="Mummy's Mask">
+			<menu><group>
+				<item android:id="@+id/menu_item_new_oracle_mm"
+					android:title="New Oracle (MM)" />
+			</group></menu>
+		</item>
 		<item android:id="@+id/menu_item_new_cd"
 			android:title="@string/new_cd">
 			<menu><group>
