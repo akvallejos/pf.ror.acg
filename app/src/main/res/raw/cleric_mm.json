@@ -1,0 +1,175 @@
+{
+	"str": "1d10",
+    "dex": "1d6",
+    "con": "1d6",
+    "int": "1d6",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Cleric",
+        "Keymaster",
+        "Vaultkeeper"
+    ],
+    "role_bonus_keys":[
+        "cleric",
+        "keymaster",
+        "vaultkeeper"
+     ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "3",
+        "4"
+    ],
+    "spells": [
+        "3",
+        "4",
+        "5"
+    ],
+    "armors": [
+        "2",
+        "3",
+        "4"
+    ],
+    "items": [
+        "2",
+        "3"
+    ],
+    "allies": [
+        "1",
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": [],
+        "wis": ["Disable: Wisdom: +2",
+                "Divine: Wisdom +3"],
+        "cha": []
+    },
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"],
+        ["Proficient With Light Armor, Heavy Armor, Weapons"]
+    ],
+    
+    "powers": {
+    	"cleric": [[
+            "When you visit a trader, display an additional card on that trader."
+        ],
+        [
+            "On your check against a card that has the Obstacle trait, you may add your Divine skill.",
+            "On your check against a card that has the Obstacle (or Trap) trait, you may add your Divine skill."
+        ],
+        [
+            "-",
+            "When you would discard a blessing that has the Abadar trait to add dice to a check, you may recharge it instead.",
+            "When you would discard a blessing that has the Abadar (or Wadjet) trait to add dice to a check, you may recharge it instead."
+        ]],
+        "keymaster": [[
+            "When you visit a trader, display an additional card on that trader."
+        ],
+        [
+            "On your check against a card that has the Obstacle trait, you may add your Divine skill.",
+            "On your check against a card that has the Obstacle (or Trap) trait, you may add your Divine skill."
+        ],
+        [
+            "-",
+            "When you would discard a blessing that has the Abadar trait to add dice to a check, you may recharge it instead.",
+            "When you would discard a blessing that has the Abadar (or Wadjet) trait to add dice to a check, you may recharge it instead.",
+            "When you would discard a blessing that has the Abadar trait to add dice to a check (or to explore a location), you may recharge it instead.",
+            "When you would discard a blessing that has the Abadar (or Wadjet) trait to add dice to a check (or to explore a location), you may recharge it instead.",
+            "When you would discard a blessing that has the Abadar trait to add dice to a check, you may recharge it instead (and add 1 additional dice).",
+            "When you would discard a blessing that has the Abadar (or Wadjet) trait to add dice to a check, you may recharge it instead (and add 1 additional dice).",
+            "When you would discard a blessing that has the Abadar trait to add dice to a check (or to explore a location), you may recharge it instead (and add 1 additional dice).",
+            "When you would discard a blessing that has the Abadar (or Wadjet) trait to add dice to a check (or to explore a location), you may recharge it instead (and add 1 additional dice)."
+        ],
+        [
+            "-",
+            "After you defeat a barrier with the Obstacle trait on your exploration, you may explore your location.",
+            "After you defeat a barrier with the Obstacle (or Trap) trait on your exploration, you may explore your location."
+        ],
+        [
+            "-",
+            "At the start of your turn, you may discard the top card of your deck to allow a character at your location to recharge a random card from her discard pile for each card discarded.",
+            "At the start of your turn, you may discard the top card of (or any number of cards from) your deck to allow a character at your location to recharge a random card from her discard pile for each card discarded.",
+            "At the start of your turn, you may discard the top card of your deck to allow a character at your location to recharge a random card from her discard pile for each card discarded. (Characters gain this power while at your location.)",
+            "At the start of your turn, you may discard the top card of (or any number of cards from) your deck to allow a character at your location to recharge a random card from her discard pile for each card discarded. (Characters gain this power while at your location.)"
+        ]],
+    
+        "vaultkeeper": [[
+            "When you visit a trader, display an additional card on that trader."
+        ],
+        [
+            "On your check against a card that has the Obstacle trait, you may add your Divine skill.",
+            "On your check against a card that has the Obstacle (or Trap) trait, you may add your Divine skill.",
+            "On your check against a card that has the Obstacle (or Trap)(or Lock) trait, you may add your Divine skill."
+        ],
+        [
+            "-",
+            "When you would discard a blessing that has the Abadar trait to add dice to a check, you may recharge it instead.",
+            "When you would discard a blessing that has the Abadar (or Wadjet) trait to add dice to a check, you may recharge it instead."
+        ],
+        [
+            "-",
+            "Add 1d6 to your check to acquire a boon or your check to close a location.",
+            "Add 1d6 to your check to acquire a boon (then you may give it to another character) or your check to close a location.",
+            "Add 1d6 to your check to acquire a boon or your check to close a location. (You may automatically fulfill the requirements to temporarily close your location.)",
+            "Add 1d6 to your check to acquire a boon (then you may give it to another character) or your check to close a location. (You may automatically fulfill the requirements to temporarily close your location.)"
+        ],
+        [
+            "-",
+            "When you defeat a card that has the Lock or Trap trait, you may examine the top 3 cards of your location deck and put them back in any order.",
+            "When you defeat (or a character at your location defeats) a card that has the Lock or Trap trait, you may examine the top 3 cards of your location deck and put them back in any order."
+        ],
+        [
+            "-",
+            "When you encounter a card, before you act, you may recharge a card that has the Abadar trait to draw a random weapon, armor, or item from the box. After you act, banish that card.",
+            "When you encounter a card, before you act, you may recharge a card that has the Abadar (or Divine) trait to draw a random weapon, armor, or item from the box. After you act, banish that card."
+        ]]}
+}

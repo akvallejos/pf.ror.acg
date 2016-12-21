@@ -1,0 +1,174 @@
+{
+	"str": "1d8",
+    "dex": "1d6",
+    "con": "1d6",
+    "int": "1d10",
+    "wis": "1d6",
+    "cha": "1d6",
+    "fav_card": "Card with Staff Trait",
+    
+    "role_bonus":[
+        "Magus",
+        "Eldrich Scion",
+        "Staff Magus"
+    ],
+    "role_bonus_keys":[
+        "magus",
+        "eldrich_scion",
+        "staff_magus"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "2",
+        "3"
+    ],
+    "spells": [
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "3",
+        "4",
+        "5"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "3",
+        "4",
+        "5"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": [],
+        "con": [],
+        "int": ["Arcane: Intelligence +2"],
+        "wis": [],
+        "cha": ["Diplomacy: Charisma +2"]
+    },
+    
+    "hand_limit":[
+        ["6","7"],
+        ["6","7","8","9"],
+        ["6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armor and Weapons."],
+        ["Proficient with Light Armor and Weapons."],
+        ["Proficient with Light Armor and Weapons."]
+        
+    ],
+
+    
+    "powers": {
+    	"magus": [[
+            "On your check, after the roll, you may discard a card to add or subtract 2 from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard a card to add or subtract 2 from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard (or recharge) a card to add or subtract 2 from the result."
+        ],
+        [
+            "When you would discard a spell for a power on a card that has the Staff trait, you may recharge it instead."
+        ],
+        [
+            "You may recharge a card that has the Staff trait to add 1d8 to your combat check.",
+            "You may recharge a card that has the Staff trait to add 1d8 to your combat check (and you may add the Fire trait)."
+        ]],
+    	
+        "eldritch_scion": [[
+            "On your check, after the roll, you may discard a card to add or subtract 2 from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard a card to add or subtract 2 from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard (or recharge) a card to add or subtract 2 from the result.",
+            "On your check, after the roll, you may discard a card to add or subtract 2 (or the card's adventure deck number) from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard a card to add or subtract 2 (or the card's adventure deck number) from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard (or recharge) a card to add or subtract 2 (or the card's adventure deck number) from the result."
+        ],
+        [
+            "When you would discard a spell for a power on a card that has the Staff trait, you may recharge it instead.",
+            "When you would discard a spell for a power on a card that has the Staff trait, you may recharge (or put on top of your deck) it instead."
+        ],
+        [
+            "You may recharge a card that has the Staff trait to add 1d8 to your combat check.",
+            "You may recharge a card that has the Staff trait to add 1d8 to your combat check (and you may add the Fire trait)."
+        ],
+        [
+            "-",
+            "On your check, after the roll, you may discard a card to remove or reroll any 1 die; take the new result",
+            "On your check, after the roll, you may discard a card to remove or reroll any 1 die (or any 2 dice); take the new result"
+        ],
+        [
+            "-",
+            "You may discard a spell to draw a spell from your discard pile.",
+            "You may discard (or recharge) a spell to draw a spell from your discard pile."
+        ]],
+    
+    "staff_magus": [[
+            "On your check, after the roll, you may discard a card to add or subtract 2 from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard a card to add or subtract 2 from the result.",
+            "On your check (or a check by another character at your location), after the roll, you may discard (or recharge) a card to add or subtract 2 from the result."
+        ],
+        [
+            "When you would discard a spell for a power on a card that has the Staff trait, you may recharge it instead.",
+            "When you would discard a spell (or any card) for a power on a card that has the Staff trait, you may recharge it instead."
+        ],
+        [
+            "You may recharge a card that has the Staff trait to add 1d8 to your combat check.",
+            "You may recharge a card that has the Staff trait to add 1d8 to your combat check (and you may add the Fire trait).",
+            "You may recharge a card that has the Staff (or Spell) trait to add 1d8 to your combat check.",
+            "You may recharge a card that has the Staff (or Spell) trait to add 1d8 to your combat check (and you may add the Fire trait).",
+            "You may recharge a card that has the Staff trait to add (1d12) to your combat check.",
+            "You may recharge a card that has the Staff trait to add (1d12) to your combat check (and you may add the Fire trait).",
+            "You may recharge a card that has the Staff (or Spell) trait to add (1d12) to your combat check.",
+            "You may recharge a card that has the Staff (or Spell) trait to add (1d12) to your combat check (and you may add the Fire trait)."
+        ],
+        [
+            "-",
+            "At the start of your turn, you may discard a card that has the Staff trait to draw a card that has the Staff trait from your discard pile.",
+            "At the start of your turn, you may discard (or recharge) a card that has the Staff trait to draw a card that has the Staff trait from your discard pile.",
+            "At the start of your turn, you may discard a card that has the Staff trait to draw a card that has the Staff trait from your discard pile. (When using this power, you may treat cards that have the Fire trait as if they have the Staff trait.)",
+            "At the start of your turn, you may discard (or recharge) a card that has the Staff trait to draw a card that has the Staff trait from your discard pile. (When using this power, you may treat cards that have the Fire trait as if they have the Staff trait.)"
+        ],
+        [
+            "-",
+            "When you attempt a Diplomacy or Knowledge check, you may recharge a card to add its adventure deck number"
+        ]]}
+}

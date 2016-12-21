@@ -1,0 +1,163 @@
+{
+	"str": "1d6",
+    "dex": "1d6",
+    "con": "1d6",
+    "int": "1d10",
+    "wis": "1d8",
+    "cha": "1d6",
+    "fav_card": "None",
+    
+    "role_bonus":[
+        "Occultist",
+        "Acquisitor",
+        "Channeler"
+    ],
+    "role_bonus_keys":[
+        "occultist",
+        "acquisitor",
+        "channeler"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "0",
+        "1"
+    ],
+    "spells": [
+        "0",
+        "1"
+    ],
+    "armors": [
+        "0",
+        "1"
+    ],
+    "items": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+    ],
+    "allies": [
+        "2",
+        "3"
+    ],
+    "blessings": [
+        "4",
+        "5",
+        "6"
+    ],
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": ["Disable: Intelligence +2",
+                "Knowledge: Intelligence +2"],
+        "wis": ["Perception: Wisdom +2"],
+        "cha": []
+    },
+    "hand_limit":[
+        ["6","7"],
+        ["6","7","8"],
+        ["6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors","Proficient with Light Armors and Weapons"],
+        ["Proficient with Light Armors","Proficient with Light Armors and Weapons","Proficient with Light Armors, Heavy Armors and Weapons"],
+        ["Proficient with Light Armors","Proficient with Light Armors and Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"occultist": [[
+            "You may discard a card to add 1 die to your check to acquire a weapon, an armor, or an item.",
+            "You may discard a card to add 1 die to your check (or a check by another character at your location) to acquire a weapon, an armor, or an item."
+        ],
+        [
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. At the end of the turn, recharge the displayed cards.",
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. (You may also add any of that card’s traits to your checks during this turn.) At the end of the turn, recharge the displayed cards."
+        ]],
+    	
+        "acquisitor": [[
+            "You may discard a card to add 1 die to your check to acquire a weapon, an armor, or an item.",
+            "You may discard a card to add 1 die to your check (or a check by another character at your location) to acquire a weapon, an armor, or an item.",
+            "You may discard (or recharge) a card to add 1 die to your check to acquire a weapon, an armor, or an item.",
+            "You may discard (or recharge) a card to add 1 die to your check (or a check by another character at your location) to acquire a weapon, an armor, or an item."
+          ],
+          [
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. At the end of the turn, recharge the displayed cards.",
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. (You may also add any of that card’s traits to your checks during this turn.) At the end of the turn, recharge the displayed cards."
+          ],
+          [
+            "-",
+            "After you acquire a weapon, an armor, or an item on the first exploration of your turn, you may discard a card to explore your location",
+            "After you acquire a weapon, an armor, or an item on the first exploration of your turn (or any exploration), you may discard a card to explore your location"
+          ],
+          [
+            "-",
+            "Before you reset your hand, you may set aside any number of items; return them to your hand after you reset it."
+          ],
+          [
+            "-",
+            "On your Intelligence check, after the roll, you may bury (□ or discard) a weapon, an armor, or an item to add or subtract 3."
+          ]],
+    
+        "channeler": [[
+            "You may discard a card to add 1 die to your check to acquire a weapon, an armor, or an item.",
+            "You may discard a card to add 1 die to your check (or a check by another character at your location) to acquire a weapon, an armor, or an item.",
+            "You may discard a card to add 1 die to your check to acquire a weapon, an armor, or an item (or spell).",
+            "You may discard a card to add 1 die to your check (or a check by another character at your location) to acquire a weapon, an armor, or an item (or spell)."
+          ],
+          [
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. At the end of the turn, recharge the displayed cards.",
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. (You may also add any of that card’s traits to your checks during this turn.) At the end of the turn, recharge the displayed cards.",
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. At the end of the turn, recharge the displayed cards (and then you may reshuffle your deck).",
+            "You may display a card to gain all skills listed on the check to acquire for that card equal to your Intelligence until the end of the turn. (You may also add any of that card’s traits to your checks during this turn.) At the end of the turn, recharge the displayed cards (and then you may reshuffle your deck)."
+          ],
+          [
+            "-",
+            "During your encounter with a bane, you may recharge a weapon, an armor, or an item that has the Magic trait to summon and play a random spell that has the Attack trait and an adventure deck number less than that of the current scenario.",
+            "During your encounter with a bane, you may recharge a weapon, an armor, or an item that has the Magic trait to summon and play a random spell that has the Attack trait and an adventure deck number less than that of the current scenario (and shares a trait of your choice with the card you are recharging)."
+          ],
+          [
+            "-",
+            "You gain the skill Arcane: Intelligence +1.",
+            "You gain the skill Arcane: Intelligence +1 (and the skill Divine: Intelligence +1)."
+          ],
+          [
+            "-",
+            "On your Intelligence check, after the roll, you may discard an item to reroll the dice; take the new result."
+          ]]}
+}

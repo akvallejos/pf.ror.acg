@@ -1,0 +1,192 @@
+{
+	"str": "1d6",
+    "dex": "1d8",
+    "con": "1d10",
+    "int": "1d6",
+    "wis": "1d4",
+    "cha": "1d8",
+    "fav_card": "Blessing",
+    
+    "role_bonus":[
+        "Kineticist",
+        "Firestarter",
+        "Pan-Elementalist"
+    ],
+    "role_bonus_keys":[
+        "kinesticist",
+        "firestarter",
+        "pan_elementalist"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "int_bonus": [
+        "0",
+        "+1"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "weapons":[
+        "2",
+        "3",
+        "4"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "4",
+        "5",
+        "6"
+    ],
+    "blessings": [
+        "6",
+        "7",
+        "8",
+        "9"
+    ],
+    "skills": {
+        "str": [],
+        "dex": ["Acrobatics: Dexterity +1",
+                "Stealth: Dexterity +2"],
+        "con": ["Fortitude: Constitution +2"],
+        "int": [],
+        "wis": [],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["5","5"],
+        ["5","6","7"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Light Armors.", "Proficient with Light Armors and Weapons."]
+    ],
+
+    
+    "powers": {
+    	"kinesticist": [[
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded."
+        ],
+        [
+            "When you are dealt Acid, Cold, Electricity, or Fire damage, you may reveal a card that has a trait matching that type to reduce the damage by 3."
+        ],
+        [
+            "At the end of your turn, you may recharge a blessing from your discard pile."
+        ]],
+        "firestarter": [[
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge (or shuffle into your deck) a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add 1d6 for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait).",
+            "You may recharge (or shuffle into your deck) a blessing (or a card that has the Fire trait) to add your Fortitude skill and the Fire trait to your combat check (or your check to defeat a barrier). You may additionally discard any number of cards to add (1d8) for each card discarded (and another 1d6 if any of the discarded cards has the Fire trait)."
+
+        ],
+        [
+            "When you are dealt Acid, Cold, Electricity, or Fire damage, you may reveal a card that has a trait matching that type to reduce the damage by 3."
+        ],
+        [
+            "At the end of your turn, you may recharge a blessing from your discard pile."
+        ],
+        [
+            "-",
+            "You may recharge a card to add 1d10 to your Charisma non-combat check.",
+            "You may recharge a card to add 1d10 to your Charisma (or Disable) non-combat check."
+        ],
+        [
+            "-",
+            "You may bury an ally to evade your encounter.",
+            "You may bury an ally to evade your encounter (or to reduce damage dealt to you to 0)."
+        ]],
+        "pan_elementalist": [[
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded.",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded (and add each card’s traits).",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded (and add each card’s traits).",
+            "You may recharge a blessing to add your Fortitude skill and the Fire trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded (and add each card’s traits).",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded (and add each card’s traits).",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity)trait to your combat check. You may additionally discard any number of cards to add 1d6 for each card discarded (and add each card’s traits).",
+            "You may recharge a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded (and add each card’s traits).",
+            "You may recharge (or shuffle into your deck) a blessing to add your Fortitude skill and the Fire (Acid, Cold, or Electricity) trait to your combat check. You may additionally discard any number of cards to add (1d8) for each card discarded (and add each card’s traits)."
+        ],
+        [
+            "When you are dealt Acid, Cold, Electricity, or Fire damage, you may reveal a card that has a trait matching that type to reduce the damage by 3.",
+            "When you are dealt Acid, Cold, Electricity, or Fire damage, you may reveal a card that has a trait matching that type to reduce the damage by (5)."
+        ],
+        [
+            "At the end of your turn, you may recharge a blessing from your discard pile."
+        ],
+        [
+            "Add 1d4 to your check for each of the following traits that it invokes: Acid, Cold,Electricity, and Fire.",
+            "Add (1d6) to your check for each of the following traits that it invokes: Acid, Cold,Electricity, and Fire."
+        ],
+        [
+            "-",
+            "At the start of your turn, you may exchange a card in your hand with a card in your discard pile that has that has the Acid, Cold, Electricity, or Fire trait.",
+            "At the start of your turn, you may exchange a card in your hand with a card in your discard pile that has that has the Acid, Cold, Electricity, or Fire trait (or a blessing)."
+        ]]}
+}

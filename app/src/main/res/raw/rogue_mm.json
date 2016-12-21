@@ -1,0 +1,172 @@
+{
+	"str": "1d6",
+    "dex": "1d12",
+    "con": "1d4",
+    "int": "1d8",
+    "wis": "1d6",
+    "cha": "1d6",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Rogue",
+        "Bladewind",
+        "Lightening Thief"
+    ],
+    "role_bonus_keys":[
+        "rogue",
+        "bladewind",
+        "lightening_thief"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7"
+    ],
+    "spells": [
+        "0",
+        "1",
+        "2"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "3",
+        "4"
+    ],
+    "allies": [
+        "3",
+        "4",
+        "5"
+    ],
+    "blessings": [
+        "3",
+        "4",
+        "5"
+    ],
+    "skills": {
+        "str": [],
+        "dex": ["Disable: Dexterity +1",
+                "Ranged: Dexterity +2"],
+        "con": [],
+        "int": ["Craft: Intelligence +1",
+                "Perception: Intelligence +2"],
+        "wis": [],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["6","7"],
+        ["6","7","8"],
+        ["6","7","8"]
+    ],
+    "proficiencies": [
+        ["Proficient with Weapons.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Weapons.", "Proficient with Light Armors and Weapons."],
+        ["Proficient with Weapons.", "Proficient with Light Armors and Weapons."]
+        
+    ],
+    
+    "powers": {
+    	"rogue": [[
+            "Reduce Electricity damage dealt to you by 2.",
+            "Reduce Electricity damage dealt to you by (4)."
+        ],
+        [
+            "Add your Perception skill to your check to defeat a barrier that has the Trap trait.",
+            "Add your Perception skill to your check to defeat a barrier that has the (Obstacle or) Trap trait."
+        ],
+        [
+            "When you would discard a weapon that has the Knife trait for its power, you may recharge it instead."
+        ]],
+        "bladewind": [[
+            "Reduce Electricity damage dealt to you by 2.",
+            "Reduce Electricity damage dealt to you by (4).",
+            "Reduce Electricity (and Combat) damage dealt to you by 2.",
+            "Reduce Electricity (and Combat) damage dealt to you by (4)."
+        ],
+        [
+            "Add your Perception skill to your check to defeat a barrier that has the Trap trait.",
+            "Add your Perception skill to your check to defeat a barrier that has the (Obstacle or) Trap trait."
+        ],
+        [
+            "When you would discard a weapon that has the Knife trait for its power, you may recharge it instead.",
+            "When you would discard a weapon that has the Knife trait for its power, you may recharge it (or place it on top of your deck) instead."
+        ],
+        [
+            "-",
+            "On your combat check that has the Knife trait, add 1  for each die rolled.",
+            "On your combat check that has the Knife trait, add (2) for each die rolled."
+        ],
+        [
+            "-",
+            "When you encounter a card, before you act, you may recharge a card to draw a random weapon that has the Knife and Ranged traits from the box. After you act, banish that weapon.",
+            "When you encounter a card, before you act, you may recharge a card to draw a random weapon that has the Knife and Ranged (and Magic) traits from the box. After you act, banish that weapon."
+        ],
+        [
+            "-",
+            "You may recharge a weapon that has the Knife and Ranged traits to add 1d4 plus its adventure deck number to a combat check by a character at another location."
+        ]],
+    
+        "lightening_thief": [[
+            "Reduce Electricity damage dealt to you by 2.",
+            "Reduce Electricity damage dealt to you by (4)."
+        ],
+        [
+            "Add your Perception skill to your check to defeat a barrier that has the Trap trait.",
+            "Add your Perception skill to your check to defeat a barrier that has the (Obstacle or) Trap trait."
+        ],
+        [
+            "When you would discard a weapon that has the Knife trait for its power, you may recharge it instead.",
+            "When you would discard a weapon that has the Knife trait (or discard, bury, or banish a boon that has the Electricity trait) for its power, you may recharge it instead."
+        ],
+        [
+            "-",
+            "You may automatically acquire a boon that has the Electricity trait.",
+            "You may automatically acquire (and gain the skill Arcane: Intelligence +2 while playing or when you would banish) a boon that has the Electricity trait.",
+            "You may automatically acquire a boon that has the Electricity (or Cold) trait.",
+            "You may automatically acquire (and gain the skill Arcane: Intelligence +2 while playing or when you would banish) a boon that has the Electricity (or Cold) trait."
+        ],
+        [
+            "-",
+            "During your exploration, you may evade your encounter. If you do, move and end your turn.",
+            "During your exploration, you may evade your encounter. If you do, move and (you may) end your turn."
+        ],
+        [
+            "-",
+            "When you move, you may examine the top card of your location deck. If it is a monster, you may encounter it; add 1d6 and the Electricity trait to your checks to defeat."
+        ]]}
+}

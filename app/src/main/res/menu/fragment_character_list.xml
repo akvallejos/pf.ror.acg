@@ -90,6 +90,26 @@
 			<menu><group>
 				<item android:id="@+id/menu_item_new_oracle_mm"
 					android:title="New Oracle (MM)" />
+				<item android:id="@+id/menu_item_new_alchemist_mm"
+					android:title="New Alchemist (MM)" />
+				<item android:id="@+id/menu_item_new_spiritualist_mm"
+					android:title="New Spiritualist (MM)" />
+				<item android:id="@+id/menu_item_new_wizard_mm"
+					android:title="New Wizard (MM)" />
+				<item android:id="@+id/menu_item_new_rogue_mm"
+					android:title="New Rogue (MM)" />
+				<item android:id="@+id/menu_item_new_kineticist_mm"
+					android:title="New Kineticist (MM)" />
+				<item android:id="@+id/menu_item_new_slayer_mm"
+					android:title="New Slayer (MM)" />
+				<item android:id="@+id/menu_item_new_magus_mm"
+					android:title="New Magus (MM)" />
+				<item android:id="@+id/menu_item_new_druid_mm"
+					android:title="New Druid (MM)" />
+				<item android:id="@+id/menu_item_new_cleric_mm"
+					android:title="New Cleric (MM)" />
+				<item android:id="@+id/menu_item_new_occultist_mm"
+					android:title="New Occultist (MM)" />
 			</group></menu>
 		</item>
 		<item android:id="@+id/menu_item_new_cd"

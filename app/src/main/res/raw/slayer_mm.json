@@ -1,0 +1,177 @@
+{
+	"str": "1d8",
+    "dex": "1d8",
+    "con": "1d8",
+    "int": "1d8",
+    "wis": "1d6",
+    "cha": "1d4",
+    "fav_card": "Weapon",
+    
+    "role_bonus":[
+        "Slayer",
+        "Executioner",
+        "Outrider"
+    ],
+    "role_bonus_keys":[
+        "slayer",
+        "executioner",
+        "outrider"
+        ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+    ],
+    "con_bonus": [
+        "0",
+        "+1"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+3"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1"
+    ],
+    "weapons":[
+        "5",
+        "6",
+        "7"
+    ],
+    "spells": [
+        "0"
+    ],
+    "armors": [
+        "2",
+        "3",
+        "4"
+    ],
+    "items": [
+        "3",
+        "4",
+        "5"
+    ],
+    "allies": [
+        "2",
+        "3",
+        "4"
+    ],
+    "blessings": [
+        "3",
+        "4",
+        "5"
+    ],
+    "skills": {
+        "str": ["Melee: Strength +2"],
+        "dex": ["Acrobatics: Dexterity +2", "Stealth: Dexterity +2"],
+        "con": [],
+        "int": ["Craft: Intelligence +1"],
+        "wis": [],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["5","6"],
+        ["5","6","7"],
+        ["5","6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor, Weapons"],
+        ["Proficient With Light Armor, Weapons"],
+        ["Proficient With Light Armor, Weapons","Proficient With Light Armor, Heavy Armor, Weapons"]
+        
+    ],
+
+    
+    "powers": {
+    	"slayer": [[
+    		"You may recharge a card to examine the top card of your location deck."
+    	],
+        [
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison trait.",
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison (or Acid or Undead) trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison (or Acid or Undead) trait."
+        ],
+        [
+            "You may discard a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location.",
+            "You may discard (or recharge) a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location."
+        ]],
+
+        "executioner": [[
+            "You may recharge a card to examine the top card of your location deck.",
+            "You may recharge a card to examine the top (or bottom) card of your location deck."
+        ],
+        [
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison trait.",
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison (or Acid or Undead) trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison (or Acid or Undead) trait.",
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison (or Acid or Undead)(or Obstacle or Trap) trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison (or Acid or Undead)(or Obstacle or Trap) trait."
+        ],
+        [
+            "You may discard a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location.",
+            "You may discard (or recharge) a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location.",
+            "You may discard a weapon that does not have the 2-Handed trait to add your Stealth skill (+2) to a combat check by a character at your location.",
+            "You may discard (or recharge) a weapon that does not have the 2-Handed trait to add your Stealth skill (+2) to a combat check by a character at your location."
+        ],
+        [
+            "-",
+            "When an item that has the Poison trait requires you to banish or bury a card, you may discard it instead.",
+            "When an item that has the Poison trait requires you to banish or bury a card, you may discard (or recharge) it instead."
+        ],
+        [
+            "-",
+            "You may ignore a monster’s immunity to the Poison trait."
+        ],
+        [
+            "-",
+            "After you attempt a combat check against a monster, you may use the result of that check for any subsequent combat checks against that monster during the encounter."
+        ]],
+    
+        "outrider": [[
+            "You may recharge a card to examine the top card of your location deck.",
+            "You may recharge a card to examine the top card (or top 2 cards) of your location deck."
+        ],
+        [
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison trait.",
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison (or Acid or Undead) trait.",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison (or Acid or Undead) trait.",
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison trait (or is against a card that has the Trigger trait).",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison trait (or is against a card that has the Trigger trait).",
+            "You may recharge a card to add your Intelligence skill to your check that invokes the Poison (or Acid or Undead) trait (or is against a card that has the Trigger trait).",
+            "You may recharge a card to add your Intelligence skill (+2) to your check that invokes the Poison (or Acid or Undead) trait (or is against a card that has the Trigger trait)."
+        ],
+        [
+            "You may discard a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location.",
+            "You may discard (or recharge) a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location.",
+            "You may discard (or recharge)(or reshuffle into your deck) a weapon that does not have the 2-Handed trait to add your Stealth skill to a combat check by a character at your location."
+        ],
+        [
+            "-",
+            "When you defeat a monster, you may examine the top card of your location deck.",
+            "When you defeat a monster, you may examine the top card of your location deck. (Then you may put it under the top card of its deck.)"
+        ],
+        [
+            "-",
+            "When another character encounters a bane that has the Poison or Trigger trait, you may move to that character's location."
+        ]]}
+}

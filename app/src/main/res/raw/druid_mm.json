@@ -1,0 +1,178 @@
+{
+	"str": "1d4",
+    "dex": "1d8",
+    "con": "1d8",
+    "int": "1d6",
+    "wis": "1d10",
+    "cha": "1d6",
+    "fav_card": "Spell",
+    
+    "role_bonus":[
+        "Druid",
+        "Tsunami Caster",
+        "Oasis Caster"
+    ],
+    "role_bonus_keys":[
+        "druid",
+        "tsunami_caster",
+        "oasis_caster"
+    ],
+    "str_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "dex_bonus":[
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "con_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "int_bonus": [
+        "0",
+        "+1",
+        "+2"
+    ],
+    "wis_bonus": [
+        "0",
+        "+1",
+        "+2",
+        "+3"
+    ],
+    "cha_bonus":[
+        "0",
+        "+1",
+        "+2"
+    ],
+    "weapons":[
+        "1",
+        "2"
+    ],
+    "spells": [
+        "5",
+        "6",
+        "7"
+    ],
+    "armors": [
+        "1",
+        "2"
+    ],
+    "items": [
+        "2",
+        "3",
+        "4"
+    ],
+    "allies": [
+        "4",
+        "5",
+        "6"
+    ],
+    "blessings": [
+        "2",
+        "3",
+        "4"
+    ],
+    "skills": {
+        "str": [],
+        "dex": [],
+        "con": [],
+        "int": ["Craft: Intelligence +3"],
+        "wis": ["Survival: Wisdom +2",
+                "Divine: Wisdom +2"],
+        "cha": []
+    },
+    
+    "hand_limit":[
+        ["6","7"],
+        ["6","7","8"],
+        ["6","7"]
+    ],
+    "proficiencies": [
+        ["Proficient With Light Armor"],
+        ["Proficient With Light Armor"],
+        ["Proficient With Light Armor","Proficient With Light Armor, Weapons"]
+    ],
+
+    
+    "powers": {
+    	"druid": [[
+    		"You may discard a card to add 1d8 to your check that invokes the Acid or Cold trait.",
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold (or Electricity or Poison) trait."
+        ],
+        [
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire (or Poison) damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire (or Poison) damage dealt to you to 0."
+        ],
+        [
+            "When you would discard an ally that has the Animal or Elemental trait for its power, you may recharge it instead"
+        ]],
+        "tsunami_caster": [[
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold trait.",
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold (or Electricity or Poison) trait.",
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold trait. (If you acquire or defeat the card, you may recharge a card that has the Liquid trait or a random card from your discard pile.)",
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold (or Electricity or Poison) trait. (If you acquire or defeat the card, you may recharge a card that has the Liquid trait or a random card from your discard pile.)",
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold (or Electricity or Poison) (or Fire or Liquid) trait. (If you acquire or defeat the card, you may recharge a card that has the Liquid trait or a random card from your discard pile.)"
+        ],
+        [
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire (or Poison) damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire (or Poison) damage dealt to you to 0."
+        ],
+        [
+            "When you would discard an ally that has the Animal or Elemental trait for its power, you may recharge it instead",
+            "When you would discard an ally that has the Animal or Elemental trait (or any Ally) for its power, you may recharge it instead"
+        ],
+        [
+            "-",
+            "You may discard any number of cards that have the Acid, Cold, or Liquid trait to add 1d8 for each card discarded to your combat check.",
+            "You may discard any number of cards that have the Acid, Cold, or Liquid trait to add 1d8 for each card discarded to your combat check (or a combat check by another character at your location)."
+        ],
+        [
+            "-",
+            "When you are dealt damage, you may bury any number of cards from your discard pile to reduce the damage dealt by 2 for each card buried.",
+            "When you are dealt damage (or another character at your location is dealt damage), you may bury any number of cards from your discard pile to reduce the damage dealt by 2 for each card buried."
+        ]],
+    
+        "oasis_caller": [[
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold trait.",
+            "You may discard a card to add 1d8 to your check that invokes the Acid or Cold (or Electricity or Poison) trait.",
+            "You may discard (or recharge) a card to add 1d8 to your check that invokes the Acid or Cold trait.",
+            "You may discard (or recharge) a card to add 1d8 to your check that invokes the Acid or Cold (or Electricity or Poison) trait."
+        ],
+        [
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire (or Poison) damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire (or Poison) damage dealt to you to 0.",
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire damage dealt to you (or a character at your location) to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire damage dealt to you (or a character at your location) to 0.",
+            "You may recharge a card that has the Liquid or Magic trait to reduce Acid or Fire (or Poison) damage dealt to you (or a character at your location) to 0.",
+            "You may recharge a card that has the Liquid or Magic (or Divine) trait to reduce Acid or Fire (or Poison) damage dealt to you (or a character at your location) to 0."
+        ],
+        [
+            "When you would discard an ally that has the Animal or Elemental trait for its power, you may recharge it instead"
+        ],
+        [
+            "-",
+            "At the end of your turn, another character at your location may recharge a random card from his discard pile.",
+            "At the end of your turn, another (or any) character at your location may recharge a random card from his discard pile."
+        ],
+        [
+            "-",
+            "You may discard a card that has the Liquid trait to banish a card that has the Curse trait displayed next to the deck of a character at your location.",
+            "You may discard a card that has the Liquid trait to banish a card that has the Curse trait displayed next to the deck of a character at your (or any) location."
+        ],
+        [
+            "-",
+            "You may recharge a card to add your Survival skill to your Diplomacy check. If the card you recharge has the Liquid trait, add another 1d8."
+        ]]}
+}
