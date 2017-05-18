@@ -53,7 +53,7 @@ public class CharacterFragment extends Fragment {
 	
 	private enum attr{Str, Dex, Con, Int, Wis, Cha, 
 		HandLimit, WeaponLimit, ArmorLimit, SpellLimit, ItemLimit, AllyLimit, BlessingLimit, Proficiency; }
-    private enum adv{ror, sos, wor;}
+    private enum adv{ror, sos, wor, mm;}
 
 	public static Fragment newInstance(UUID pcId) {
 		Bundle args = new Bundle();
@@ -322,6 +322,7 @@ public class CharacterFragment extends Fragment {
         createProgressSpinner(mCH.getRorAdventures(), R.id.ror_progress_spinner, mCharacter.getRoRProgress(), adv.ror);
         createProgressSpinner(mCH.getSosAdventures(),R.id.sos_progress_spinner, mCharacter.getSoSProgress(), adv.sos);
 		createProgressSpinner(mCH.getWorAdventures(),R.id.wor_progress_spinner, mCharacter.getWoRProgress(), adv.wor);
+		createProgressSpinner(mCH.getMMAdventures(),R.id.mm_progress_spinner, mCharacter.getMMProgress(), adv.mm);
 
 	}
 	
@@ -354,6 +355,9 @@ public class CharacterFragment extends Fragment {
                         return;
 					case wor:
 						mCharacter.setWoRProgress(pos);
+						return;
+					case  mm:
+						mCharacter.setMMProgress(pos);
 						return;
                     default:
                         return;

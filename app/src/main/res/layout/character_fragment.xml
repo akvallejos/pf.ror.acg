@@ -519,7 +519,17 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"/>
 				</TableRow>
-
+				<TableRow>
+					<TextView
+						android:id="@+id/mm_progress_title"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Mummy's Mask:"/>
+					<Spinner
+						android:id="@+id/mm_progress_spinner"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+				</TableRow>
 
          	</TableLayout>
 		</RelativeLayout>

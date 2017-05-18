@@ -32,6 +32,7 @@ public class PC {
 	private static final String JSON_ROR_PROGRESS = "ror_progress";
 	private	static final String JSON_SOS_PROGRESS = "sos_progress";
 	private static final String JSON_WOR_PROGRESS = "wor_progress";
+	private static final String JSON_MM_PROGRESS = "mm_progress";
 	private static final int POWERS_ARRAY_SIZE = 16;
 
 	private static final String TAG = "PC.class";
@@ -67,6 +68,7 @@ public class PC {
     private Integer mRoRProgress = 0;
     private Integer mSoSProgress = 0;
 	private Integer mWoRProgress = 0;
+	private Integer mMMProgress = 0;
 	
 	// Used to convert String role value into enum for use in switch statements
 	public enum valid_roles{
@@ -135,6 +137,7 @@ public class PC {
 		mRoRProgress = json.getInt(JSON_ROR_PROGRESS);
 		mWoRProgress = json.getInt(JSON_WOR_PROGRESS);
 		mSoSProgress = json.getInt(JSON_SOS_PROGRESS);
+		mMMProgress = json.getInt(JSON_MM_PROGRESS);
 		
 		JSONArray powers = (JSONArray) json.get(JSON_POWERS_ARRAY);
 		for(int i = 0; i < powers.length(); i++){
@@ -173,6 +176,7 @@ public class PC {
 		json.put(JSON_ROR_PROGRESS, mRoRProgress);
 		json.put(JSON_SOS_PROGRESS, mSoSProgress);
 		json.put(JSON_WOR_PROGRESS, mWoRProgress);
+		json.put(JSON_MM_PROGRESS, mMMProgress);
 		
 		json.put(JSON_POWERS_ARRAY, new JSONArray(Arrays.asList(mPowersArray)));
 
@@ -357,4 +361,10 @@ public class PC {
 	}
 
 	public void setWoRProgress(Integer WoRProgress) { mWoRProgress = WoRProgress; }
+
+	public Integer getMMProgress() {
+		return mMMProgress;
+	}
+
+	public void setMMProgress(Integer MMProgress) { mWoRProgress = MMProgress; }
 }

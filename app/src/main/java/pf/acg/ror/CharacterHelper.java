@@ -43,6 +43,7 @@ public class CharacterHelper {
     private ArrayAdapter<CharSequence> mRorAdventures;
     private ArrayAdapter<CharSequence> mSosAdventures;
 	private ArrayAdapter<CharSequence> mWorAdventures;
+	private ArrayAdapter<CharSequence> mMMAdventures;
 
 	private JSONArray mPowers;
 
@@ -102,6 +103,8 @@ public class CharacterHelper {
     public ArrayAdapter<CharSequence> getSosAdventures(){ return mSosAdventures; }
 
 	public ArrayAdapter<CharSequence> getWorAdventures(){ return mWorAdventures; }
+
+	public ArrayAdapter<CharSequence> getMMAdventures(){ return mMMAdventures; }
 
 	public ArrayAdapter<CharSequence> getStrBonus() {
 		return mStrBonus;
@@ -218,6 +221,9 @@ public class CharacterHelper {
 
 		InputStream worProgressIO = activity.getResources().openRawResource(R.raw.adventure_wr);
 		mWorAdventures = setProgressList(activity, worProgressIO);
+
+		InputStream mmProgressIO = activity.getResources().openRawResource(R.raw.adventure_mm);
+		mMMAdventures = setProgressList(activity, mmProgressIO);
 
         try {
             mInputStream.close();
